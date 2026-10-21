@@ -1,0 +1,72 @@
+{
+  "name": "Easy Joy Dim Sum & AYCE Hot Pot",
+  "shortName": "Easy Joy",
+  "alternateName": "Easy Joy意中人",
+  "domain": "https://www.easyjoybuffet.com",
+  "language": "en-US",
+  "telephone": "+1-929-243-6130",
+  "displayPhone": "(929) 243-6130",
+  "address": {
+    "streetAddress": "145 Mulberry St",
+    "addressLocality": "New York",
+    "addressRegion": "NY",
+    "postalCode": "10013",
+    "addressCountry": "US"
+  },
+  "neighborhood": "Chinatown, Manhattan",
+  "orderUrl": "https://order.mealkeyway.com/customer/release/index?mid=35554f7339436751782f466c5152626a423569654a773d3d#/main",
+  "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=145%20Mulberry%20St%2C%20New%20York%2C%20NY%2010013",
+  "servesCuisine": [
+    "Chinese",
+    "Dim Sum",
+    "Hot Pot"
+  ],
+  "hours": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "10:00",
+      "closes": "22:30"
+    }
+  ],
+  "hoursMessage": "Mon - Sun: 10:00 AM - 10:30 PM",
+  "menuPriceContext": "Online ordering menu · USD",
+  "menuNotice": "Prices and sold-out labels reflect the online ordering menu captured on October 20, 2026. Check MealKeyway for current prices, availability and any options or additional charges. These are online menu prices, not AYCE admission prices.",
+  "lastReviewed": "2026-10-20",
+  "navigation": [
+    {
+      "label": "Overview",
+      "href": "/"
+    },
+    {
+      "label": "Menu",
+      "href": "/menu/"
+    },
+    {
+      "label": "About",
+      "href": "/about/"
+    },
+    {
+      "label": "Facility",
+      "href": "/facility/"
+    },
+    {
+      "label": "Location",
+      "href": "/location/"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact/"
+    }
+  ],
+  "googleMapsUrl": "https://maps.app.goo.gl/HgKMhWXqBt28XdHA9",
+  "hoursSource": "Restaurant owner confirmed in conversation on 2026-10-20; local time in New York."
+}

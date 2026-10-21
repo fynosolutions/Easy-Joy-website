@@ -1,0 +1,20 @@
+{
+  "team": "easy-j-o-y",
+  "project": "easyjoy-website",
+  "productionUrl": "https://easyjoy-website.vercel.app",
+  "deploymentUrl": "https://easyjoy-website-bvabxbtco-easy-j-o-y.vercel.app",
+  "dashboardUrl": "https://vercel.com/easy-j-o-y/easyjoy-website",
+  "deploymentId": "dpl_FWo3bMRuQxSFjG6UhDJ9rFvY4aKv",
+  "readyState": "READY",
+  "indexing": "noindex review deployment; existing official domain unchanged",
+  "cloudBuild": {
+    "state": "completed",
+    "mode": "preview (noindex)",
+    "menuItems": 152,
+    "categoryPages": 12,
+    "routesPlus404": 21
+  },
+  "productionAccessConfiguration": "Public production alias; Vercel authentication retained for preview/deployment URLs",
+  "ssoProtectionScope": "prod_deployment_urls_and_all_previews",
+  "httpVerification": "Requests to production and generated domains timed out from this execution environment; browser visual/video verification not completed."
+}

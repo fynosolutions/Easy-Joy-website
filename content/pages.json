@@ -1,0 +1,74 @@
+{
+  "home": {
+    "title": "Easy Joy | Dim Sum & Hot Pot in Chinatown, NYC",
+    "description": "Explore Easy Joy's dim sum, dumplings, BBQ and hot pot menu. Find online menu prices, ordering details and our address at 145 Mulberry St in New York's Chinatown."
+  },
+  "menu": {
+    "title": "Menu & Prices | Easy Joy Chinatown, NYC",
+    "description": "Browse Easy Joy's online menu: dim sum, dumplings, rice rolls, BBQ, mini hot pots, malatang, hot pot ingredients and soup bases, with prices in USD."
+  },
+  "about": {
+    "title": "About Easy Joy | Dim Sum & Hot Pot in Chinatown",
+    "description": "Discover Easy Joy’s all-you-can-eat hot pot, handcrafted dim sum, fresh ingredients and signature Chinese dishes at 145 Mulberry St in New York’s Chinatown."
+  },
+  "location": {
+    "title": "Location & Contact Details | Easy Joy NYC",
+    "description": "Visit Easy Joy at 145 Mulberry St, New York, NY 10013. Open daily, 10:00 AM–10:30 PM. Find directions or call (929) 243-6130."
+  },
+  "contact": {
+    "title": "Contact & Order Online | Easy Joy NYC",
+    "description": "Call Easy Joy at (929) 243-6130, find our Chinatown address or open our MealKeyway online ordering page for pickup."
+  },
+  "faq": {
+    "title": "Menu, Ordering & Visiting FAQs | Easy Joy NYC",
+    "description": "Find answers about Easy Joy's location, menu prices, online ordering, hot pot soup bases and dining information before visiting Chinatown."
+  },
+  "faqs": [
+    {
+      "question": "Where is Easy Joy located?",
+      "answer": "Easy Joy is at 145 Mulberry St, New York, NY 10013, in Manhattan's Chinatown.",
+      "link": "/location/",
+      "linkLabel": "Location & directions"
+    },
+    {
+      "question": "What is on the Easy Joy menu?",
+      "answer": "The online menu includes premium dim sum, buns and dumplings, rice noodle rolls, BBQ, fried rice and noodles, mini hot pots, malatang, hot pot ingredients, soup bases and more.",
+      "link": "/menu/",
+      "linkLabel": "Browse the menu"
+    },
+    {
+      "question": "Can I order online for pickup?",
+      "answer": "Yes. Easy Joy's MealKeyway ordering page offers a pickup option. Open that page for the current menu, pickup times and checkout.",
+      "external": "order",
+      "linkLabel": "Order through MealKeyway"
+    },
+    {
+      "question": "Are these all-you-can-eat hot pot prices?",
+      "answer": "No. The prices on this website come from the online ordering menu, including individual hot pot ingredients and soup bases. Call Easy Joy to ask about current AYCE pricing and rules.",
+      "external": "phone",
+      "linkLabel": "Call the restaurant"
+    },
+    {
+      "question": "Which hot pot soup bases are listed online?",
+      "answer": "The Soup Base Delivery category lists Rich Tomato Broth, Coconut Chicken Broth, Pork Bone Collagen Broth and Tom Yum Goong Soup. Each is listed at $9.99 in the captured online menu.",
+      "link": "/menu/soup-base-delivery/",
+      "linkLabel": "Soup bases & prices"
+    },
+    {
+      "question": "What are the current opening hours?",
+      "answer": "Easy Joy is open Monday through Sunday, from 10:00 AM to 10:30 PM (New York local time).",
+      "linkLabel": "Hours & location",
+      "link": "/location/"
+    },
+    {
+      "question": "How can I ask about allergies or dietary requirements?",
+      "answer": "Call the restaurant before ordering to discuss ingredients, preparation and your requirements. Menu names alone do not confirm whether a dish meets a particular dietary requirement.",
+      "external": "phone",
+      "linkLabel": "Discuss your requirements"
+    }
+  ],
+  "facility": {
+    "title": "Facility & Dining Information | Easy Joy Chinatown, NYC",
+    "description": "Plan your visit to Easy Joy at 145 Mulberry St, New York. Find pickup and dining information, and contact the restaurant about access, seating and group arrangements."
+  }
+}

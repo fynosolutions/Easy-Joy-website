@@ -1,0 +1,37 @@
+{
+  "sourceUrl": "https://www.easyjoybuffet.com/",
+  "sourceSection": "Google Review",
+  "checkedAt": "2026-10-20",
+  "heading": "Google Review",
+  "notice": "Reviews reproduced from our previous website. Star ratings are shown as they appeared there. This is not a live Google reviews feed.",
+  "items": [
+    {
+      "topic": "Dim sum",
+      "sourcePosition": 1,
+      "paragraphs": [
+        "I can taste the difference compared to other Dim sum places. They are fresh and unique in their flavor. All the shrimp dishes are just packed with tons of shrimps. Perfect for shrimp lovers. Definitely try their soup dumplings and fried crab with shrimp my favorite. I got the coconut chicken soup base for hotpot it was refreshing and you can see the big chunks of fresh coconut in the soup. Last but not least their desserts are perfect to wrap up this meal.",
+        "They are way better than the ones you would pay $7-$10 at other bakeries in manhattan."
+      ],
+      "sourceDisplayedStars": 5
+    },
+    {
+      "topic": "The dining experience",
+      "sourcePosition": 2,
+      "paragraphs": [
+        "I recently visited Easy Joy – Hot Pot Dim Sum Buffet and was absolutely impressed! The variety of fresh ingredients for the hot pot was incredible, and the dim sum selection was delicious. Everything was well-prepared and tasted authentic.",
+        "The service was excellent—staff were attentive and friendly, making sure our dining experience was enjoyable. The restaurant was clean, and the atmosphere was cozy and inviting.",
+        "For the price, the quality and variety are unbeatable. I highly recommend Easy Joy to anyone craving hot pot or dim sum. Will definitely be coming back!"
+      ],
+      "sourceDisplayedStars": 5
+    },
+    {
+      "topic": "Hot pot",
+      "sourcePosition": 3,
+      "paragraphs": [
+        "Combining the best of both worlds – ayce hotpot and dimsum! The delicious broth sets this apart from other hotpot restaurants. They have the typical spicy and herbal broths, but the pickled radish duck broth is the winner here! Dimsum was impressive with steamed truffle shrimp dumplings, steamed scallop and shrimp dumplings, soup dumplings and peppers stuffed with fish and shrimp paste. While I was full already, I couldn’t help but finish the creme brûlée and matcha pudding."
+      ],
+      "sourceDisplayedStars": 5
+    }
+  ],
+  "transcriptionSource": "Full review text and individual star displays transcribed from the screenshot supplied by the user in this conversation."
+}

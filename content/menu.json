@@ -1,0 +1,1058 @@
+{
+  "source": "https://order.mealkeyway.com/customer/release/index?mid=35554f7339436751782f466c5152626a423569654a773d3d#/main",
+  "capturedAt": "2026-10-20",
+  "currency": "USD",
+  "store": {
+    "name": "Easy Joy意中人",
+    "address": "145 Mulberry St, New York, NY 10013",
+    "phone": "929-243-6130"
+  },
+  "notes": [
+    "Menu text and prices were transcribed from the user-provided page text copied from the MealKeyway ordering page.",
+    "Popular Items is a recommendation group; repeated items are represented by their canonical menu category and marked popular.",
+    "Hot Pot Delivery is labeled as 68 items by the source and all 68 item entries were present in the supplied text.",
+    "Other category lists Dessert at $2.00 without a fuller item name or description in the supplied text.",
+    "Prices and sold-out status reflect the supplied page text and should be reconfirmed before publishing.",
+    "Clear spelling, grammar and abbreviation corrections are applied to item names; sourceName preserves each original ordering-menu name. Ambiguous names remain unchanged pending restaurant confirmation."
+  ],
+  "categories": [
+    {
+      "name": "Popular Items",
+      "sourceCount": 14,
+      "isRecommendationGroup": true,
+      "items": [
+        {
+          "name": "Salted Egg Custard Buns",
+          "variant": "3 pc",
+          "price": 6.99,
+          "popular": true,
+          "canonicalCategory": "Bun/Dumplings"
+        },
+        {
+          "name": "Scallion Pancake",
+          "price": 8.99,
+          "popular": true,
+          "canonicalCategory": "Pie"
+        },
+        {
+          "name": "Grilled Chicken Skewers",
+          "variant": "5 pc",
+          "price": 5.0,
+          "popular": true,
+          "canonicalCategory": "BBQ"
+        },
+        {
+          "name": "Shiitake Mushroom & Chicken Dumplings",
+          "variant": "8 pc",
+          "price": 9.95,
+          "popular": true,
+          "canonicalCategory": "Premium Dim Sum"
+        },
+        {
+          "name": "Shrimp Dumplings Har Gow",
+          "variant": "4 pc",
+          "price": 6.25,
+          "popular": true,
+          "canonicalCategory": "Premium Dim Sum"
+        },
+        {
+          "name": "Napa Cabbage & Pork Dumplings",
+          "variant": "8 pc",
+          "price": 9.95,
+          "popular": true,
+          "canonicalCategory": "Premium Dim Sum"
+        },
+        {
+          "name": "Grilled Lamb Skewers",
+          "variant": "5 pc",
+          "price": 10.0,
+          "popular": true,
+          "canonicalCategory": "BBQ",
+          "image": "/assets/images/dishes/grilled-lamb-skewers-5-skewers-960.webp",
+          "imageSmall": "/assets/images/dishes/grilled-lamb-skewers-5-skewers-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Grilled Lamb Skewers (5 skewers)",
+          "imageSourceName": "烤羊肉(5串)"
+        },
+        {
+          "name": "Quail Egg",
+          "price": 6.99,
+          "popular": true,
+          "canonicalCategory": "Hot Pot Delivery"
+        },
+        {
+          "name": "Salted Egg Yolk Chicken Wings",
+          "variant": "8 pc",
+          "price": 12.99,
+          "popular": true,
+          "canonicalCategory": "Premium Dim Sum"
+        },
+        {
+          "name": "Corn & Pork Dumplings",
+          "variant": "8 pc",
+          "price": 9.95,
+          "popular": true,
+          "canonicalCategory": "Premium Dim Sum"
+        },
+        {
+          "name": "Cilantro Rice Roll",
+          "alternateName": "Cheung fun",
+          "price": 5.99,
+          "popular": true,
+          "canonicalCategory": "Rice Noodle Roll",
+          "image": "/assets/images/dishes/cilantro-rice-noodle-rolls-960.webp",
+          "imageSmall": "/assets/images/dishes/cilantro-rice-noodle-rolls-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Cilantro Rice Noodle Rolls",
+          "imageSourceName": "芫荽肠粉"
+        },
+        {
+          "name": "Vegetarian Meat Buns",
+          "variant": "3 pc",
+          "price": 6.99,
+          "popular": true,
+          "canonicalCategory": "Bun/Dumplings"
+        },
+        {
+          "name": "Chive & Pork Dumplings",
+          "variant": "8 pc",
+          "price": 9.95,
+          "popular": true,
+          "canonicalCategory": "Premium Dim Sum"
+        },
+        {
+          "name": "Shrimp Fried Rice",
+          "price": 17.99,
+          "popular": true,
+          "canonicalCategory": "Fried Rice & Noodles"
+        }
+      ]
+    },
+    {
+      "name": "Take Out Menu",
+      "sourceCount": 8,
+      "items": [
+        {
+          "name": "Coconut Chicken Mini Hot Pot",
+          "price": 20.0,
+          "description": "酱汁：姜+红皮蒜+青柠+酱油 猪肚，玉米，金针菇，冬瓜，竹笙，海鲜菇 配米饭",
+          "image": "/assets/images/dishes/coconut-chicken-mini-hot-pot-set-960.webp",
+          "imageSmall": "/assets/images/dishes/coconut-chicken-mini-hot-pot-set-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Coconut Chicken Mini Hot Pot Set",
+          "imageSourceName": "椰子鸡套餐"
+        },
+        {
+          "name": "Tomato Mini Hot Pot",
+          "price": 16.0,
+          "image": "/assets/images/dishes/tomato-mini-hot-pot-set-960.webp",
+          "imageSmall": "/assets/images/dishes/tomato-mini-hot-pot-set-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Tomato Mini Hot Pot Set",
+          "imageSourceName": "番茄烫套餐"
+        },
+        {
+          "name": "Pork Bone Broth Mini Hot Pot",
+          "price": 16.0,
+          "image": "/assets/images/dishes/pork-bone-broth-mini-hot-pot-set-960.webp",
+          "imageSmall": "/assets/images/dishes/pork-bone-broth-mini-hot-pot-set-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Pork Bone Broth Mini Hot Pot Set",
+          "imageSourceName": "猪骨浓汤套餐"
+        },
+        {
+          "name": "Vegetarian Mushroom Mini Hot Pot",
+          "price": 16.0,
+          "image": "/assets/images/dishes/vegetarian-mushroom-mini-hot-pot-set-960.webp",
+          "imageSmall": "/assets/images/dishes/vegetarian-mushroom-mini-hot-pot-set-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Vegetarian Mushroom Mini Hot Pot Set",
+          "imageSourceName": "素食菌汤套餐"
+        },
+        {
+          "name": "Tom Yum Mini Hot Pot",
+          "price": 20.0,
+          "image": "/assets/images/dishes/tom-yum-mini-hot-pot-set-960.webp",
+          "imageSmall": "/assets/images/dishes/tom-yum-mini-hot-pot-set-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Tom Yum Mini Hot Pot Set",
+          "imageSourceName": "冬阴功套餐"
+        },
+        {
+          "name": "Fish Maw Chicken Mini Hot Pot",
+          "price": 20.0
+        },
+        {
+          "name": "Fried Noodles/Fried Rice Set",
+          "price": 17.99,
+          "description": "Fried Noodles/Fried Rice + Dessert + Lemonade",
+          "sourceName": "Fried Noodle/Fried Rice Set"
+        },
+        {
+          "name": "Mystery Box Set",
+          "price": 16.0,
+          "availability": "sold_out",
+          "image": "/assets/images/dishes/mystery-box-set-960.webp",
+          "imageSmall": "/assets/images/dishes/mystery-box-set-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Mystery Box Set",
+          "imageSourceName": "盲盒套餐"
+        }
+      ]
+    },
+    {
+      "name": "Malatang",
+      "sourceCount": 4,
+      "items": [
+        {
+          "name": "Beef Malatang Combo",
+          "price": 17.99,
+          "image": "/assets/images/dishes/beef-malatang-960.webp",
+          "imageSmall": "/assets/images/dishes/beef-malatang-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Beef Malatang",
+          "imageSourceName": "肥牛麻辣烫"
+        },
+        {
+          "name": "Lamb Malatang Combo",
+          "price": 17.99,
+          "image": "/assets/images/dishes/lamb-malatang-960.webp",
+          "imageSmall": "/assets/images/dishes/lamb-malatang-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Lamb Malatang",
+          "imageSourceName": "羊肉麻辣烫"
+        },
+        {
+          "name": "Thousand-Layer Tripe Malatang Combo",
+          "price": 17.99,
+          "sourceName": "Thousand Layer Tripe Malatang Combo",
+          "image": "/assets/images/dishes/thousand-layer-tripe-malatang-960.webp",
+          "imageSmall": "/assets/images/dishes/thousand-layer-tripe-malatang-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Thousand-Layer Tripe Malatang",
+          "imageSourceName": "千层肚麻辣烫"
+        },
+        {
+          "name": "Vegetable Malatang Combo",
+          "price": 17.99,
+          "image": "/assets/images/dishes/vegetable-malatang-960.webp",
+          "imageSmall": "/assets/images/dishes/vegetable-malatang-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Vegetable Malatang",
+          "imageSourceName": "素菜麻辣烫"
+        }
+      ]
+    },
+    {
+      "name": "New Arrival",
+      "sourceCount": 4,
+      "items": [
+        {
+          "name": "Sweet & Sour Chicken",
+          "price": 15.99
+        },
+        {
+          "name": "General Tso's Chicken",
+          "price": 15.99
+        },
+        {
+          "name": "Chicken Wonton Noodle Soup",
+          "price": 5.75
+        },
+        {
+          "name": "Chicken Wonton Rice Soup",
+          "price": 5.75
+        }
+      ]
+    },
+    {
+      "name": "Premium Dim Sum",
+      "sourceCount": 20,
+      "items": [
+        {
+          "name": "Napa Cabbage & Pork Dumplings",
+          "variant": "8 pc",
+          "price": 9.95,
+          "popular": true
+        },
+        {
+          "name": "Shiitake Mushroom & Chicken Dumplings",
+          "variant": "8 pc",
+          "price": 9.95,
+          "popular": true
+        },
+        {
+          "name": "Chive & Pork Dumplings",
+          "variant": "8 pc",
+          "price": 9.95,
+          "popular": true
+        },
+        {
+          "name": "Corn & Pork Dumplings",
+          "variant": "8 pc",
+          "price": 9.95,
+          "popular": true
+        },
+        {
+          "name": "Seaweed & Pork Dumplings",
+          "variant": "8 pc",
+          "price": 9.95
+        },
+        {
+          "name": "Steamed Chicken Feet in Black Bean Sauce",
+          "price": 6.25,
+          "image": "/assets/images/dishes/chicken-feet-in-black-bean-sauce-960.webp",
+          "imageSmall": "/assets/images/dishes/chicken-feet-in-black-bean-sauce-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Chicken Feet in Black Bean Sauce",
+          "imageSourceName": "豉汁凤爪"
+        },
+        {
+          "name": "Steamed Spare Ribs in Black Bean Sauce",
+          "price": 6.25,
+          "image": "/assets/images/dishes/spare-ribs-in-black-bean-sauce-960.webp",
+          "imageSmall": "/assets/images/dishes/spare-ribs-in-black-bean-sauce-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Spare Ribs in Black Bean Sauce",
+          "imageSourceName": "豉汁排骨"
+        },
+        {
+          "name": "Salted Egg Yolk Chicken Wings",
+          "variant": "8 pc",
+          "price": 12.99,
+          "popular": true
+        },
+        {
+          "name": "Fried Squid Tentacles",
+          "price": 12.99
+        },
+        {
+          "name": "Beancurd Skin Rolls",
+          "variant": "3 pc",
+          "price": 6.99
+        },
+        {
+          "name": "Sticky Rice with Pork in Lotus Leaf",
+          "variant": "2 pc",
+          "price": 6.99
+        },
+        {
+          "name": "Shrimp Dumplings Har Gow",
+          "variant": "4 pc",
+          "price": 6.25,
+          "popular": true
+        },
+        {
+          "name": "Choi Sum",
+          "price": 8.99,
+          "image": "/assets/images/dishes/choi-sum-960.webp",
+          "imageSmall": "/assets/images/dishes/choi-sum-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Choi Sum",
+          "imageSourceName": "时菜芯"
+        },
+        {
+          "name": "Pork & Shrimp Siu Mai",
+          "variant": "3 pc",
+          "price": 6.25
+        },
+        {
+          "name": "Fried Vegetable Spring Rolls",
+          "variant": "3 pc",
+          "price": 8.99,
+          "image": "/assets/images/dishes/vegetable-spring-rolls-960.webp",
+          "imageSmall": "/assets/images/dishes/vegetable-spring-rolls-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Vegetable Spring Rolls",
+          "imageSourceName": "素菜春卷"
+        },
+        {
+          "name": "Fried Milk Custard",
+          "variant": "4 pc",
+          "price": 3.99
+        },
+        {
+          "name": "Egg Tarts",
+          "variant": "2 pc",
+          "price": 5.99,
+          "image": "/assets/images/dishes/egg-tarts-960.webp",
+          "imageSmall": "/assets/images/dishes/egg-tarts-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Egg Tarts",
+          "imageSourceName": "蛋挞"
+        },
+        {
+          "name": "Fried Mini Steamed Buns",
+          "variant": "4 pc",
+          "price": 3.99
+        },
+        {
+          "name": "Brown Sugar Rice Cake",
+          "variant": "4 pc",
+          "price": 5.99
+        },
+        {
+          "name": "Crab & Cheese Fried Wontons",
+          "price": 12.99
+        }
+      ]
+    },
+    {
+      "name": "BBQ",
+      "sourceCount": 16,
+      "items": [
+        {
+          "name": "Grilled Shell-On Shrimp",
+          "variant": "6 pc",
+          "price": 10.0
+        },
+        {
+          "name": "Garlic Eggplant with Vermicelli",
+          "variant": "1 pc",
+          "price": 6.0,
+          "sourceName": "Garlic Eggplant w.Vermicelli"
+        },
+        {
+          "name": "Grilled Chicken Skewers",
+          "variant": "5 pc",
+          "price": 5.0,
+          "popular": true
+        },
+        {
+          "name": "Grilled Oysters",
+          "variant": "3 pc",
+          "price": 10.0,
+          "availability": "sold_out"
+        },
+        {
+          "name": "Grilled Lamb Skewers",
+          "variant": "5 pc",
+          "price": 10.0,
+          "popular": true,
+          "image": "/assets/images/dishes/grilled-lamb-skewers-5-skewers-960.webp",
+          "imageSmall": "/assets/images/dishes/grilled-lamb-skewers-5-skewers-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Grilled Lamb Skewers (5 skewers)",
+          "imageSourceName": "烤羊肉(5串)"
+        },
+        {
+          "name": "Beef with Pineapple",
+          "variant": "3 pc",
+          "price": 10.0,
+          "sourceName": "Beef w.Pineapple"
+        },
+        {
+          "name": "BBQ Squid Skewers",
+          "variant": "3 pc",
+          "price": 10.0,
+          "image": "/assets/images/dishes/grilled-squid-skewers-3-skewers-960.webp",
+          "imageSmall": "/assets/images/dishes/grilled-squid-skewers-3-skewers-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Grilled Squid Skewers (3 skewers)",
+          "imageSourceName": "烤鱿鱼（3）"
+        },
+        {
+          "name": "Mid-Joint Chicken Wings",
+          "variant": "3 pc",
+          "price": 10.0
+        },
+        {
+          "name": "Pork Neck Meat",
+          "variant": "3 pc",
+          "price": 10.0
+        },
+        {
+          "name": "Grilled Beef Skewers",
+          "variant": "5 pc",
+          "price": 10.0,
+          "image": "/assets/images/dishes/grilled-beef-skewers-5-skewers-960.webp",
+          "imageSmall": "/assets/images/dishes/grilled-beef-skewers-5-skewers-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Grilled Beef Skewers (5 skewers)",
+          "imageSourceName": "烤牛肉（5）"
+        },
+        {
+          "name": "Pork Belly",
+          "variant": "5 pc",
+          "price": 10.0
+        },
+        {
+          "name": "Chicken Hearts",
+          "variant": "5 pc",
+          "price": 10.0
+        },
+        {
+          "name": "Gizzards",
+          "variant": "5 pc",
+          "price": 10.0
+        },
+        {
+          "name": "Pork Belly Wrapped Enoki Mushrooms",
+          "variant": "3 pc",
+          "price": 10.0
+        },
+        {
+          "name": "Grilled Chinese Chives",
+          "variant": "2 pc",
+          "price": 8.0,
+          "image": "/assets/images/dishes/grilled-chinese-chives-960.webp",
+          "imageSmall": "/assets/images/dishes/grilled-chinese-chives-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Grilled Chinese Chives",
+          "imageSourceName": "烤韭菜"
+        },
+        {
+          "name": "Grilled Peeled Shrimp/Order",
+          "price": 10.0
+        }
+      ]
+    },
+    {
+      "name": "Bun/Dumplings",
+      "sourceCount": 5,
+      "items": [
+        {
+          "name": "BBQ Pork Buns Char Siu Bao",
+          "variant": "3 pc",
+          "price": 6.25
+        },
+        {
+          "name": "Salted Egg Custard Buns",
+          "variant": "3 pc",
+          "price": 6.99,
+          "popular": true
+        },
+        {
+          "name": "Vegetarian Meat Buns",
+          "variant": "3 pc",
+          "price": 6.99,
+          "popular": true
+        },
+        {
+          "name": "Mini Pan-Fried Beef Buns",
+          "variant": "8 pc",
+          "price": 6.99
+        },
+        {
+          "name": "Soup Dumplings",
+          "variant": "6 pc",
+          "alternateName": "Xiao long bao",
+          "price": 12.0,
+          "image": "/assets/images/dishes/shanghai-soup-dumplings-960.webp",
+          "imageSmall": "/assets/images/dishes/shanghai-soup-dumplings-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Shanghai Soup Dumplings",
+          "imageSourceName": "上海小笼包"
+        }
+      ]
+    },
+    {
+      "name": "Rice Noodle Roll",
+      "sourceCount": 4,
+      "items": [
+        {
+          "name": "Shrimp Rice Roll",
+          "alternateName": "Cheung fun",
+          "price": 6.99
+        },
+        {
+          "name": "Beef Rice Roll",
+          "alternateName": "Cheung fun",
+          "price": 6.99,
+          "image": "/assets/images/dishes/beef-rice-noodle-rolls-960.webp",
+          "imageSmall": "/assets/images/dishes/beef-rice-noodle-rolls-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Beef Rice Noodle Rolls",
+          "imageSourceName": "牛肉肠粉"
+        },
+        {
+          "name": "Cilantro Rice Roll",
+          "alternateName": "Cheung fun",
+          "price": 5.99,
+          "popular": true,
+          "image": "/assets/images/dishes/cilantro-rice-noodle-rolls-960.webp",
+          "imageSmall": "/assets/images/dishes/cilantro-rice-noodle-rolls-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Cilantro Rice Noodle Rolls",
+          "imageSourceName": "芫荽肠粉"
+        },
+        {
+          "name": "Mixed Vegetable Rice Roll",
+          "alternateName": "Cheung fun",
+          "price": 7.99,
+          "image": "/assets/images/dishes/mixed-vegetable-rice-noodle-rolls-960.webp",
+          "imageSmall": "/assets/images/dishes/mixed-vegetable-rice-noodle-rolls-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Mixed Vegetable Rice Noodle Rolls",
+          "imageSourceName": "罗汉斋肠"
+        }
+      ]
+    },
+    {
+      "name": "Pie",
+      "sourceCount": 5,
+      "items": [
+        {
+          "name": "Scallion Pancake",
+          "price": 8.99,
+          "popular": true
+        },
+        {
+          "name": "Scallion Pork Flaky Pastry Pie",
+          "variant": "2 pc",
+          "price": 7.0
+        },
+        {
+          "name": "Black Pepper Beef Flaky Pastry Pie",
+          "variant": "2 pc",
+          "price": 7.0
+        },
+        {
+          "name": "Chicken Flaky Pastry Pie",
+          "variant": "2 pc",
+          "price": 7.0
+        },
+        {
+          "name": "Sweet Potato Flaky Pastry Pie",
+          "variant": "2 pc",
+          "price": 7.0
+        }
+      ]
+    },
+    {
+      "name": "Fried Rice & Noodles",
+      "sourceCount": 12,
+      "items": [
+        {
+          "name": "Vegetable Fried Rice",
+          "price": 14.99
+        },
+        {
+          "name": "Egg Fried Rice",
+          "price": 15.99
+        },
+        {
+          "name": "Ham & Egg Fried Rice",
+          "price": 17.99
+        },
+        {
+          "name": "Chicken Fried Rice",
+          "price": 17.99
+        },
+        {
+          "name": "Beef Fried Rice",
+          "price": 17.99
+        },
+        {
+          "name": "Shrimp Fried Rice",
+          "price": 17.99,
+          "popular": true
+        },
+        {
+          "name": "Steamed White Rice",
+          "price": 2.99
+        },
+        {
+          "name": "Vegetable Chow Mein",
+          "price": 14.99,
+          "description": "Choice of egg noodles or rice noodles (gluten free)"
+        },
+        {
+          "name": "Chicken Chow Mein",
+          "price": 17.99,
+          "description": "Choice of egg noodles or rice noodles (gluten free)"
+        },
+        {
+          "name": "Beef Chow Mein",
+          "price": 17.99,
+          "description": "Choice of egg noodles or rice noodles (gluten free)",
+          "image": "/assets/images/dishes/beef-chow-mein-960.webp",
+          "imageSmall": "/assets/images/dishes/beef-chow-mein-480.webp",
+          "width": 960,
+          "height": 654,
+          "alt": "Beef Chow Mein",
+          "imageSourceName": "牛肉炒面"
+        },
+        {
+          "name": "Shrimp Chow Mein",
+          "price": 17.99,
+          "description": "Choice of egg noodles or rice noodles (gluten free)"
+        },
+        {
+          "name": "Pork Chow Mein",
+          "price": 17.99,
+          "description": "Choice of egg noodles or rice noodles (gluten free)"
+        }
+      ]
+    },
+    {
+      "name": "Hot Pot Delivery",
+      "sourceCount": 68,
+      "items": [
+        {
+          "name": "Beef Tripe",
+          "price": 7.99
+        },
+        {
+          "name": "Mini Sausage",
+          "price": 6.99
+        },
+        {
+          "name": "Quail Egg",
+          "price": 6.99,
+          "popular": true
+        },
+        {
+          "name": "Spicy Chicken Liver",
+          "price": 6.99
+        },
+        {
+          "name": "Braised Pork Intestines",
+          "price": 7.99
+        },
+        {
+          "name": "Bullfrog Legs",
+          "price": 9.99
+        },
+        {
+          "name": "Fish Tofu",
+          "price": 7.99
+        },
+        {
+          "name": "Premium Fatty Beef",
+          "price": 7.99
+        },
+        {
+          "name": "New Zealand Lamb",
+          "price": 7.99
+        },
+        {
+          "name": "Snowflake Beef",
+          "price": 9.99
+        },
+        {
+          "name": "American Wagyu Beef",
+          "price": 9.99
+        },
+        {
+          "name": "Beef Tongue",
+          "price": 8.99
+        },
+        {
+          "name": "Beef Tender Shoulder",
+          "price": 9.99
+        },
+        {
+          "name": "Organic Pork Belly",
+          "price": 7.99
+        },
+        {
+          "name": "Chicken Roll",
+          "price": 6.99
+        },
+        {
+          "name": "Tender Beef",
+          "price": 8.99
+        },
+        {
+          "name": "Crispy Black Tripe",
+          "price": 15.99
+        },
+        {
+          "name": "Premium White Tripe",
+          "price": 8.99
+        },
+        {
+          "name": "Spicy Beef Slices",
+          "price": 8.99
+        },
+        {
+          "name": "Yellow Throat",
+          "price": 7.99
+        },
+        {
+          "name": "Thousand-Layer Tripe",
+          "price": 7.99
+        },
+        {
+          "name": "Tender Beef Slices",
+          "price": 8.99
+        },
+        {
+          "name": "Boneless Duck Feet",
+          "price": 8.99
+        },
+        {
+          "name": "Ham",
+          "price": 6.99
+        },
+        {
+          "name": "Pig Brain",
+          "price": 6.99
+        },
+        {
+          "name": "Shrimp In Tofu Porch",
+          "price": 6.99
+        },
+        {
+          "name": "Cheese Fish Tofu",
+          "price": 8.99,
+          "sourceName": "Chesse Fish Tofu"
+        },
+        {
+          "name": "Shrimp With Head",
+          "price": 6.99
+        },
+        {
+          "name": "Crab Stick",
+          "price": 6.99
+        },
+        {
+          "name": "Sole Fish Fillet",
+          "price": 6.99
+        },
+        {
+          "name": "Squid Tentacle",
+          "price": 7.99,
+          "sourceName": "Squid Tantacle"
+        },
+        {
+          "name": "Shrimp Paste",
+          "price": 7.99
+        },
+        {
+          "name": "Mussel",
+          "price": 6.99
+        },
+        {
+          "name": "Tiger Prawn",
+          "price": 7.99
+        },
+        {
+          "name": "Snakehead Fillet",
+          "price": 7.99
+        },
+        {
+          "name": "Grass Carp Fillet",
+          "price": 8.99
+        },
+        {
+          "name": "Beef Tender Ball",
+          "price": 7.99
+        },
+        {
+          "name": "Fish Roe Ball",
+          "price": 7.99
+        },
+        {
+          "name": "Brown Sugar Rice Cake",
+          "price": 4.99
+        },
+        {
+          "name": "Fried Milk Custard",
+          "price": 4.99
+        },
+        {
+          "name": "Fried Mini Steamed Bun",
+          "price": 4.99,
+          "sourceName": "Fried Mini Steam Bun"
+        },
+        {
+          "name": "Fried Mini Dough Stick",
+          "price": 4.99,
+          "availability": "sold_out"
+        },
+        {
+          "name": "Crown Daisy",
+          "price": 5.99
+        },
+        {
+          "name": "Fresh Corn",
+          "price": 5.99
+        },
+        {
+          "name": "Kelp",
+          "price": 5.99
+        },
+        {
+          "name": "Lotus Root",
+          "price": 5.99
+        },
+        {
+          "name": "Potato",
+          "price": 5.99
+        },
+        {
+          "name": "Broccoli",
+          "price": 5.99
+        },
+        {
+          "name": "Bamboo Shoots",
+          "price": 5.99
+        },
+        {
+          "name": "Yamakurage",
+          "price": 5.99
+        },
+        {
+          "name": "Firm Tofu",
+          "price": 5.99
+        },
+        {
+          "name": "Spiced Tofu Skin",
+          "price": 5.99
+        },
+        {
+          "name": "Winter Melon",
+          "price": 5.99
+        },
+        {
+          "name": "Pumpkin",
+          "price": 5.99
+        },
+        {
+          "name": "Konjac Knot",
+          "price": 5.99
+        },
+        {
+          "name": "Shiitake Mushroom",
+          "price": 5.99
+        },
+        {
+          "name": "Potato Slices",
+          "price": 5.99
+        },
+        {
+          "name": "Handmade Noodle",
+          "price": 5.99
+        },
+        {
+          "name": "Rice Cake",
+          "price": 5.99
+        },
+        {
+          "name": "Fried Bean Curd Roll",
+          "price": 5.99
+        },
+        {
+          "name": "Dried Beancurd",
+          "price": 5.99
+        },
+        {
+          "name": "Fried Tofu",
+          "price": 5.99
+        },
+        {
+          "name": "Napa Cabbage",
+          "price": 5.99
+        },
+        {
+          "name": "Shanghai Bok Choy",
+          "price": 5.99
+        },
+        {
+          "name": "Clam",
+          "price": 6.99
+        },
+        {
+          "name": "Blue Crab",
+          "price": 7.99
+        },
+        {
+          "name": "Kelp Bud",
+          "price": 5.99
+        },
+        {
+          "name": "Enoki Mushroom",
+          "price": 5.99
+        }
+      ]
+    },
+    {
+      "name": "Soup Base Delivery",
+      "sourceCount": 4,
+      "items": [
+        {
+          "name": "Rich Tomato Broth",
+          "price": 9.99,
+          "image": "/assets/images/dishes/rich-tomato-broth-960.webp",
+          "imageSmall": "/assets/images/dishes/rich-tomato-broth-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Rich Tomato Broth",
+          "imageSourceName": "浓香西红柿锅"
+        },
+        {
+          "name": "Coconut Chicken Broth",
+          "price": 9.99,
+          "image": "/assets/images/dishes/coconut-chicken-broth-960.webp",
+          "imageSmall": "/assets/images/dishes/coconut-chicken-broth-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Coconut Chicken Broth",
+          "imageSourceName": "椰子鸡锅"
+        },
+        {
+          "name": "Pork Bone Collagen Broth",
+          "price": 9.99,
+          "image": "/assets/images/dishes/pork-bone-broth-960.webp",
+          "imageSmall": "/assets/images/dishes/pork-bone-broth-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Pork Bone Broth",
+          "imageSourceName": "猪骨浓汤锅"
+        },
+        {
+          "name": "Tom Yum Goong Soup",
+          "price": 9.99,
+          "image": "/assets/images/dishes/tom-yum-soup-960.webp",
+          "imageSmall": "/assets/images/dishes/tom-yum-soup-480.webp",
+          "width": 960,
+          "height": 576,
+          "alt": "Tom Yum Soup",
+          "imageSourceName": "冬阴功汤"
+        }
+      ]
+    },
+    {
+      "name": "Other",
+      "sourceCount": 2,
+      "items": [
+        {
+          "name": "Lemonade",
+          "price": 3.0
+        },
+        {
+          "name": "Dessert",
+          "price": 2.0,
+          "note": "Generic label in supplied page text; exact dessert name not shown."
+        }
+      ]
+    }
+  ]
+}

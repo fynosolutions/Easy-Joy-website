@@ -1,0 +1,56 @@
+{
+  "source": "Existing Easy Joy official About copy, supplied by the restaurant website owner in this conversation.",
+  "sourceText": "Easy Joy Dim Sum & AYCE Hot Pot is a Chinese restaurant located at 145 Mulberry St, New York, NY 10013, offering all-you-can-eat experience of authentic hot pot and handcrafted dim sum in a lively and welcoming setting. We are committed to using fresh, high-quality ingredients, including locally sourced produce and time-honored recipes, to bring guests an unforgettable and authentic taste of Chinese cuisine. Our signature dishes include Spicy Sichuan Hot Pot, Cantonese Shrimp Dumplings, and Steamed Pork Buns, each prepared with authentic flavors and meticulous culinary skill. Visit Chinese restaurant Easy Joy Hot Pot Dim Sum Buffet in New York’s Chinatown and enjoy a flavorful, authentic, and satisfying dining experience that will keep you coming back for more.",
+  "headline": [
+    "All-you-can-eat hot pot.",
+    "Handcrafted dim sum."
+  ],
+  "intro": "Easy Joy Dim Sum & AYCE Hot Pot is a Chinese restaurant at 145 Mulberry St in New York’s Chinatown, offering all-you-can-eat hot pot and handcrafted dim sum in a lively, welcoming setting.",
+  "homeSummary": "Come together over all-you-can-eat hot pot and handcrafted dim sum in a lively, welcoming Chinatown setting.",
+  "homeDetail": "Our kitchen pairs fresh, high-quality ingredients, including locally sourced produce, with time-honored recipes to bring authentic Chinese flavors to the table.",
+  "heroDescription": "All-you-can-eat hot pot and handcrafted dim sum, served in a lively, welcoming setting in New York’s Chinatown.",
+  "kitchenHeading": [
+    "Fresh ingredients.",
+    "Time-honored recipes."
+  ],
+  "kitchenIntro": "We pair fresh, high-quality ingredients, including locally sourced produce, with time-honored recipes. Every dish is prepared with care to bring out the authentic flavors of Chinese cuisine.",
+  "values": [
+    {
+      "title": "Ingredients come first",
+      "text": "Fresh, high-quality ingredients, including locally sourced produce, are at the heart of our kitchen."
+    },
+    {
+      "title": "Rooted in Chinese flavor",
+      "text": "Time-honored recipes guide the hot pot and dim sum we bring to the table."
+    },
+    {
+      "title": "Prepared with care",
+      "text": "Authentic flavors and meticulous preparation shape the Easy Joy dining experience."
+    }
+  ],
+  "signatures": [
+    {
+      "name": "Spicy Sichuan Hot Pot",
+      "description": "A signature hot pot choice that brings Sichuan flavor to the table.",
+      "href": "/menu/hot-pot-delivery/",
+      "linkLabel": "Explore hot pot options"
+    },
+    {
+      "name": "Cantonese Shrimp Dumplings",
+      "description": "One of the signature dishes in our handcrafted dim sum selection.",
+      "href": "/menu/premium-dim-sum/",
+      "linkLabel": "Explore dim sum"
+    },
+    {
+      "name": "Steamed Pork Buns",
+      "description": "One of Easy Joy’s signature dishes, prepared with care.",
+      "href": "/menu/bun-dumplings/",
+      "linkLabel": "Explore buns & dumplings"
+    }
+  ],
+  "experienceHeading": [
+    "A lively table.",
+    "A warm welcome."
+  ],
+  "experienceText": "Whether you come for hot pot or dim sum, Easy Joy brings a flavorful and satisfying Chinese dining experience to Mulberry Street. Explore the menu, plan your visit and come enjoy a little Easy Joy."
+}

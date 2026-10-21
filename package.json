@@ -1,0 +1,16 @@
+{
+  "name": "easyjoy-restaurant-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:preview": "node scripts/build.mjs --preview",
+    "check": "node scripts/check.mjs",
+    "preview": "node scripts/serve.mjs",
+    "build:vercel": "node scripts/build.mjs --vercel"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

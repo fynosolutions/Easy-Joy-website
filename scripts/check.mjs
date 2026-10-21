@@ -1,0 +1,77 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {slug,escape,money} from '../lib/site.mjs';
+const root=fileURLToPath(new URL('../',import.meta.url));
+const dist=path.join(root,'dist');
+const r=JSON.parse(await fs.readFile(path.join(root,'content/restaurant.json'),'utf8'));
+const menu=JSON.parse(await fs.readFile(path.join(root,'content/menu.json'),'utf8'));
+const categories=menu.categories.filter(c=>!c.isRecommendationGroup);
+assert.equal(menu.currency,'USD');
+assert.equal(new Set(categories.map(c=>slug(c.name))).size,categories.length,'Duplicate category slug');
+let total=0;
+for(const category of categories){
+ assert.equal(category.items.length,category.sourceCount,`Source count mismatch: ${category.name}`);
+ const html=await fs.readFile(path.join(dist,'menu',slug(category.name),'index.html'),'utf8');
+ for(const [i,item] of category.items.entries()){
+  assert.ok(item.name&&Number.isFinite(item.price)&&item.price>=0,'Missing name or valid price');
+  const start=html.indexOf(`<article id="dish-${slug(category.name)}-${i+1}"`);
+  assert.ok(start>=0,`Missing HTML item: ${item.name}`);
+  const block=html.slice(start,html.indexOf('</article>',start));
+  assert.ok(block.includes(escape(item.name)),`Name mismatch: ${item.name}`);
+  assert.ok(block.includes(money(item.price)),`Price mismatch: ${item.name}`);
+  if(item.variant)assert.ok(block.includes(escape(item.variant)),`Missing serving size: ${item.name}`);
+  if(item.availability==='sold_out')assert.ok(block.includes('Listed as sold out'));
+  total++;
+ }
+}
+for(const group of menu.categories.filter(c=>c.isRecommendationGroup))for(const popular of group.items){
+ const category=categories.find(c=>c.name===popular.canonicalCategory);
+ const item=category?.items.find(x=>x.name===popular.name&&x.variant===popular.variant);
+ assert.ok(item,`Unmatched recommendation: ${popular.name}`);
+ assert.equal(item.price,popular.price,`Recommendation price mismatch: ${popular.name}`);
+ assert.equal(item.popular,true,`Missing popular flag: ${popular.name}`);
+}
+const files=[];
+async function walk(dir){for(const entry of await fs.readdir(dir,{withFileTypes:true})){const p=path.join(dir,entry.name);if(entry.isDirectory())await walk(p);else files.push(p);}}
+await walk(dist);
+const htmlFiles=files.filter(p=>p.endsWith('.html'));
+let links=0;
+for(const file of htmlFiles){
+ const html=await fs.readFile(file,'utf8');
+ assert.equal((html.match(/<h1(?:\s|>)/g)||[]).length,1,`H1 count: ${file}`);
+ assert.ok(html.includes('<meta name="description" content="'));
+ assert.ok(html.includes('<link rel="canonical"'));
+ assert.ok(html.includes(r.telephone),'Missing phone');
+ const encoded=(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)||[])[1];
+ const schema=JSON.parse(encoded);
+ const restaurant=schema['@graph'].find(x=>x['@type']==='Restaurant');
+ assert.equal(restaurant.address.streetAddress,r.address.streetAddress);
+ assert.equal(restaurant.telephone,r.telephone);
+ if(r.hours===null)assert.ok(!restaurant.openingHoursSpecification,'Unconfirmed hours in schema');
+ for(const match of html.matchAll(/(?:href|src)="([^"\s]+)"/g)){
+  const href=match[1];
+  if(!href.startsWith('/')&&!href.startsWith('#'))continue;
+  const [pathname,hash]=href.split('#');
+  const target=pathname ? path.join(dist,pathname,pathname.endsWith('/')?'index.html':'') : file;
+  assert.ok(files.includes(target),`Broken link ${href} in ${file}`);
+  if(hash){const targetHTML=await fs.readFile(target,'utf8');assert.ok(targetHTML.includes(`id="${hash}"`),`Broken anchor ${href}`);}
+  links++;
+ }
+}
+const html=await fs.readFile(path.join(dist,'menu/index.html'),'utf8');
+const graph=JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
+const structuredMenu=graph['@graph'].find(x=>x['@type']==='Menu');
+assert.equal(structuredMenu.hasMenuSection.reduce((n,c)=>n+c.hasMenuItem.length,0),total);
+assert.equal((html.match(/<article id="dish-/g)||[]).length,total);
+console.log(`PASS: ${total} HTML menu entries and structured prices; ${categories.length} category counts; ${htmlFiles.length} pages; ${links} internal links/anchors; NAP, metadata and recommendation matching.`);
+
+const aboutData=JSON.parse(await fs.readFile(path.join(root,'content/about.json'),'utf8'));
+const aboutHTML=await fs.readFile(path.join(dist,'about/index.html'),'utf8');
+for(const text of [aboutData.intro,aboutData.kitchenIntro,...aboutData.signatures.map(x=>x.name)])assert.ok(aboutHTML.includes(escape(text)),`Missing official About content: ${text}`);
+const homeHTML=await fs.readFile(path.join(dist,'index.html'),'utf8');
+assert.ok(homeHTML.includes(escape(aboutData.homeSummary)), 'Home and About content source drift');
+const aboutGraph=JSON.parse(aboutHTML.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
+assert.equal(aboutGraph['@graph'].find(x=>x['@type']==='Restaurant').description,aboutData.intro);
+console.log('PASS: official About copy, signature dishes, home summary and Restaurant description alignment.');
