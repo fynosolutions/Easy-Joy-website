@@ -1,4 +1,10 @@
 {
+  "hotpotVideo": {
+    "src": "",
+    "poster": "",
+    "title": "Easy Joy hot pot experience",
+    "caption": "A moment at the Easy Joy table."
+  },
   "source": "Restaurant-provided local materials",
   "galleryNotice": "Explore our food in photos. Selection and portions may vary. Check the online ordering menu for current availability and prices.",
   "groups": [
@@ -842,21 +848,29 @@
       "id": "dining-room",
       "sourceFile": "material/photos/others/环境3.jpg",
       "englishName": "A warm welcome",
-      "image": "/assets/images/lifestyle/dining-room-960.webp",
-      "imageSmall": "/assets/images/lifestyle/dining-room-480.webp",
-      "width": 960,
-      "height": 640,
-      "alt": "The dining room at Easy Joy, with warm pendant lights and hot pot tables"
+      "image": "/assets/images/lifestyle/dining-room-hd-1536.webp",
+      "imageSmall": "/assets/images/lifestyle/dining-room-hd-768.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "The dining room at Easy Joy, with warm pendant lights and hot pot tables",
+      "originalImage": "/assets/images/lifestyle/dining-room-960.webp",
+      "enhancedSourceFile": "assets/images/lifestyle/dining-room-hd-master.png",
+      "enhancement": "AI-assisted clarity restoration, 2026-10-28; original photograph retained.",
+      "imageSmallWidth": 768
     },
     {
       "id": "entrance",
       "sourceFile": "material/photos/others/环境1.jpg",
       "englishName": "Come on in",
-      "image": "/assets/images/lifestyle/entrance-960.webp",
-      "imageSmall": "/assets/images/lifestyle/entrance-480.webp",
-      "width": 960,
-      "height": 640,
-      "alt": "The Easy Joy entrance and dining area"
+      "image": "/assets/images/lifestyle/entrance-hd-1536.webp",
+      "imageSmall": "/assets/images/lifestyle/entrance-hd-768.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": "The Easy Joy entrance and dining area",
+      "originalImage": "/assets/images/lifestyle/entrance-960.webp",
+      "enhancedSourceFile": "assets/images/lifestyle/entrance-hd-master.png",
+      "enhancement": "AI-assisted clarity restoration, 2026-10-28; original photograph retained.",
+      "imageSmallWidth": 768
     },
     {
       "id": "skewers-on-the-grill",

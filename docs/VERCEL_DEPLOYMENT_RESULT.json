@@ -1,20 +1,15 @@
 {
-  "team": "easy-j-o-y",
+  "team": "wei34",
   "project": "easyjoy-website",
-  "productionUrl": "https://easyjoy-website.vercel.app",
-  "deploymentUrl": "https://easyjoy-website-bvabxbtco-easy-j-o-y.vercel.app",
-  "dashboardUrl": "https://vercel.com/easy-j-o-y/easyjoy-website",
-  "deploymentId": "dpl_FWo3bMRuQxSFjG6UhDJ9rFvY4aKv",
+  "productionUrl": "https://easyjoy-website-tau.vercel.app",
+  "deploymentUrl": "https://easyjoy-website-ji0i18d6a-wei34.vercel.app",
+  "dashboardUrl": "https://vercel.com/wei34/easyjoy-website",
+  "deploymentId": "dpl_84cSyLJNvruipPCEKEWEeWB4ynme",
   "readyState": "READY",
+  "deployedOn": "2026-10-28",
   "indexing": "noindex review deployment; existing official domain unchanged",
-  "cloudBuild": {
-    "state": "completed",
-    "mode": "preview (noindex)",
-    "menuItems": 152,
-    "categoryPages": 12,
-    "routesPlus404": 21
-  },
-  "productionAccessConfiguration": "Public production alias; Vercel authentication retained for preview/deployment URLs",
-  "ssoProtectionScope": "prod_deployment_urls_and_all_previews",
-  "httpVerification": "Requests to production and generated domains timed out from this execution environment; browser visual/video verification not completed."
+  "localValidation": "Production and Vercel-mode build/check passed. Browser QA passed at 1440,1024,768,390,360 px; navigation, menu filtering, existing film playback, no-JS and reduced motion. Dedicated motion QA passed for autoplay/pause, keyboard, parallax, sticky layout, mobile and short desktop viewport.",
+  "httpVerification": "Vercel deployment returned READY and assigned the existing production alias. Browser verification performed against local generated output; public production HTTP not independently rechecked in this update.",
+  "previousTeamNote": "Current authenticated account has access to wei34 only; previous easy-j-o-y project was not updated.",
+  "change": "Editorial home redesign with four owner-supplied photos, brand marquee, accessible food carousel, sticky story chapters and scroll parallax."
 }

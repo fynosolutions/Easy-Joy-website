@@ -1,0 +1,47 @@
+# macOS and editor files
+.DS_Store
+.AppleDouble/
+__MACOSX/
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Dependencies and generated output
+node_modules/
+dist/
+out/
+.next/
+coverage/
+.cache/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+
+# Local credentials and environment files
+.env
+.env.*
+.env*
+!.env.example
+!.env.*.example
+.vercel/
+.vercel
+.npmrc.local
+*.pem
+*.key
+
+# Logs and local archives
+*.log
+npm-debug.log*
+*.zip
+*.tar
+*.tar.gz
+
+# Original local media and one-time exports; web-ready media stays in website/assets/
+material/
+easyjoy-menu-export/
+
+.vercel
+.env*

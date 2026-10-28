@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "image": "/assets/images/home/hot-pot-table-1920.webp",
+    "alt": "Steaming individual hot pots and fresh ingredients at the Easy Joy table",
+    "position": "center 55%",
+    "videoSrc": "",
+    "imageSmall": "/assets/images/home/hot-pot-table-960.webp"
+  },
+  "scenes": {
+    "hotPot": {
+      "image": "/assets/images/home/hot-pot-table-1920.webp",
+      "alt": "Steaming individual hot pots and fresh ingredients at the Easy Joy table",
+      "position": "60% center",
+      "imageSmall": "/assets/images/home/hot-pot-table-960.webp"
+    },
+    "dimSum": {
+      "image": "/assets/images/dishes/shanghai-soup-dumplings-960.webp",
+      "alt": "Shanghai soup dumplings in a bamboo steamer",
+      "position": "center center"
+    },
+    "dining": {
+      "image": "/assets/images/home/dining-room-1920.webp",
+      "alt": "Warm lanterns and hot pot tables in the Easy Joy dining room",
+      "position": "65% center",
+      "imageSmall": "/assets/images/home/dining-room-960.webp"
+    }
+  },
+  "atmosphere": [
+    {
+      "image": "/assets/images/home/entrance-1920.webp",
+      "imageSmall": "/assets/images/home/entrance-960.webp",
+      "alt": "The Easy Joy entrance and dining tables on Mulberry Street",
+      "caption": "A warm welcome on Mulberry Street."
+    },
+    {
+      "image": "/assets/images/home/dining-atmosphere-1920.webp",
+      "imageSmall": "/assets/images/home/dining-atmosphere-960.webp",
+      "alt": "Guests enjoying a meal in the Easy Joy dining room",
+      "caption": "Good food. Even better company."
+    }
+  ]
+}

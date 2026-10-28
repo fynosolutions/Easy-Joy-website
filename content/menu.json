@@ -26,41 +26,95 @@
           "variant": "3 pc",
           "price": 6.99,
           "popular": true,
-          "canonicalCategory": "Bun/Dumplings"
+          "canonicalCategory": "Bun/Dumplings",
+          "image": "/assets/images/ordering/menu-3070-960.webp",
+          "imageSmall": "/assets/images/ordering/menu-3070-480.webp",
+          "width": 960,
+          "height": 539,
+          "imageSmallWidth": 480,
+          "alt": "Salted Egg Custard Buns",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260706140046652KicD.jpg",
+          "imageSourceItemId": 3070,
+          "imageVerifiedAt": "2026-10-28"
         },
         {
           "name": "Scallion Pancake",
           "price": 8.99,
           "popular": true,
-          "canonicalCategory": "Pie"
+          "canonicalCategory": "Pie",
+          "image": "/assets/images/ordering/menu-3044-960.webp",
+          "imageSmall": "/assets/images/ordering/menu-3044-480.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmallWidth": 480,
+          "alt": "Scallion Pancake",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260628231342757utEc.jpg",
+          "imageSourceItemId": 3044,
+          "imageVerifiedAt": "2026-10-28"
         },
         {
           "name": "Grilled Chicken Skewers",
           "variant": "5 pc",
           "price": 5.0,
           "popular": true,
-          "canonicalCategory": "BBQ"
+          "canonicalCategory": "BBQ",
+          "image": "/assets/images/ordering/menu-3085-960.webp",
+          "imageSmall": "/assets/images/ordering/menu-3085-480.webp",
+          "width": 960,
+          "height": 539,
+          "imageSmallWidth": 480,
+          "alt": "Grilled Chicken Skewers",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260714003909735j3st.jpg",
+          "imageSourceItemId": 3085,
+          "imageVerifiedAt": "2026-10-28"
         },
         {
           "name": "Shiitake Mushroom & Chicken Dumplings",
           "variant": "8 pc",
           "price": 9.95,
           "popular": true,
-          "canonicalCategory": "Premium Dim Sum"
+          "canonicalCategory": "Premium Dim Sum",
+          "image": "/assets/images/ordering/menu-3325-960.webp",
+          "imageSmall": "/assets/images/ordering/menu-3325-480.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmallWidth": 480,
+          "alt": "Shiitake Mushroom & Chicken Dumplings",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260828115352948krgn.jpg",
+          "imageSourceItemId": 3325,
+          "imageVerifiedAt": "2026-10-28"
         },
         {
           "name": "Shrimp Dumplings Har Gow",
           "variant": "4 pc",
           "price": 6.25,
           "popular": true,
-          "canonicalCategory": "Premium Dim Sum"
+          "canonicalCategory": "Premium Dim Sum",
+          "image": "/assets/images/ordering/menu-3332-960.webp",
+          "imageSmall": "/assets/images/ordering/menu-3332-480.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmallWidth": 480,
+          "alt": "Shrimp Dumplings Har Gow",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/2026101411280615RV79.jpg",
+          "imageSourceItemId": 3332,
+          "imageVerifiedAt": "2026-10-28"
         },
         {
           "name": "Napa Cabbage & Pork Dumplings",
           "variant": "8 pc",
           "price": 9.95,
           "popular": true,
-          "canonicalCategory": "Premium Dim Sum"
+          "canonicalCategory": "Premium Dim Sum",
+          "image": "/assets/images/ordering/menu-3324-960.webp",
+          "imageSmall": "/assets/images/ordering/menu-3324-480.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmallWidth": 480,
+          "alt": "Napa Cabbage & Pork Dumplings",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260828115343902EEXB.jpg",
+          "imageSourceItemId": 3324,
+          "imageVerifiedAt": "2026-10-28"
         },
         {
           "name": "Grilled Lamb Skewers",
@@ -79,21 +133,48 @@
           "name": "Quail Egg",
           "price": 6.99,
           "popular": true,
-          "canonicalCategory": "Hot Pot Delivery"
+          "canonicalCategory": "Hot Pot Delivery",
+          "image": "/assets/images/ordering/menu-3250-960.webp",
+          "imageSmall": "/assets/images/ordering/menu-3250-480.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmallWidth": 480,
+          "alt": "Quail Egg",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260705132520945nj9S.jpg",
+          "imageSourceItemId": 3250,
+          "imageVerifiedAt": "2026-10-28"
         },
         {
           "name": "Salted Egg Yolk Chicken Wings",
           "variant": "8 pc",
           "price": 12.99,
           "popular": true,
-          "canonicalCategory": "Premium Dim Sum"
+          "canonicalCategory": "Premium Dim Sum",
+          "image": "/assets/images/ordering/menu-3330-960.webp",
+          "imageSmall": "/assets/images/ordering/menu-3330-480.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmallWidth": 480,
+          "alt": "Salted Egg Yolk Chicken Wings",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/2026101411275995atxh.jpg",
+          "imageSourceItemId": 3330,
+          "imageVerifiedAt": "2026-10-28"
         },
         {
           "name": "Corn & Pork Dumplings",
           "variant": "8 pc",
           "price": 9.95,
           "popular": true,
-          "canonicalCategory": "Premium Dim Sum"
+          "canonicalCategory": "Premium Dim Sum",
+          "image": "/assets/images/ordering/menu-3321-960.webp",
+          "imageSmall": "/assets/images/ordering/menu-3321-480.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmallWidth": 480,
+          "alt": "Corn & Pork Dumplings",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261014112601131jfSc.jpg",
+          "imageSourceItemId": 3321,
+          "imageVerifiedAt": "2026-10-28"
         },
         {
           "name": "Cilantro Rice Roll",
@@ -113,20 +194,47 @@
           "variant": "3 pc",
           "price": 6.99,
           "popular": true,
-          "canonicalCategory": "Bun/Dumplings"
+          "canonicalCategory": "Bun/Dumplings",
+          "image": "/assets/images/ordering/menu-3071-960.webp",
+          "imageSmall": "/assets/images/ordering/menu-3071-480.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmallWidth": 480,
+          "alt": "Vegetarian Meat Buns",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261022135237830yUuD.jpg",
+          "imageSourceItemId": 3071,
+          "imageVerifiedAt": "2026-10-28"
         },
         {
           "name": "Chive & Pork Dumplings",
           "variant": "8 pc",
           "price": 9.95,
           "popular": true,
-          "canonicalCategory": "Premium Dim Sum"
+          "canonicalCategory": "Premium Dim Sum",
+          "image": "/assets/images/ordering/menu-3322-960.webp",
+          "imageSmall": "/assets/images/ordering/menu-3322-480.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmallWidth": 480,
+          "alt": "Chive & Pork Dumplings",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/202608281153495213hb1.jpg",
+          "imageSourceItemId": 3322,
+          "imageVerifiedAt": "2026-10-28"
         },
         {
           "name": "Shrimp Fried Rice",
           "price": 17.99,
           "popular": true,
-          "canonicalCategory": "Fried Rice & Noodles"
+          "canonicalCategory": "Fried Rice & Noodles",
+          "image": "/assets/images/ordering/menu-3058-960.webp",
+          "imageSmall": "/assets/images/ordering/menu-3058-480.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmallWidth": 480,
+          "alt": "Shrimp Fried Rice",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005243358UEBf.jpg",
+          "imageSourceItemId": 3058,
+          "imageVerifiedAt": "2026-10-28"
         }
       ]
     },
@@ -187,13 +295,31 @@
         },
         {
           "name": "Fish Maw Chicken Mini Hot Pot",
-          "price": 20.0
+          "price": 20.0,
+          "alt": "Fish Maw Chicken Mini Hot Pot",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261014112921674jeUn.jpg",
+          "imageSourceItemId": 4312,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-4312-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-4312-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Fried Noodles/Fried Rice Set",
           "price": 17.99,
           "description": "Fried Noodles/Fried Rice + Dessert + Lemonade",
-          "sourceName": "Fried Noodle/Fried Rice Set"
+          "sourceName": "Fried Noodle/Fried Rice Set",
+          "alt": "Fried Noodles/Fried Rice Set",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260930051546303TppQ.jpg",
+          "imageSourceItemId": 7257,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-7257-960.webp",
+          "width": 960,
+          "height": 539,
+          "imageSmall": "/assets/images/ordering/menu-7257-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Mystery Box Set",
@@ -261,19 +387,55 @@
       "items": [
         {
           "name": "Sweet & Sour Chicken",
-          "price": 15.99
+          "price": 15.99,
+          "alt": "Sweet & Sour Chicken",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/202610151650285670nR8.jpg",
+          "imageSourceItemId": 7375,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-7375-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-7375-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "General Tso's Chicken",
-          "price": 15.99
+          "price": 15.99,
+          "alt": "General Tso's Chicken",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261015165025350GrQF.jpg",
+          "imageSourceItemId": 7376,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-7376-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-7376-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Chicken Wonton Noodle Soup",
-          "price": 5.75
+          "price": 5.75,
+          "alt": "Chicken Wonton Noodle Soup",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261015165017342vLnQ.jpg",
+          "imageSourceItemId": 7377,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-7377-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-7377-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Chicken Wonton Rice Soup",
-          "price": 5.75
+          "price": 5.75,
+          "alt": "Chicken Wonton Rice Soup",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261015165020850uCCF.jpg",
+          "imageSourceItemId": 7378,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-7378-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-7378-480.webp",
+          "imageSmallWidth": 480
         }
       ]
     },
@@ -285,30 +447,75 @@
           "name": "Napa Cabbage & Pork Dumplings",
           "variant": "8 pc",
           "price": 9.95,
-          "popular": true
+          "popular": true,
+          "alt": "Napa Cabbage & Pork Dumplings",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260828115343902EEXB.jpg",
+          "imageSourceItemId": 3324,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3324-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3324-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Shiitake Mushroom & Chicken Dumplings",
           "variant": "8 pc",
           "price": 9.95,
-          "popular": true
+          "popular": true,
+          "alt": "Shiitake Mushroom & Chicken Dumplings",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260828115352948krgn.jpg",
+          "imageSourceItemId": 3325,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3325-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3325-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Chive & Pork Dumplings",
           "variant": "8 pc",
           "price": 9.95,
-          "popular": true
+          "popular": true,
+          "alt": "Chive & Pork Dumplings",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/202608281153495213hb1.jpg",
+          "imageSourceItemId": 3322,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3322-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3322-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Corn & Pork Dumplings",
           "variant": "8 pc",
           "price": 9.95,
-          "popular": true
+          "popular": true,
+          "alt": "Corn & Pork Dumplings",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261014112601131jfSc.jpg",
+          "imageSourceItemId": 3321,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3321-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-3321-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Seaweed & Pork Dumplings",
           "variant": "8 pc",
-          "price": 9.95
+          "price": 9.95,
+          "alt": "Seaweed & Pork Dumplings",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260828115746826dKQU.jpg",
+          "imageSourceItemId": 3323,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3323-960.webp",
+          "width": 960,
+          "height": 539,
+          "imageSmall": "/assets/images/ordering/menu-3323-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Steamed Chicken Feet in Black Bean Sauce",
@@ -334,27 +541,72 @@
           "name": "Salted Egg Yolk Chicken Wings",
           "variant": "8 pc",
           "price": 12.99,
-          "popular": true
+          "popular": true,
+          "alt": "Salted Egg Yolk Chicken Wings",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/2026101411275995atxh.jpg",
+          "imageSourceItemId": 3330,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3330-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-3330-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Fried Squid Tentacles",
-          "price": 12.99
+          "price": 12.99,
+          "alt": "Fried Squid Tentacles",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261014112636311Vh2E.jpg",
+          "imageSourceItemId": 3329,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3329-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-3329-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Beancurd Skin Rolls",
           "variant": "3 pc",
-          "price": 6.99
+          "price": 6.99,
+          "alt": "Beancurd Skin Rolls",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261014112500863ueY2.jpg",
+          "imageSourceItemId": 3337,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3337-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-3337-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Sticky Rice with Pork in Lotus Leaf",
           "variant": "2 pc",
-          "price": 6.99
+          "price": 6.99,
+          "alt": "Sticky Rice with Pork in Lotus Leaf",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260628231422994skaV.jpg",
+          "imageSourceItemId": 3336,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3336-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3336-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Shrimp Dumplings Har Gow",
           "variant": "4 pc",
           "price": 6.25,
-          "popular": true
+          "popular": true,
+          "alt": "Shrimp Dumplings Har Gow",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/2026101411280615RV79.jpg",
+          "imageSourceItemId": 3332,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3332-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-3332-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Choi Sum",
@@ -369,7 +621,16 @@
         {
           "name": "Pork & Shrimp Siu Mai",
           "variant": "3 pc",
-          "price": 6.25
+          "price": 6.25,
+          "alt": "Pork & Shrimp Siu Mai",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261014112716524Vry1.jpg",
+          "imageSourceItemId": 3333,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3333-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-3333-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Fried Vegetable Spring Rolls",
@@ -385,7 +646,16 @@
         {
           "name": "Fried Milk Custard",
           "variant": "4 pc",
-          "price": 3.99
+          "price": 3.99,
+          "alt": "Fried Milk Custard",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261014112622350BDmr.jpg",
+          "imageSourceItemId": 3328,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3328-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-3328-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Egg Tarts",
@@ -401,16 +671,43 @@
         {
           "name": "Fried Mini Steamed Buns",
           "variant": "4 pc",
-          "price": 3.99
+          "price": 3.99,
+          "alt": "Fried Mini Steamed Buns",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261014112629377GNOR.jpg",
+          "imageSourceItemId": 3327,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3327-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-3327-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Brown Sugar Rice Cake",
           "variant": "4 pc",
-          "price": 5.99
+          "price": 5.99,
+          "alt": "Brown Sugar Rice Cake",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005633128HKqE.jpg",
+          "imageSourceItemId": 3326,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3326-960.webp",
+          "width": 960,
+          "height": 539,
+          "imageSmall": "/assets/images/ordering/menu-3326-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Crab & Cheese Fried Wontons",
-          "price": 12.99
+          "price": 12.99,
+          "alt": "Crab & Cheese Fried Wontons",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261021170103613i9qa.jpg",
+          "imageSourceItemId": 7366,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-7366-960.webp",
+          "width": 562,
+          "height": 335,
+          "imageSmall": "/assets/images/ordering/menu-7366-480.webp",
+          "imageSmallWidth": 480
         }
       ]
     },
@@ -421,25 +718,61 @@
         {
           "name": "Grilled Shell-On Shrimp",
           "variant": "6 pc",
-          "price": 10.0
+          "price": 10.0,
+          "alt": "Grilled Shell-On Shrimp",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261021172502617k4Df.jpg",
+          "imageSourceItemId": 3090,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3090-960.webp",
+          "width": 960,
+          "height": 539,
+          "imageSmall": "/assets/images/ordering/menu-3090-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Garlic Eggplant with Vermicelli",
           "variant": "1 pc",
           "price": 6.0,
-          "sourceName": "Garlic Eggplant w.Vermicelli"
+          "sourceName": "Garlic Eggplant w.Vermicelli",
+          "alt": "Garlic Eggplant with Vermicelli",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/2026101508474984oGt3.jpg",
+          "imageSourceItemId": 4747,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-4747-960.webp",
+          "width": 960,
+          "height": 539,
+          "imageSmall": "/assets/images/ordering/menu-4747-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Grilled Chicken Skewers",
           "variant": "5 pc",
           "price": 5.0,
-          "popular": true
+          "popular": true,
+          "alt": "Grilled Chicken Skewers",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260714003909735j3st.jpg",
+          "imageSourceItemId": 3085,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3085-960.webp",
+          "width": 960,
+          "height": 539,
+          "imageSmall": "/assets/images/ordering/menu-3085-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Grilled Oysters",
           "variant": "3 pc",
           "price": 10.0,
-          "availability": "sold_out"
+          "availability": "sold_out",
+          "alt": "Grilled Oysters",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261015084719393pKGv.jpg",
+          "imageSourceItemId": 3342,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3342-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3342-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Grilled Lamb Skewers",
@@ -457,7 +790,16 @@
           "name": "Beef with Pineapple",
           "variant": "3 pc",
           "price": 10.0,
-          "sourceName": "Beef w.Pineapple"
+          "sourceName": "Beef w.Pineapple",
+          "alt": "Beef with Pineapple",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261015084728395qXJz.jpg",
+          "imageSourceItemId": 4757,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-4757-960.webp",
+          "width": 960,
+          "height": 539,
+          "imageSmall": "/assets/images/ordering/menu-4757-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "BBQ Squid Skewers",
@@ -473,12 +815,30 @@
         {
           "name": "Mid-Joint Chicken Wings",
           "variant": "3 pc",
-          "price": 10.0
+          "price": 10.0,
+          "alt": "Mid-Joint Chicken Wings",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/2026101508472759LPlo.jpg",
+          "imageSourceItemId": 4777,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-4777-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-4777-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Pork Neck Meat",
           "variant": "3 pc",
-          "price": 10.0
+          "price": 10.0,
+          "alt": "Pork Neck Meat",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/2026102117251387J373.jpg",
+          "imageSourceItemId": 4778,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-4778-960.webp",
+          "width": 960,
+          "height": 539,
+          "imageSmall": "/assets/images/ordering/menu-4778-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Grilled Beef Skewers",
@@ -494,22 +854,58 @@
         {
           "name": "Pork Belly",
           "variant": "5 pc",
-          "price": 10.0
+          "price": 10.0,
+          "alt": "Pork Belly",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261021172537266hDgD.jpg",
+          "imageSourceItemId": 4758,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-4758-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-4758-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Chicken Hearts",
           "variant": "5 pc",
-          "price": 10.0
+          "price": 10.0,
+          "alt": "Chicken Hearts",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261015084710471P6HB.jpg",
+          "imageSourceItemId": 4759,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-4759-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-4759-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Gizzards",
           "variant": "5 pc",
-          "price": 10.0
+          "price": 10.0,
+          "alt": "Gizzards",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261015084714265UvmC.jpg",
+          "imageSourceItemId": 4760,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-4760-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-4760-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Pork Belly Wrapped Enoki Mushrooms",
           "variant": "3 pc",
-          "price": 10.0
+          "price": 10.0,
+          "alt": "Pork Belly Wrapped Enoki Mushrooms",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261015084729622luQ0.jpg",
+          "imageSourceItemId": 4761,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-4761-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-4761-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Grilled Chinese Chives",
@@ -524,7 +920,16 @@
         },
         {
           "name": "Grilled Peeled Shrimp/Order",
-          "price": 10.0
+          "price": 10.0,
+          "alt": "Grilled Peeled Shrimp/Order",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261015084721926nlVD.jpg",
+          "imageSourceItemId": 7336,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-7336-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-7336-480.webp",
+          "imageSmallWidth": 480
         }
       ]
     },
@@ -535,24 +940,60 @@
         {
           "name": "BBQ Pork Buns Char Siu Bao",
           "variant": "3 pc",
-          "price": 6.25
+          "price": 6.25,
+          "alt": "BBQ Pork Buns Char Siu Bao",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261014112456816srdg.jpg",
+          "imageSourceItemId": 3069,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3069-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-3069-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Salted Egg Custard Buns",
           "variant": "3 pc",
           "price": 6.99,
-          "popular": true
+          "popular": true,
+          "alt": "Salted Egg Custard Buns",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260706140046652KicD.jpg",
+          "imageSourceItemId": 3070,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3070-960.webp",
+          "width": 960,
+          "height": 539,
+          "imageSmall": "/assets/images/ordering/menu-3070-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Vegetarian Meat Buns",
           "variant": "3 pc",
           "price": 6.99,
-          "popular": true
+          "popular": true,
+          "alt": "Vegetarian Meat Buns",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261022135237830yUuD.jpg",
+          "imageSourceItemId": 3071,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3071-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3071-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Mini Pan-Fried Beef Buns",
           "variant": "8 pc",
-          "price": 6.99
+          "price": 6.99,
+          "alt": "Mini Pan-Fried Beef Buns",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260715232524214rDXW.jpg",
+          "imageSourceItemId": 3072,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3072-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3072-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Soup Dumplings",
@@ -575,7 +1016,16 @@
         {
           "name": "Shrimp Rice Roll",
           "alternateName": "Cheung fun",
-          "price": 6.99
+          "price": 6.99,
+          "alt": "Shrimp Rice Roll",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260628231351342O0lj.jpg",
+          "imageSourceItemId": 3065,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3065-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3065-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Beef Rice Roll",
@@ -620,27 +1070,72 @@
         {
           "name": "Scallion Pancake",
           "price": 8.99,
-          "popular": true
+          "popular": true,
+          "alt": "Scallion Pancake",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260628231342757utEc.jpg",
+          "imageSourceItemId": 3044,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3044-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3044-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Scallion Pork Flaky Pastry Pie",
           "variant": "2 pc",
-          "price": 7.0
+          "price": 7.0,
+          "alt": "Scallion Pork Flaky Pastry Pie",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/2026071700543075Sh95.jpg",
+          "imageSourceItemId": 3045,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3045-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3045-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Black Pepper Beef Flaky Pastry Pie",
           "variant": "2 pc",
-          "price": 7.0
+          "price": 7.0,
+          "alt": "Black Pepper Beef Flaky Pastry Pie",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005434299gNpL.jpg",
+          "imageSourceItemId": 3046,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3046-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3046-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Chicken Flaky Pastry Pie",
           "variant": "2 pc",
-          "price": 7.0
+          "price": 7.0,
+          "alt": "Chicken Flaky Pastry Pie",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/202610141126185991kX0.jpg",
+          "imageSourceItemId": 3047,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3047-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-3047-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Sweet Potato Flaky Pastry Pie",
           "variant": "2 pc",
-          "price": 7.0
+          "price": 7.0,
+          "alt": "Sweet Potato Flaky Pastry Pie",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261017143923341OHm4.jpg",
+          "imageSourceItemId": 3048,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3048-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3048-480.webp",
+          "imageSmallWidth": 480
         }
       ]
     },
@@ -650,42 +1145,123 @@
       "items": [
         {
           "name": "Vegetable Fried Rice",
-          "price": 14.99
+          "price": 14.99,
+          "alt": "Vegetable Fried Rice",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005311596aIOI.jpg",
+          "imageSourceItemId": 3053,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3053-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3053-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Egg Fried Rice",
-          "price": 15.99
+          "price": 15.99,
+          "alt": "Egg Fried Rice",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261014112632793SE2c.jpg",
+          "imageSourceItemId": 3054,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3054-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-3054-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Ham & Egg Fried Rice",
-          "price": 17.99
+          "price": 17.99,
+          "alt": "Ham & Egg Fried Rice",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005252979rIKg.jpg",
+          "imageSourceItemId": 3055,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3055-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3055-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Chicken Fried Rice",
-          "price": 17.99
+          "price": 17.99,
+          "alt": "Chicken Fried Rice",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005239246jakA.jpg",
+          "imageSourceItemId": 3056,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3056-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3056-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Beef Fried Rice",
-          "price": 17.99
+          "price": 17.99,
+          "alt": "Beef Fried Rice",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/202607152325515050OdB.jpg",
+          "imageSourceItemId": 3057,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3057-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3057-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Shrimp Fried Rice",
           "price": 17.99,
-          "popular": true
+          "popular": true,
+          "alt": "Shrimp Fried Rice",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005243358UEBf.jpg",
+          "imageSourceItemId": 3058,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3058-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3058-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Steamed White Rice",
-          "price": 2.99
+          "price": 2.99,
+          "alt": "Steamed White Rice",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260715232807769ksb9.jpg",
+          "imageSourceItemId": 3059,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3059-960.webp",
+          "width": 960,
+          "height": 539,
+          "imageSmall": "/assets/images/ordering/menu-3059-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Vegetable Chow Mein",
           "price": 14.99,
-          "description": "Choice of egg noodles or rice noodles (gluten free)"
+          "description": "Choice of egg noodles or rice noodles (gluten free)",
+          "alt": "Vegetable Chow Mein",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005308414cnXH.jpg",
+          "imageSourceItemId": 3060,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3060-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3060-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Chicken Chow Mein",
           "price": 17.99,
-          "description": "Choice of egg noodles or rice noodles (gluten free)"
+          "description": "Choice of egg noodles or rice noodles (gluten free)",
+          "alt": "Chicken Chow Mein",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/202607170052468113tBE.jpg",
+          "imageSourceItemId": 3061,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3061-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3061-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Beef Chow Mein",
@@ -701,12 +1277,30 @@
         {
           "name": "Shrimp Chow Mein",
           "price": 17.99,
-          "description": "Choice of egg noodles or rice noodles (gluten free)"
+          "description": "Choice of egg noodles or rice noodles (gluten free)",
+          "alt": "Shrimp Chow Mein",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005249824mpSE.jpg",
+          "imageSourceItemId": 3063,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3063-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3063-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Pork Chow Mein",
           "price": 17.99,
-          "description": "Choice of egg noodles or rice noodles (gluten free)"
+          "description": "Choice of egg noodles or rice noodles (gluten free)",
+          "alt": "Pork Chow Mein",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261014112551477GSVc.jpg",
+          "imageSourceItemId": 3064,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3064-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-3064-480.webp",
+          "imageSmallWidth": 480
         }
       ]
     },
@@ -716,280 +1310,892 @@
       "items": [
         {
           "name": "Beef Tripe",
-          "price": 7.99
+          "price": 7.99,
+          "alt": "Beef Tripe",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261014112509837mH3h.jpg",
+          "imageSourceItemId": 3248,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3248-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-3248-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Mini Sausage",
-          "price": 6.99
+          "price": 6.99,
+          "alt": "Mini Sausage",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260705132349426gTjU.jpg",
+          "imageSourceItemId": 3249,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3249-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3249-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Quail Egg",
           "price": 6.99,
-          "popular": true
+          "popular": true,
+          "alt": "Quail Egg",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260705132520945nj9S.jpg",
+          "imageSourceItemId": 3250,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3250-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3250-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Spicy Chicken Liver",
-          "price": 6.99
+          "price": 6.99,
+          "alt": "Spicy Chicken Liver",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/202607051327017288xue.jpg",
+          "imageSourceItemId": 3251,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3251-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3251-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Braised Pork Intestines",
-          "price": 7.99
+          "price": 7.99,
+          "alt": "Braised Pork Intestines",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260705132159876G7gv.jpg",
+          "imageSourceItemId": 3252,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3252-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3252-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Bullfrog Legs",
-          "price": 9.99
+          "price": 9.99,
+          "alt": "Bullfrog Legs",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/2026101411252481FWlu.jpg",
+          "imageSourceItemId": 3253,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3253-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-3253-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Fish Tofu",
-          "price": 7.99
+          "price": 7.99,
+          "alt": "Fish Tofu",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260705132248734E6EA.jpg",
+          "imageSourceItemId": 3254,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3254-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3254-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Premium Fatty Beef",
-          "price": 7.99
+          "price": 7.99,
+          "alt": "Premium Fatty Beef",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20251105100540698RN9x.jpg",
+          "imageSourceItemId": 3255,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3255-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3255-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "New Zealand Lamb",
-          "price": 7.99
+          "price": 7.99,
+          "alt": "New Zealand Lamb",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/202511051005114634koe.jpg",
+          "imageSourceItemId": 3256,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3256-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3256-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Snowflake Beef",
-          "price": 9.99
+          "price": 9.99,
+          "alt": "Snowflake Beef",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261014112819172myuX.jpg",
+          "imageSourceItemId": 3257,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3257-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-3257-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "American Wagyu Beef",
-          "price": 9.99
+          "price": 9.99,
+          "alt": "American Wagyu Beef",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261014112846907EpGa.jpg",
+          "imageSourceItemId": 3258,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3258-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-3258-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Beef Tongue",
-          "price": 8.99
+          "price": 8.99,
+          "alt": "Beef Tongue",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/2026101411250738LQP2.jpg",
+          "imageSourceItemId": 3259,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3259-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-3259-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Beef Tender Shoulder",
-          "price": 9.99
+          "price": 9.99,
+          "alt": "Beef Tender Shoulder",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260705132059786qkge.jpg",
+          "imageSourceItemId": 3260,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3260-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3260-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Organic Pork Belly",
-          "price": 7.99
+          "price": 7.99,
+          "alt": "Organic Pork Belly",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/2026070513245841VbAn.jpg",
+          "imageSourceItemId": 3261,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3261-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3261-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Chicken Roll",
-          "price": 6.99
+          "price": 6.99,
+          "alt": "Chicken Roll",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261014112541111OuBw.jpg",
+          "imageSourceItemId": 3262,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3262-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-3262-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Tender Beef",
-          "price": 8.99
+          "price": 8.99,
+          "alt": "Tender Beef",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260705132713760Smrq.jpg",
+          "imageSourceItemId": 3263,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3263-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3263-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Crispy Black Tripe",
-          "price": 15.99
+          "price": 15.99,
+          "alt": "Crispy Black Tripe",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261014112513287jlyb.jpg",
+          "imageSourceItemId": 3264,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3264-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-3264-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Premium White Tripe",
-          "price": 8.99
+          "price": 8.99,
+          "alt": "Premium White Tripe",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261014112853996s3wO.jpg",
+          "imageSourceItemId": 3265,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3265-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-3265-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Spicy Beef Slices",
-          "price": 8.99
+          "price": 8.99,
+          "alt": "Spicy Beef Slices",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261014112503820W673.jpg",
+          "imageSourceItemId": 3266,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3266-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-3266-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Yellow Throat",
-          "price": 7.99
+          "price": 7.99,
+          "alt": "Yellow Throat",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260705132050812F5ge.jpg",
+          "imageSourceItemId": 3267,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3267-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3267-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Thousand-Layer Tripe",
-          "price": 7.99
+          "price": 7.99,
+          "alt": "Thousand-Layer Tripe",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20251105100618576R8ue.jpg",
+          "imageSourceItemId": 3268,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3268-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3268-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Tender Beef Slices",
-          "price": 8.99
+          "price": 8.99,
+          "alt": "Tender Beef Slices",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260705132713760Smrq.jpg",
+          "imageSourceItemId": 3269,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3269-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3269-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Boneless Duck Feet",
-          "price": 8.99
+          "price": 8.99,
+          "alt": "Boneless Duck Feet",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261014112608452y7TH.jpg",
+          "imageSourceItemId": 3270,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3270-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-3270-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Ham",
-          "price": 6.99
+          "price": 6.99,
+          "alt": "Ham",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005324886ycWY.jpg",
+          "imageSourceItemId": 3271,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3271-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3271-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Pig Brain",
-          "price": 6.99
+          "price": 6.99,
+          "alt": "Pig Brain",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261021171259531dvlW.jpg",
+          "imageSourceItemId": 3272,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3272-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3272-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Shrimp In Tofu Porch",
-          "price": 6.99
+          "price": 6.99,
+          "alt": "Shrimp In Tofu Porch",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260705132526771O1QD.jpg",
+          "imageSourceItemId": 3273,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3273-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3273-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Cheese Fish Tofu",
           "price": 8.99,
-          "sourceName": "Chesse Fish Tofu"
+          "sourceName": "Chesse Fish Tofu",
+          "alt": "Cheese Fish Tofu",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260705132221596LtQE.jpg",
+          "imageSourceItemId": 3274,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3274-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3274-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Shrimp With Head",
-          "price": 6.99
+          "price": 6.99,
+          "alt": "Shrimp With Head",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260705132547376amjd.jpg",
+          "imageSourceItemId": 3275,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3275-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3275-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Crab Stick",
-          "price": 6.99
+          "price": 6.99,
+          "alt": "Crab Stick",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260705132227460O9uu.jpg",
+          "imageSourceItemId": 3276,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3276-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3276-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Sole Fish Fillet",
-          "price": 6.99
+          "price": 6.99,
+          "alt": "Sole Fish Fillet",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/2026071700543844meMZ.jpg",
+          "imageSourceItemId": 3277,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3277-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3277-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Squid Tentacle",
           "price": 7.99,
-          "sourceName": "Squid Tantacle"
+          "sourceName": "Squid Tantacle",
+          "alt": "Squid Tentacle",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260705132707781KD0p.jpg",
+          "imageSourceItemId": 3278,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3278-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3278-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Shrimp Paste",
-          "price": 7.99
+          "price": 7.99,
+          "alt": "Shrimp Paste",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261014112812498yzij.jpg",
+          "imageSourceItemId": 3279,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3279-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-3279-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Mussel",
-          "price": 6.99
+          "price": 6.99,
+          "alt": "Mussel",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/202607051323056169Vu8.jpg",
+          "imageSourceItemId": 3280,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3280-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3280-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Tiger Prawn",
-          "price": 7.99
+          "price": 7.99,
+          "alt": "Tiger Prawn",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260705132723773v1Bg.jpg",
+          "imageSourceItemId": 3281,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3281-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3281-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Snakehead Fillet",
-          "price": 7.99
+          "price": 7.99,
+          "alt": "Snakehead Fillet",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260705132552556dGkD.jpg",
+          "imageSourceItemId": 3282,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3282-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3282-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Grass Carp Fillet",
-          "price": 8.99
+          "price": 8.99,
+          "alt": "Grass Carp Fillet",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261014112646219RxVH.jpg",
+          "imageSourceItemId": 3283,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3283-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-3283-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Beef Tender Ball",
-          "price": 7.99
+          "price": 7.99,
+          "alt": "Beef Tender Ball",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260705132111787DpxA.jpg",
+          "imageSourceItemId": 3284,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3284-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3284-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Fish Roe Ball",
-          "price": 7.99
+          "price": 7.99,
+          "alt": "Fish Roe Ball",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005908211yjiM.jpg",
+          "imageSourceItemId": 3285,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3285-960.webp",
+          "width": 960,
+          "height": 539,
+          "imageSmall": "/assets/images/ordering/menu-3285-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Brown Sugar Rice Cake",
-          "price": 4.99
+          "price": 4.99,
+          "alt": "Brown Sugar Rice Cake",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261014112520491B6ex.jpg",
+          "imageSourceItemId": 3286,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3286-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-3286-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Fried Milk Custard",
-          "price": 4.99
+          "price": 4.99,
+          "alt": "Fried Milk Custard",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20261014112625966duMe.jpg",
+          "imageSourceItemId": 3287,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3287-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-3287-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Fried Mini Steamed Bun",
           "price": 4.99,
-          "sourceName": "Fried Mini Steam Bun"
+          "sourceName": "Fried Mini Steam Bun",
+          "alt": "Fried Mini Steamed Bun",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005418177tase.jpg",
+          "imageSourceItemId": 3288,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3288-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3288-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Fried Mini Dough Stick",
           "price": 4.99,
-          "availability": "sold_out"
+          "availability": "sold_out",
+          "alt": "Fried Mini Dough Stick",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005441253LKHm.jpg",
+          "imageSourceItemId": 3289,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3289-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3289-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Crown Daisy",
-          "price": 5.99
+          "price": 5.99,
+          "alt": "Crown Daisy",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005453138soJl.jpg",
+          "imageSourceItemId": 3290,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3290-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3290-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Fresh Corn",
-          "price": 5.99
+          "price": 5.99,
+          "alt": "Fresh Corn",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005445305jyVw.jpg",
+          "imageSourceItemId": 3291,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3291-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3291-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Kelp",
-          "price": 5.99
+          "price": 5.99,
+          "alt": "Kelp",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005449921MClY.jpg",
+          "imageSourceItemId": 3292,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3292-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3292-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Lotus Root",
-          "price": 5.99
+          "price": 5.99,
+          "alt": "Lotus Root",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005456908f3cM.jpg",
+          "imageSourceItemId": 3293,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3293-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3293-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Potato",
-          "price": 5.99
+          "price": 5.99,
+          "alt": "Potato",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005334930cPFX.jpg",
+          "imageSourceItemId": 3294,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3294-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3294-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Broccoli",
-          "price": 5.99
+          "price": 5.99,
+          "alt": "Broccoli",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/2026071700552746361Zv.jpg",
+          "imageSourceItemId": 3295,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3295-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3295-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Bamboo Shoots",
-          "price": 5.99
+          "price": 5.99,
+          "alt": "Bamboo Shoots",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005520259UCbB.jpg",
+          "imageSourceItemId": 3296,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3296-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3296-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Yamakurage",
-          "price": 5.99
+          "price": 5.99,
+          "alt": "Yamakurage",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005507517rAS7.jpg",
+          "imageSourceItemId": 3297,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3297-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3297-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Firm Tofu",
-          "price": 5.99
+          "price": 5.99,
+          "alt": "Firm Tofu",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005516440SeTo.jpg",
+          "imageSourceItemId": 3298,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3298-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3298-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Spiced Tofu Skin",
-          "price": 5.99
+          "price": 5.99,
+          "alt": "Spiced Tofu Skin",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005512397WuiR.jpg",
+          "imageSourceItemId": 3299,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3299-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3299-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Winter Melon",
-          "price": 5.99
+          "price": 5.99,
+          "alt": "Winter Melon",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/2026071700534416022zY.jpg",
+          "imageSourceItemId": 3300,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3300-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3300-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Pumpkin",
-          "price": 5.99
+          "price": 5.99,
+          "alt": "Pumpkin",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005350623BC24.jpg",
+          "imageSourceItemId": 3301,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3301-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3301-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Konjac Knot",
-          "price": 5.99
+          "price": 5.99,
+          "alt": "Konjac Knot",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005503797zcxi.jpg",
+          "imageSourceItemId": 3302,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3302-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3302-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Shiitake Mushroom",
-          "price": 5.99
+          "price": 5.99,
+          "alt": "Shiitake Mushroom",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005500587jdZE.jpg",
+          "imageSourceItemId": 3303,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3303-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3303-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Potato Slices",
-          "price": 5.99
+          "price": 5.99,
+          "alt": "Potato Slices",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005328407TEkw.jpg",
+          "imageSourceItemId": 3304,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3304-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3304-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Handmade Noodle",
-          "price": 5.99
+          "price": 5.99,
+          "alt": "Handmade Noodle",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005400406Payn.jpg",
+          "imageSourceItemId": 3305,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3305-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3305-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Rice Cake",
-          "price": 5.99
+          "price": 5.99,
+          "alt": "Rice Cake",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005403787nVxL.jpg",
+          "imageSourceItemId": 3306,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3306-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3306-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Fried Bean Curd Roll",
-          "price": 5.99
+          "price": 5.99,
+          "alt": "Fried Bean Curd Roll",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005357294GsP5.jpg",
+          "imageSourceItemId": 3307,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3307-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3307-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Dried Beancurd",
-          "price": 5.99
+          "price": 5.99,
+          "alt": "Dried Beancurd",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005533903Msf4.jpg",
+          "imageSourceItemId": 3308,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3308-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3308-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Fried Tofu",
-          "price": 5.99
+          "price": 5.99,
+          "alt": "Fried Tofu",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005353855ZoU2.jpg",
+          "imageSourceItemId": 3309,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3309-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3309-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Napa Cabbage",
-          "price": 5.99
+          "price": 5.99,
+          "alt": "Napa Cabbage",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005410807vMap.jpg",
+          "imageSourceItemId": 3310,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3310-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3310-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Shanghai Bok Choy",
-          "price": 5.99
+          "price": 5.99,
+          "alt": "Shanghai Bok Choy",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005706801utzp.jpg",
+          "imageSourceItemId": 3311,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3311-960.webp",
+          "width": 960,
+          "height": 539,
+          "imageSmall": "/assets/images/ordering/menu-3311-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Clam",
-          "price": 6.99
+          "price": 6.99,
+          "alt": "Clam",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005540270ieJT.jpg",
+          "imageSourceItemId": 3312,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3312-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3312-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Blue Crab",
-          "price": 7.99
+          "price": 7.99,
+          "alt": "Blue Crab",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/2026101411251730MSPQ.jpg",
+          "imageSourceItemId": 3313,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3313-960.webp",
+          "width": 960,
+          "height": 576,
+          "imageSmall": "/assets/images/ordering/menu-3313-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Kelp Bud",
-          "price": 5.99
+          "price": 5.99,
+          "alt": "Kelp Bud",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005543744X4II.jpg",
+          "imageSourceItemId": 3314,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3314-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3314-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Enoki Mushroom",
-          "price": 5.99
+          "price": 5.99,
+          "alt": "Enoki Mushroom",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260717005550403bbFx.jpg",
+          "imageSourceItemId": 3315,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3315-960.webp",
+          "width": 960,
+          "height": 540,
+          "imageSmall": "/assets/images/ordering/menu-3315-480.webp",
+          "imageSmallWidth": 480
         }
       ]
     },
@@ -1045,7 +2251,16 @@
       "items": [
         {
           "name": "Lemonade",
-          "price": 3.0
+          "price": 3.0,
+          "alt": "Lemonade",
+          "imageSourceUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/202609300305211818zw.jpg",
+          "imageSourceItemId": 3339,
+          "imageVerifiedAt": "2026-10-28",
+          "image": "/assets/images/ordering/menu-3339-960.webp",
+          "width": 960,
+          "height": 539,
+          "imageSmall": "/assets/images/ordering/menu-3339-480.webp",
+          "imageSmallWidth": 480
         },
         {
           "name": "Dessert",

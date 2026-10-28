@@ -43,7 +43,7 @@
   "lastReviewed": "2026-10-20",
   "navigation": [
     {
-      "label": "Overview",
+      "label": "Home",
       "href": "/"
     },
     {
@@ -51,20 +51,16 @@
       "href": "/menu/"
     },
     {
-      "label": "About",
+      "label": "Our Story",
       "href": "/about/"
     },
     {
-      "label": "Facility",
+      "label": "Dining",
       "href": "/facility/"
     },
     {
-      "label": "Location",
+      "label": "Visit Us",
       "href": "/location/"
-    },
-    {
-      "label": "Contact",
-      "href": "/contact/"
     }
   ],
   "googleMapsUrl": "https://maps.app.goo.gl/HgKMhWXqBt28XdHA9",

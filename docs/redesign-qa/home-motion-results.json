@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checks": [
+    "moving marquee and pause",
+    "carousel buttons and keyboard",
+    "visible autoplay",
+    "pause stops autoplay",
+    "desktop sticky chapters and parallax",
+    "mobile natural flow",
+    "reduced motion",
+    "no-JS content and horizontal scroll"
+  ],
+  "sticky": {
+    "top": 81,
+    "header": 81,
+    "transform": "translate3d(0px, -8.61352px, 0px)"
+  }
+}

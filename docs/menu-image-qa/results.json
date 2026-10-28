@@ -1,0 +1,234 @@
+{
+  "passed": true,
+  "viewports": [
+    {
+      "width": 1440,
+      "scroll": 1425,
+      "photos": 151,
+      "broken": [],
+      "first": [
+        {
+          "category": "Take Out Menu",
+          "first": "Coconut Chicken Mini Hot Pot"
+        },
+        {
+          "category": "Malatang",
+          "first": "Beef Malatang Combo"
+        },
+        {
+          "category": "New Arrival",
+          "first": "Sweet & Sour Chicken"
+        },
+        {
+          "category": "Premium Dim Sum",
+          "first": "Napa Cabbage & Pork Dumplings 8 pc"
+        },
+        {
+          "category": "BBQ",
+          "first": "Grilled Shell-On Shrimp 6 pc"
+        },
+        {
+          "category": "Bun/Dumplings",
+          "first": "BBQ Pork Buns Char Siu Bao 3 pc"
+        },
+        {
+          "category": "Rice Noodle Roll",
+          "first": "Shrimp Rice Roll"
+        },
+        {
+          "category": "Pie",
+          "first": "Scallion Pancake"
+        },
+        {
+          "category": "Fried Rice & Noodles",
+          "first": "Vegetable Fried Rice"
+        },
+        {
+          "category": "Hot Pot Delivery",
+          "first": "Beef Tripe"
+        },
+        {
+          "category": "Soup Base Delivery",
+          "first": "Rich Tomato Broth"
+        },
+        {
+          "category": "Other",
+          "first": "Lemonade"
+        }
+      ],
+      "h1": 1
+    },
+    {
+      "width": 768,
+      "scroll": 753,
+      "photos": 151,
+      "broken": [],
+      "first": [
+        {
+          "category": "Take Out Menu",
+          "first": "Coconut Chicken Mini Hot Pot"
+        },
+        {
+          "category": "Malatang",
+          "first": "Beef Malatang Combo"
+        },
+        {
+          "category": "New Arrival",
+          "first": "Sweet & Sour Chicken"
+        },
+        {
+          "category": "Premium Dim Sum",
+          "first": "Napa Cabbage & Pork Dumplings 8 pc"
+        },
+        {
+          "category": "BBQ",
+          "first": "Grilled Shell-On Shrimp 6 pc"
+        },
+        {
+          "category": "Bun/Dumplings",
+          "first": "BBQ Pork Buns Char Siu Bao 3 pc"
+        },
+        {
+          "category": "Rice Noodle Roll",
+          "first": "Shrimp Rice Roll"
+        },
+        {
+          "category": "Pie",
+          "first": "Scallion Pancake"
+        },
+        {
+          "category": "Fried Rice & Noodles",
+          "first": "Vegetable Fried Rice"
+        },
+        {
+          "category": "Hot Pot Delivery",
+          "first": "Beef Tripe"
+        },
+        {
+          "category": "Soup Base Delivery",
+          "first": "Rich Tomato Broth"
+        },
+        {
+          "category": "Other",
+          "first": "Lemonade"
+        }
+      ],
+      "h1": 1
+    },
+    {
+      "width": 390,
+      "scroll": 375,
+      "photos": 151,
+      "broken": [],
+      "first": [
+        {
+          "category": "Take Out Menu",
+          "first": "Coconut Chicken Mini Hot Pot"
+        },
+        {
+          "category": "Malatang",
+          "first": "Beef Malatang Combo"
+        },
+        {
+          "category": "New Arrival",
+          "first": "Sweet & Sour Chicken"
+        },
+        {
+          "category": "Premium Dim Sum",
+          "first": "Napa Cabbage & Pork Dumplings 8 pc"
+        },
+        {
+          "category": "BBQ",
+          "first": "Grilled Shell-On Shrimp 6 pc"
+        },
+        {
+          "category": "Bun/Dumplings",
+          "first": "BBQ Pork Buns Char Siu Bao 3 pc"
+        },
+        {
+          "category": "Rice Noodle Roll",
+          "first": "Shrimp Rice Roll"
+        },
+        {
+          "category": "Pie",
+          "first": "Scallion Pancake"
+        },
+        {
+          "category": "Fried Rice & Noodles",
+          "first": "Vegetable Fried Rice"
+        },
+        {
+          "category": "Hot Pot Delivery",
+          "first": "Beef Tripe"
+        },
+        {
+          "category": "Soup Base Delivery",
+          "first": "Rich Tomato Broth"
+        },
+        {
+          "category": "Other",
+          "first": "Lemonade"
+        }
+      ],
+      "h1": 1
+    },
+    {
+      "width": 360,
+      "scroll": 345,
+      "photos": 151,
+      "broken": [],
+      "first": [
+        {
+          "category": "Take Out Menu",
+          "first": "Coconut Chicken Mini Hot Pot"
+        },
+        {
+          "category": "Malatang",
+          "first": "Beef Malatang Combo"
+        },
+        {
+          "category": "New Arrival",
+          "first": "Sweet & Sour Chicken"
+        },
+        {
+          "category": "Premium Dim Sum",
+          "first": "Napa Cabbage & Pork Dumplings 8 pc"
+        },
+        {
+          "category": "BBQ",
+          "first": "Grilled Shell-On Shrimp 6 pc"
+        },
+        {
+          "category": "Bun/Dumplings",
+          "first": "BBQ Pork Buns Char Siu Bao 3 pc"
+        },
+        {
+          "category": "Rice Noodle Roll",
+          "first": "Shrimp Rice Roll"
+        },
+        {
+          "category": "Pie",
+          "first": "Scallion Pancake"
+        },
+        {
+          "category": "Fried Rice & Noodles",
+          "first": "Vegetable Fried Rice"
+        },
+        {
+          "category": "Hot Pot Delivery",
+          "first": "Beef Tripe"
+        },
+        {
+          "category": "Soup Base Delivery",
+          "first": "Rich Tomato Broth"
+        },
+        {
+          "category": "Other",
+          "first": "Lemonade"
+        }
+      ],
+      "h1": 1
+    }
+  ],
+  "searchAndClear": true
+}

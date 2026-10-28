@@ -1,0 +1,160 @@
+{
+  "passed": true,
+  "widths": [
+    {
+      "width": 1440,
+      "scroll": 1425,
+      "h1": 1,
+      "sections": [
+        "cinema-hero",
+        "brand-intro",
+        "menu-highlights",
+        "story-stack",
+        "at-the-table",
+        "guest-reviews",
+        "find-us"
+      ],
+      "brokenImages": [],
+      "font": "Inter, \"PingFang SC\", \"Microsoft YaHei\", Arial, sans-serif",
+      "overflow": [
+        "marquee-track",
+        "",
+        "",
+        "marquee-track",
+        "",
+        "signature-track",
+        "signature-slide",
+        "signature-number",
+        "signature-image",
+        "signature-copy"
+      ]
+    },
+    {
+      "width": 1024,
+      "scroll": 1009,
+      "h1": 1,
+      "sections": [
+        "cinema-hero",
+        "brand-intro",
+        "menu-highlights",
+        "story-stack",
+        "at-the-table",
+        "guest-reviews",
+        "find-us"
+      ],
+      "brokenImages": [],
+      "font": "Inter, \"PingFang SC\", \"Microsoft YaHei\", Arial, sans-serif",
+      "overflow": [
+        "marquee-track",
+        "",
+        "",
+        "marquee-track",
+        "",
+        "signature-track",
+        "signature-slide",
+        "signature-image",
+        "signature-copy",
+        ""
+      ]
+    },
+    {
+      "width": 768,
+      "scroll": 753,
+      "h1": 1,
+      "sections": [
+        "cinema-hero",
+        "brand-intro",
+        "menu-highlights",
+        "story-stack",
+        "at-the-table",
+        "guest-reviews",
+        "find-us"
+      ],
+      "brokenImages": [],
+      "font": "Inter, \"PingFang SC\", \"Microsoft YaHei\", Arial, sans-serif",
+      "overflow": [
+        "marquee-track",
+        "",
+        "",
+        "marquee-track",
+        "",
+        "signature-track",
+        "signature-slide",
+        "signature-image",
+        "signature-copy",
+        ""
+      ]
+    },
+    {
+      "width": 390,
+      "scroll": 375,
+      "h1": 1,
+      "sections": [
+        "cinema-hero",
+        "brand-intro",
+        "menu-highlights",
+        "story-stack",
+        "at-the-table",
+        "guest-reviews",
+        "find-us"
+      ],
+      "brokenImages": [],
+      "font": "Inter, \"PingFang SC\", \"Microsoft YaHei\", Arial, sans-serif",
+      "overflow": [
+        "marquee-track",
+        "",
+        "",
+        "marquee-track",
+        "",
+        "signature-track",
+        "signature-slide",
+        "signature-image",
+        "signature-copy",
+        ""
+      ]
+    },
+    {
+      "width": 360,
+      "scroll": 345,
+      "h1": 1,
+      "sections": [
+        "cinema-hero",
+        "brand-intro",
+        "menu-highlights",
+        "story-stack",
+        "at-the-table",
+        "guest-reviews",
+        "find-us"
+      ],
+      "brokenImages": [],
+      "font": "Inter, \"PingFang SC\", \"Microsoft YaHei\", Arial, sans-serif",
+      "overflow": [
+        "marquee-track",
+        "",
+        "",
+        "marquee-track",
+        "",
+        "signature-track",
+        "signature-slide",
+        "signature-number",
+        "signature-image",
+        "signature-copy"
+      ]
+    }
+  ],
+  "interactions": [
+    "mobile navigation + Escape + focus return",
+    "category dropdown",
+    "review full text",
+    "video playback",
+    "menu search + clear + 14 popular dishes",
+    "interior overflow at desktop and mobile",
+    "no-JS navigation + menu + native video controls",
+    "reduced motion"
+  ],
+  "video": {
+    "paused": false,
+    "time": 2.999289
+  },
+  "errors": []
+}

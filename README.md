@@ -64,13 +64,13 @@ dist/                生成物；部署时上传此目录，勿在其中直接�
 
 沿用原官网的米色背景（#f6f0e7）、黑色标题、黄色按钮（#febd2d）以及Inter/Kumbh Sans字体。首页使用原官网已有的背景图；菜单没有新增菜品图片。详情见docs/STYLE_REFERENCE.md。
 
-主导航由content/restaurant.json的navigation配置，Overview、Menu、About、Facility、Location、Contact在桌面和移动端均直接显示；FAQ保留在页脚。
+主导航由 content/restaurant.json 的 navigation 配置：Home、Menu、Our Story、Dining、Visit Us。Contact、Gallery 和 FAQ 保留在页脚；原有 URL 不变。手机端有 JavaScript 时使用可折叠菜单，无 JavaScript 时直接显示全部导航。
 
 ## About 对齐与浏览体验更新
 
 About原文归档在content/about.json的sourceText中。该文件提供About正文、首页摘要和Restaurant结构化数据描述的统一来源；编辑时保留店方提供的事实范围。
 
-菜单支持多关键词搜索、14道热门菜筛选、桌面分类高亮、手机分类选择器和页眉12个分类快捷入口。手机主导航以两行直接展示；分类下拉支持键盘和Esc；动效遵守prefers-reduced-motion。无JavaScript时仍显示全部菜单和分类链接。
+菜单支持多关键词搜索、14道热门菜筛选、桌面分类高亮、手机分类选择器和页眉12个分类快捷入口。手机主导航支持折叠、Esc 关闭与焦点返回；分类下拉支持键盘和Esc；动效遵守prefers-reduced-motion。无JavaScript时仍显示全部菜单和分类链接。
 
 ## 本地素材接入
 
@@ -87,4 +87,18 @@ About原文归档在content/about.json的sourceText中。该文件提供About正
 
 ## Vercel
 
-目标团队easy-j-o-y，vercel.json已配置Other静态构建及dist输出。构建命令npm run build:vercel默认生成noindex审阅版本；完成正式域名迁移时设置EASYJOY_INDEXING=production后重建。操作说明见docs/VERCEL_DEPLOYMENT.md。菜单有图优先的稳定排序见docs/MENU_DISPLAY_ORDER.md。
+目标团队easy-j-o-y，vercel.json已配置Other静态构建及dist输出。构建命令npm run build:vercel默认生成noindex审阅版本；完成正式域名迁移时设置EASYJOY_INDEXING=production后重建。操作说明见docs/VERCEL_DEPLOYMENT.md。菜单按点单程序原始顺序展示；图片匹配与顺序说明见 docs/MENU_DISPLAY_ORDER.md。
+
+## 2026-10-28 本地视觉改版
+
+首页由 lib/home.mjs 生成，按首屏、到店信息、火锅介绍、六道精选、环境与视频、评价、地图排序。全站使用红白金配色与 Inter 400/600。Facility 页面用于 Dining 内容；保留原路由、菜单数据和价格语境。
+
+验证说明与截图见 docs/REDESIGN_VALIDATION.md。可选浏览器检查 scripts/browser-qa.mjs 使用本机独立 CDP 端口 9334、Node.js 和 Python websockets（仅验证工具需要，网站运行和构建不需要），截图写入 docs/redesign-qa/。
+
+## 官方点单图片补齐
+
+2026-10-28 已从 MealKeyway 逐项匹配并补入 123 张缺失菜图，保留原有 28 道的图片；现有 152 道菜共 151 道有图，Dessert 的来源也没有图片。取消有图优先排序，恢复点单程序顺序。图片来源清单为 content/menu-source-assets.json；价格与售罄快照仍为原记录。详见 docs/MENU_DISPLAY_ORDER.md。
+
+## 2026-10-28 首页图文与滚动改版
+
+首页采用大幅摄影首屏、红底循环品牌字、菜品轮播、三个整屏图文叠层和环境展示。四张用户提供的高清横图已接入。图片与首屏视频配置在 content/home.json，首页样式/交互独立于内页。视频接入、素材缺口及验证方式见 docs/HOME_REDESIGN.md。
