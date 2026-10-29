@@ -1,17 +1,20 @@
 {
   "hero": {
-    "image": "/assets/images/home/hot-pot-table-1920.webp",
-    "alt": "Steaming individual hot pots and fresh ingredients at the Easy Joy table",
+    "image": "/assets/images/home/hot-pot-warm-1536.webp",
+    "alt": "Hot pots and ingredients against a warm restaurant-inspired background",
     "position": "center 55%",
     "videoSrc": "",
-    "imageSmall": "/assets/images/home/hot-pot-table-960.webp"
+    "imageSmall": "/assets/images/home/hot-pot-warm-960.webp",
+    "width": 1536,
+    "height": 1024,
+    "imageTreatment": "AI background replacement; original food photograph retained; 2026-10-29"
   },
   "scenes": {
     "hotPot": {
-      "image": "/assets/images/home/hot-pot-table-1920.webp",
-      "alt": "Steaming individual hot pots and fresh ingredients at the Easy Joy table",
-      "position": "60% center",
-      "imageSmall": "/assets/images/home/hot-pot-table-960.webp"
+      "image": "/assets/images/home/mulberry-storefront-1920.webp",
+      "alt": "Easy Joy storefront and outdoor tables at 145 Mulberry Street",
+      "position": "center center",
+      "imageSmall": "/assets/images/home/mulberry-storefront-960.webp"
     },
     "dimSum": {
       "image": "/assets/images/dishes/shanghai-soup-dumplings-960.webp",

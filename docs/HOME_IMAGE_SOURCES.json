@@ -30,5 +30,56 @@
       8192,
       5464
     ]
+  },
+  {
+    "source": "D:/Users/WZ/Downloads/_25A4705.jpg",
+    "name": "mulberry-storefront",
+    "originalSize": [
+      8192,
+      5464
+    ],
+    "use": "A table full of possibilities",
+    "added": "2026-10-29"
+  },
+  {
+    "source": "Existing hot-pot-table photo with AI-generated background replacement",
+    "name": "hot-pot-warm",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "use": "Hero and hot pot cuisine introduction",
+    "treatment": "Warm lantern and wood restaurant-inspired background; not presented as an unedited restaurant interior photograph",
+    "added": "2026-10-29"
+  },
+  {
+    "source": "C:\\Users\\WZ\\AppData\\Local\\Temp\\codex-clipboard-e71898ca-181b-4a05-99d3-e071187a88ef.png",
+    "name": "cuisine-hot-pot",
+    "originalSize": [
+      1683,
+      934
+    ],
+    "use": "Homepage cuisine introduction card",
+    "added": "2026-10-29"
+  },
+  {
+    "source": "C:\\Users\\WZ\\AppData\\Local\\Temp\\codex-clipboard-7c59fc37-a725-42f5-9695-dc62985e2532.png",
+    "name": "cuisine-dim-sum",
+    "originalSize": [
+      1254,
+      1254
+    ],
+    "use": "Homepage cuisine introduction card",
+    "added": "2026-10-29"
+  },
+  {
+    "source": "C:\\Users\\WZ\\AppData\\Local\\Temp\\codex-clipboard-88c1c69a-e364-4b3b-a988-ab2382355077.png",
+    "name": "cuisine-bbq-skewers",
+    "originalSize": [
+      1200,
+      1310
+    ],
+    "use": "Homepage cuisine introduction card",
+    "added": "2026-10-29"
   }
 ]

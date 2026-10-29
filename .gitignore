@@ -45,3 +45,6 @@ easyjoy-menu-export/
 
 .vercel
 .env*
+
+# Local render intermediates
+tmp/

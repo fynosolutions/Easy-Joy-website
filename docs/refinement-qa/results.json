@@ -1,0 +1,122 @@
+{
+  "passed": true,
+  "viewports": [
+    {
+      "width": 1440,
+      "scroll": 1425,
+      "font": "\"Kumbh Sans\", \"PingFang SC\", \"Microsoft YaHei\", Arial, sans-serif",
+      "headingFont": "\"Kumbh Sans\", \"PingFang SC\", \"Microsoft YaHei\", Arial, sans-serif",
+      "marquee": 0,
+      "cuisines": 3,
+      "photos": [
+        {
+          "x": 56,
+          "y": 5720.84375,
+          "w": 642.5,
+          "h": 428.328125
+        },
+        {
+          "x": 726.5,
+          "y": 5720.84375,
+          "w": 642.5,
+          "h": 428.328125
+        }
+      ],
+      "broken": 0
+    },
+    {
+      "width": 1024,
+      "scroll": 1009,
+      "font": "\"Kumbh Sans\", \"PingFang SC\", \"Microsoft YaHei\", Arial, sans-serif",
+      "headingFont": "\"Kumbh Sans\", \"PingFang SC\", \"Microsoft YaHei\", Arial, sans-serif",
+      "marquee": 0,
+      "cuisines": 3,
+      "photos": [
+        {
+          "x": 36,
+          "y": 5287.90625,
+          "w": 454.5,
+          "h": 303
+        },
+        {
+          "x": 518.5,
+          "y": 5287.90625,
+          "w": 454.5,
+          "h": 303
+        }
+      ],
+      "broken": 0
+    },
+    {
+      "width": 768,
+      "scroll": 753,
+      "font": "\"Kumbh Sans\", \"PingFang SC\", \"Microsoft YaHei\", Arial, sans-serif",
+      "headingFont": "\"Kumbh Sans\", \"PingFang SC\", \"Microsoft YaHei\", Arial, sans-serif",
+      "marquee": 0,
+      "cuisines": 3,
+      "photos": [
+        {
+          "x": 36,
+          "y": 5375.171875,
+          "w": 330.5,
+          "h": 220.328125
+        },
+        {
+          "x": 386.5,
+          "y": 5375.171875,
+          "w": 330.5,
+          "h": 220.328125
+        }
+      ],
+      "broken": 0
+    },
+    {
+      "width": 390,
+      "scroll": 375,
+      "font": "\"Kumbh Sans\", \"PingFang SC\", \"Microsoft YaHei\", Arial, sans-serif",
+      "headingFont": "\"Kumbh Sans\", \"PingFang SC\", \"Microsoft YaHei\", Arial, sans-serif",
+      "marquee": 0,
+      "cuisines": 3,
+      "photos": [
+        {
+          "x": 20,
+          "y": 5816.234375,
+          "w": 335,
+          "h": 223.328125
+        },
+        {
+          "x": 20,
+          "y": 6099.703125,
+          "w": 335,
+          "h": 223.328125
+        }
+      ],
+      "broken": 0
+    },
+    {
+      "width": 360,
+      "scroll": 345,
+      "font": "\"Kumbh Sans\", \"PingFang SC\", \"Microsoft YaHei\", Arial, sans-serif",
+      "headingFont": "\"Kumbh Sans\", \"PingFang SC\", \"Microsoft YaHei\", Arial, sans-serif",
+      "marquee": 0,
+      "cuisines": 3,
+      "photos": [
+        {
+          "x": 20,
+          "y": 5703.46875,
+          "w": 305,
+          "h": 203.328125
+        },
+        {
+          "x": 20,
+          "y": 5966.9375,
+          "w": 305,
+          "h": 203.328125
+        }
+      ],
+      "broken": 0
+    }
+  ],
+  "errors": [],
+  "deliveryKeyboardAndNoJS": true
+}

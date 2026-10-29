@@ -2,13 +2,13 @@
   "source": "Existing Easy Joy official About copy, supplied by the restaurant website owner in this conversation.",
   "sourceText": "Easy Joy Dim Sum & AYCE Hot Pot is a Chinese restaurant located at 145 Mulberry St, New York, NY 10013, offering all-you-can-eat experience of authentic hot pot and handcrafted dim sum in a lively and welcoming setting. We are committed to using fresh, high-quality ingredients, including locally sourced produce and time-honored recipes, to bring guests an unforgettable and authentic taste of Chinese cuisine. Our signature dishes include Spicy Sichuan Hot Pot, Cantonese Shrimp Dumplings, and Steamed Pork Buns, each prepared with authentic flavors and meticulous culinary skill. Visit Chinese restaurant Easy Joy Hot Pot Dim Sum Buffet in New York’s Chinatown and enjoy a flavorful, authentic, and satisfying dining experience that will keep you coming back for more.",
   "headline": [
-    "All-you-can-eat hot pot.",
-    "Handcrafted dim sum."
+    "Hot Pot. Dim Sum.",
+    "BBQ Skewers."
   ],
-  "intro": "Easy Joy Dim Sum & AYCE Hot Pot is a Chinese restaurant at 145 Mulberry St in New York’s Chinatown, offering all-you-can-eat hot pot and handcrafted dim sum in a lively, welcoming setting.",
-  "homeSummary": "Come together over all-you-can-eat hot pot and handcrafted dim sum in a lively, welcoming Chinatown setting.",
+  "intro": "Easy Joy Hot Pot, Dim Sum & BBQ Skewers is a Chinese restaurant at 145 Mulberry St in New York’s Chinatown, offering all-you-can-eat hot pot, handcrafted dim sum and BBQ skewers in a lively, welcoming setting.",
+  "homeSummary": "Come together over all-you-can-eat hot pot, handcrafted dim sum and BBQ skewers in a lively, welcoming Chinatown setting.",
   "homeDetail": "Our kitchen pairs fresh, high-quality ingredients, including locally sourced produce, with time-honored recipes to bring authentic Chinese flavors to the table.",
-  "heroDescription": "All-you-can-eat hot pot and handcrafted dim sum, served in a lively, welcoming setting in New York’s Chinatown.",
+  "heroDescription": "All-you-can-eat hot pot, handcrafted dim sum and BBQ skewers, served in a lively, welcoming setting in New York’s Chinatown.",
   "kitchenHeading": [
     "Fresh ingredients.",
     "Time-honored recipes."
@@ -21,7 +21,7 @@
     },
     {
       "title": "Rooted in Chinese flavor",
-      "text": "Time-honored recipes guide the hot pot and dim sum we bring to the table."
+      "text": "Time-honored recipes guide the hot pot, dim sum and BBQ skewers we bring to the table."
     },
     {
       "title": "Prepared with care",
@@ -52,5 +52,5 @@
     "A lively table.",
     "A warm welcome."
   ],
-  "experienceText": "Whether you come for hot pot or dim sum, Easy Joy brings a flavorful and satisfying Chinese dining experience to Mulberry Street. Explore the menu, plan your visit and come enjoy a little Easy Joy."
+  "experienceText": "Whether you come for hot pot, dim sum or BBQ skewers, Easy Joy brings a flavorful and satisfying Chinese dining experience to Mulberry Street. Explore the menu, plan your visit and come enjoy a little Easy Joy."
 }

@@ -1,5 +1,5 @@
 {
-  "name": "Easy Joy Dim Sum & AYCE Hot Pot",
+  "name": "Easy Joy Hot Pot, Dim Sum & BBQ Skewers",
   "shortName": "Easy Joy",
   "alternateName": "Easy Joy意中人",
   "domain": "https://www.easyjoybuffet.com",
@@ -18,8 +18,9 @@
   "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=145%20Mulberry%20St%2C%20New%20York%2C%20NY%2010013",
   "servesCuisine": [
     "Chinese",
+    "Hot Pot",
     "Dim Sum",
-    "Hot Pot"
+    "BBQ Skewers"
   ],
   "hours": [
     {
@@ -64,5 +65,19 @@
     }
   ],
   "googleMapsUrl": "https://maps.app.goo.gl/HgKMhWXqBt28XdHA9",
-  "hoursSource": "Restaurant owner confirmed in conversation on 2026-10-20; local time in New York."
+  "hoursSource": "Restaurant owner confirmed in conversation on 2026-10-20; local time in New York.",
+  "deliveryPlatforms": [
+    {
+      "name": "Grubhub",
+      "url": "https://www.grubhub.com/restaurant/easy-joy-ayce-dim-sum-hot-pot-145-mulberry-st-new-york/12387504"
+    },
+    {
+      "name": "Uber Eats",
+      "url": "https://www.ubereats.com/store/easy-joy-dim-sum-hot-pot-buffet-%E6%84%8F%E4%B8%AD%E4%BA%BA%E7%82%B9%E5%BF%83%E7%81%AB%E9%94%85%E8%87%AA%E5%8A%A9-145-mulberry-street/7ObUBkSuUKCK1aTC7nHx_g"
+    },
+    {
+      "name": "DoorDash",
+      "url": "https://www.doordash.com/store/35886623/"
+    }
+  ]
 }

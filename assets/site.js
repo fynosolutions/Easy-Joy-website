@@ -77,7 +77,8 @@ if (input) {
   };
   resetMenu = () => { input.value = ''; popularButton.setAttribute('aria-pressed', 'false'); filter(); };
   updateActiveCategory = () => {
-    const visible = sections.filter(section => !section.hidden);
+    const drinksSection = document.querySelector('#drinks-menu');
+    const visible = [...sections, ...(drinksSection ? [drinksSection] : [])].filter(section => !section.hidden);
     const jumpHeight = categoryJump.parentElement.getBoundingClientRect().height;
     const offset = header.getBoundingClientRect().height + jumpHeight + 48;
     const current = visible.filter(section => section.getBoundingClientRect().top <= offset).at(-1) || visible[0];
@@ -133,3 +134,22 @@ if (film && filmPlay) {
   film.addEventListener('ended', () => { filmPlay.hidden = false; });
   film.addEventListener('error', () => { filmPlay.hidden = true; document.querySelector('.film-error').hidden = false; });
 }
+// Native details supplies keyboard and no-JS behavior; add dismissal and focus return.
+const deliveryMenus = [...document.querySelectorAll('.delivery-menu')];
+deliveryMenus.forEach(menu => {
+  menu.addEventListener('toggle', () => {
+    if (menu.open) deliveryMenus.forEach(other => { if (other !== menu) other.open = false; });
+  });
+  menu.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && menu.open) {
+      event.preventDefault(); event.stopPropagation(); menu.open = false; menu.querySelector('summary').focus();
+    }
+  });
+  menu.addEventListener('focusout', event => {
+    // During pointer focus transfer activeElement can still be body. Closing
+    // here would hide the link before mouseup/click. Use the destination instead.
+    // A null destination is handled by outside-click or Escape dismissal.
+    if (event.relatedTarget && !menu.contains(event.relatedTarget)) menu.open = false;
+  });
+});
+document.addEventListener('click', event => deliveryMenus.forEach(menu => { if (!menu.contains(event.target)) menu.open = false; }));
