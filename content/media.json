@@ -1,9 +1,10 @@
 {
   "hotpotVideo": {
-    "src": "",
-    "poster": "",
-    "title": "Easy Joy hot pot experience",
-    "caption": "A moment at the Easy Joy table."
+    "src": "/assets/video/hot-pot-landscape.mp4",
+    "poster": "/assets/video/hot-pot-landscape-poster.webp",
+    "title": "At the Easy Joy table",
+    "caption": "A moment at the Easy Joy table.",
+    "mobileSrc": "/assets/video/hot-pot-landscape-mobile.mp4"
   },
   "source": "Restaurant-provided local materials",
   "galleryNotice": "Explore our food in photos. Selection and portions may vary. Check the online ordering menu for current availability and prices.",
