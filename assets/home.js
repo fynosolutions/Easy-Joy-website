@@ -18,7 +18,10 @@
   let hovered = false;
   let focused = false;
   let dragging = false;
-  let timer;
+  let carouselFrame;
+  let carouselPaused = false;
+  let lastTick = 0;
+  let resumeAt = 0;
   let frame;
   let sceneStarts = [];
   const motionAllowed = () => !paused && !reduce.matches;
@@ -74,53 +77,107 @@
     root.querySelectorAll('[data-home-reveal]').forEach(element => reveal.observe(element));
   }
 
-  const maxScroll = () => carousel.scrollWidth - carousel.clientWidth;
-  const cardStops = () => cards.map(card => card.offsetLeft - cards[0].offsetLeft);
-  const currentIndex = () => {
-    const left = carousel.scrollLeft;
-    const stops = cardStops();
-    return stops.reduce((nearest, stop, i) => Math.abs(stop - left) < Math.abs(stops[nearest] - left) ? i : nearest, 0);
-  };
+  const track = carousel.querySelector('.signature-track');
+  const carouselSection = root.querySelector('#menu-highlights');
+  const pauseCarousel = controls.querySelector('.carousel-pause');
+  // Only the ten original cards participate in keyboard/screen-reader navigation.
+  // Matching copies on both sides make the visual wrap continuous.
+  const copySet = () => cards.map(card => {
+    const copy = card.cloneNode(true);
+    copy.dataset.loopCopy = '';
+    copy.setAttribute('aria-hidden', 'true');
+    copy.tabIndex = -1;
+    return copy;
+  });
+  const leading = copySet();
+  track.prepend(...leading);
+  track.append(...copySet());
+  carousel.classList.add('is-looping');
+  let cycle = 0;
+  let step = 0;
+  let position = 0;
+  const modulo = (value, length) => ((value % length) + length) % length;
+  const currentIndex = () => cycle ? modulo(Math.round((carousel.scrollLeft - cycle) / step), cards.length) : 0;
   const refreshCounter = () => { counter.textContent = `${String(currentIndex() + 1).padStart(2, '0')} / ${String(cards.length).padStart(2, '0')}`; };
-  carousel.addEventListener('scroll', refreshCounter, {passive: true});
-  function advance(direction, manual = false) {
-    const stops = cardStops();
+  const measureCarousel = () => {
+    const phase = cycle ? modulo(carousel.scrollLeft - cycle, cycle) / cycle : 0;
+    cycle = cards[0].offsetLeft - leading[0].offsetLeft;
+    step = cycle / cards.length;
+    position = cycle + phase * cycle;
+    carousel.scrollTo({left: position, behavior: 'instant'});
+    refreshCounter();
+  };
+  const normalizePosition = () => {
     const left = carousel.scrollLeft;
-    let target;
-    if (direction > 0) target = left >= maxScroll() - 3 ? 0 : Math.min(maxScroll(), stops.find(stop => stop > left + 5) ?? maxScroll());
-    else target = left <= 3 ? maxScroll() : [...stops].reverse().find(stop => stop < left - 5) ?? 0;
-    carousel.scrollTo({left: target, behavior: behavior()});
-    if (manual) {
-      const index = stops.reduce((nearest, stop, i) => Math.abs(stop - target) < Math.abs(stops[nearest] - target) ? i : nearest, 0);
-      announcement.textContent = `Showing ${cards[index].querySelector('h3').textContent} and more dishes.`;
+    if (left < cycle || left >= 2 * cycle) {
+      carousel.scrollTo({left: cycle + modulo(left - cycle, cycle), behavior: 'instant'});
     }
+    position = carousel.scrollLeft;
+  };
+  function tick(now) {
+    const elapsed = lastTick ? Math.min(now - lastTick, 80) : 0;
+    lastTick = now;
+    if (now >= resumeAt) {
+      // Decreasing scrollLeft moves the pictures from left to right.
+      position -= step * elapsed / 10000;
+      position = cycle + modulo(position - cycle, cycle);
+      carousel.scrollTo({left: position, behavior: 'instant'});
+    } else position = carousel.scrollLeft;
+    carouselFrame = requestAnimationFrame(tick);
   }
   function schedule() {
-    clearTimeout(timer);
-    if (!motionAllowed() || !visible || hovered || focused || dragging || document.hidden || maxScroll() <= 1) return;
-    timer = setTimeout(() => { advance(1); schedule(); }, 5000);
+    cancelAnimationFrame(carouselFrame);
+    carouselFrame = null;
+    lastTick = 0;
+    if (!motionAllowed() || carouselPaused || !visible || hovered || focused || dragging || document.hidden || !cycle) return;
+    normalizePosition();
+    carouselFrame = requestAnimationFrame(tick);
   }
+  function advance(direction, manual = false) {
+    normalizePosition();
+    const relative = (carousel.scrollLeft - cycle) / step;
+    const next = direction > 0 ? Math.floor(relative + .02) + 1 : Math.ceil(relative - .02) - 1;
+    const target = cycle + next * step;
+    resumeAt = performance.now() + 1500;
+    carousel.scrollTo({left: target, behavior: behavior()});
+    if (manual) announcement.textContent = `Showing ${cards[modulo(next, cards.length)].querySelector('h3').textContent} and more dishes.`;
+  }
+  carousel.addEventListener('scroll', refreshCounter, {passive: true});
   controls.hidden = false;
-  controls.querySelectorAll('button').forEach(button => button.addEventListener('click', () => {
+  controls.querySelectorAll('[data-carousel-step]').forEach(button => button.addEventListener('click', () => {
     advance(Number(button.dataset.carouselStep), true); schedule();
   }));
+  pauseCarousel.addEventListener('click', () => {
+    if (paused) { paused = false; carouselPaused = false; }
+    else carouselPaused = !carouselPaused;
+    syncMotion();
+  });
   carousel.addEventListener('keydown', event => {
-    if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
-    if (event.target !== carousel) return;
+    if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key) || event.target !== carousel) return;
     event.preventDefault();
-    if (event.key === 'Home' || event.key === 'End') carousel.scrollTo({left: event.key === 'Home' ? 0 : maxScroll(), behavior: behavior()});
+    if (event.key === 'Home' || event.key === 'End') carousel.scrollTo({left: cycle + (event.key === 'Home' ? 0 : (cards.length - 1) * step), behavior: behavior()});
     else advance(event.key === 'ArrowRight' ? 1 : -1, true);
     schedule();
   });
-  const carouselSection = root.querySelector('#menu-highlights');
-  carouselSection.addEventListener('pointerenter', event => { if (event.pointerType === 'mouse') { hovered = true; schedule(); } });
-  carouselSection.addEventListener('pointerleave', () => { hovered = false; schedule(); });
-  carouselSection.addEventListener('focusin', () => { focused = true; schedule(); });
-  carouselSection.addEventListener('focusout', () => queueMicrotask(() => { focused = carouselSection.contains(document.activeElement); schedule(); }));
+  carousel.querySelectorAll('.signature-slide').forEach(card => {
+    card.addEventListener('pointerenter', event => { if (event.pointerType === 'mouse') { hovered = true; schedule(); } });
+    card.addEventListener('pointerleave', event => { if (event.pointerType === 'mouse') { hovered = false; schedule(); } });
+  });
+  // Keep keyboard reading stable without treating mouse clicks on controls as
+  // a persistent focus pause after the pointer has left the pictures.
+  carouselSection.addEventListener('focusin', event => { focused = event.target.matches(':focus-visible'); schedule(); });
+  carouselSection.addEventListener('focusout', event => {
+    focused = Boolean(event.relatedTarget && carouselSection.contains(event.relatedTarget) && event.relatedTarget.matches(':focus-visible'));
+    schedule();
+  });
   carousel.addEventListener('pointerdown', () => { dragging = true; schedule(); }, {passive: true});
-  addEventListener('pointerup', () => { dragging = false; schedule(); }, {passive: true});
-  addEventListener('pointercancel', () => { dragging = false; schedule(); }, {passive: true});
-  if ('IntersectionObserver' in window) new IntersectionObserver(entries => { visible = entries[0].isIntersecting; schedule(); }, {threshold: .4}).observe(carousel);
+  const endDrag = () => { if (!dragging) return; dragging = false; resumeAt = performance.now() + 1500; schedule(); };
+  addEventListener('pointerup', endDrag, {passive: true});
+  addEventListener('pointercancel', endDrag, {passive: true});
+  carousel.addEventListener('wheel', () => { resumeAt = performance.now() + 1500; }, {passive: true});
+  measureCarousel();
+  new ResizeObserver(() => { measureCarousel(); schedule(); }).observe(carousel);
+  if ('IntersectionObserver' in window) new IntersectionObserver(entries => { visible = entries[0].isIntersecting; schedule(); }, {threshold: .1}).observe(carousel);
 
   const video = root.querySelector('.hero-motion-video');
   const videoButton = root.querySelector('.hero-video-control');
@@ -150,6 +207,9 @@
     motionButton.setAttribute('aria-pressed', String(!motionAllowed()));
     motionButton.textContent = reduce.matches ? 'Reduced motion on' : paused ? 'Resume motion ▶' : 'Pause motion Ⅱ';
     motionButton.disabled = reduce.matches;
+    pauseCarousel.setAttribute('aria-pressed', String(carouselPaused || !motionAllowed()));
+    pauseCarousel.textContent = reduce.matches ? 'Motion off' : carouselPaused || paused ? 'Resume scrolling' : 'Pause scrolling';
+    pauseCarousel.disabled = reduce.matches;
     queueScroll(); schedule(); syncVideo();
   }
   motionButton.hidden = false;

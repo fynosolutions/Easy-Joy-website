@@ -26,8 +26,10 @@ document.addEventListener('keydown', event => {
 document.addEventListener('click', event => {
   if (!header.contains(event.target)) closeNavigation(primaryNav.contains(document.activeElement));
 });
-header.addEventListener('focusout', () => {
-  queueMicrotask(() => { if (!header.contains(document.activeElement)) closeNavigation(); });
+header.addEventListener('focusout', event => {
+  // Focus is temporarily on body between blur and focus during a pointer click.
+  // Keep the menu visible when focus is moving to one of its own links.
+  if (event.relatedTarget && !header.contains(event.relatedTarget)) closeNavigation();
 });
 primaryNav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => closeNavigation()));
 const setHeaderHeight = () => document.documentElement.style.setProperty('--sticky-header', `${Math.ceil(header.getBoundingClientRect().height)}px`);
