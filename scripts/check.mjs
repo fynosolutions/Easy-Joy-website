@@ -84,7 +84,9 @@ assert.equal((homeHTML.match(/class="signature-slide"/g)||[]).length,10);
 assert.ok(!homeHTML.includes('class="closing"')&&!homeHTML.includes('class="category-grid"'));
 assert.ok(homeHTML.includes('Online pickup menu prices are separate from dine-in AYCE pricing.'));
 const reviews=JSON.parse(await fs.readFile(path.join(root,'content/reviews.json'),'utf8'));
-for(const review of reviews.items)for(const paragraph of review.paragraphs)assert.ok(homeHTML.includes(escape(paragraph)),'Review original text missing');
+const approvedReviews=reviews.items.filter(review=>review.publicationStatus==='approved');
+assert.equal((homeHTML.match(/class="review-card"/g)||[]).length,approvedReviews.length);
+for(const review of approvedReviews)for(const paragraph of review.paragraphs)assert.ok(homeHTML.includes(escape(paragraph)),'Approved review text missing');
 for(const [route,label] of [['/','Home'],['/menu/','Menu'],['/about/','Our Story'],['/facility/','Dining'],['/location/','Visit Us']]){
  const content=await fs.readFile(path.join(dist,route,'index.html'),'utf8');
  assert.ok(content.includes(`href="${route}" aria-current="page">${label}</a>`),`Navigation active state: ${route}`);
