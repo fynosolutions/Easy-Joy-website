@@ -103,16 +103,6 @@
     "added": "2026-11-04"
   },
   {
-    "name": "cuisine-bbq-real",
-    "source": "Feishu 020 意中人AYCE/图片/常规图片/0906新图/DSC04491  4 3.jpg (real photo, cropped) ; slight warm grade",
-    "originalSize": [
-      4672,
-      7008
-    ],
-    "use": "Home cuisine card: BBQ Skewers",
-    "added": "2026-11-04"
-  },
-  {
     "name": "cuisine-hot-pot-pots",
     "source": "Crop of a second AI hot pot variant (same references as hot-pot-spread)",
     "originalSize": [
@@ -123,11 +113,21 @@
     "added": "2026-11-04"
   },
   {
-    "name": "cuisine-dim-sum-real",
-    "source": "Feishu 宣传片图/_25A4682.jpg (real photo, cropped, slight warm grade)",
+    "name": "cuisine-bbq-grill",
+    "source": "Photo from the designer's Easy Joy BBQ & beer A-frame board (Feishu: 0723意中人烧烤啤酒A字架A1尺寸.pdf, embedded image 0), cropped; owner asked to use it 2026-11-04",
     "originalSize": [
-      5464,
-      8192
+      3484,
+      4961
+    ],
+    "use": "Home cuisine card: BBQ Skewers",
+    "added": "2026-11-04"
+  },
+  {
+    "name": "cuisine-dim-sum-steamers",
+    "source": "AI-generated (ChatGPT image via Codex) from the restaurant's own dim sum menu photos (har gow, siu mai, egg tart)",
+    "originalSize": [
+      1024,
+      1536
     ],
     "use": "Home cuisine card: Dim Sum",
     "added": "2026-11-04"

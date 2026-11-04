@@ -205,3 +205,4 @@
 .signature-copy p{color:#fff;opacity:.92;text-shadow:0 1px 8px #000a}
 .signature-slide:after{background:linear-gradient(0deg,#1c1514f2 0%,#1c1514b3 30%,#1c151452 50%,transparent 70%)}
 @media(min-width:1001px){.scene-panel{justify-content:center}.scene-index{margin-bottom:20px}}
+.cuisine-card:nth-child(3) img{object-position:center 75%}
