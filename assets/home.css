@@ -206,3 +206,11 @@
 .signature-slide:after{background:linear-gradient(0deg,#1c1514f2 0%,#1c1514b3 30%,#1c151452 50%,transparent 70%)}
 @media(min-width:1001px){.scene-panel{justify-content:center}.scene-index{margin-bottom:20px}}
 .cuisine-card:nth-child(3) img{object-position:center 75%}
+/* Menu-photo carousel: cutout dishes on menu paper, dark text (no photo gradient) */
+.signature-slide.menu-card{background:#f4ece1;color:var(--home-ink,#2b1d18)}
+.signature-slide.menu-card:after{display:none}
+.menu-card .signature-image{inset:22px 18px auto;width:calc(100% - 36px);height:58%;object-fit:contain;z-index:0;filter:drop-shadow(0 10px 14px #0002)}
+.menu-card .signature-copy p{color:#a3262d;opacity:1;text-shadow:none;font-weight:600}
+.menu-card .signature-copy h3{color:#2b1d18}
+.menu-card .signature-link{border-top-color:#2b1d1826;color:#2b1d18}
+.menu-card:hover{color:#2b1d18}

@@ -43,3 +43,7 @@ Two blind design reviews (screenshots only) scored the 11-03 site 4.5/10. Main r
 | Checks | New `check.mjs` block: AYCE = hot pot only, no "unlimited dim sum", no Mystery Box, unique carousel dishes, no card cloning, hero mark inline. |
 
 Image sources (real vs AI-generated) are listed in `docs/HOME_IMAGE_SOURCES.json`.
+
+## Round 3 (owner feedback, same day)
+- "Find your next favorite" now uses the printed menu's own dish photos (cutouts in `assets/images/menu-card/`), in menu order: hot pot broths and $43 meat → dim sum → BBQ → mains. Cards are menu-paper cream with dark text.
+- Dim sum card and the "One more basket" scene use photos from the printed menu (pages 16 and 15) instead of AI images. BBQ card uses the photo from the BBQ & beer A-frame board.

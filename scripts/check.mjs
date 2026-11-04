@@ -83,7 +83,7 @@ console.log('PASS: official About copy, signature dishes, home summary and Resta
 const homeSections=['class="cinema-hero"','id="brand-intro"','id="menu-highlights"','id="hot-pot"','id="dim-sum"','id="dining-experience"','id="at-the-table"','id="guest-reviews"','id="find-us"'];
 let lastSection=-1;
 for(const marker of homeSections){const next=homeHTML.indexOf(marker);assert.ok(next>lastSection,`Home section missing or out of order: ${marker}`);lastSection=next;}
-assert.equal((homeHTML.match(/class="signature-slide"/g)||[]).length,10);
+assert.equal((homeHTML.match(/class="signature-slide[ "]/g)||[]).length,10);
 assert.ok(!homeHTML.includes('class="closing"')&&!homeHTML.includes('class="category-grid"'));
 assert.ok(homeHTML.includes('$28 before 5 PM.')&&homeHTML.includes('/faq/#ayce-price'),'Home states AYCE prices and links to the details');
 const reviews=JSON.parse(await fs.readFile(path.join(root,'content/reviews.json'),'utf8'));
@@ -152,7 +152,7 @@ console.log(`PASS: source menu order and available official photos (${categories
   assert.ok(!/unlimited dim sum|plus handcrafted dim sum|all-you-can-eat (?:dim sum|bbq)/i.test(text),`AYCE wording implies dim sum/BBQ are included on ${route}`);
   assert.ok(!/Mystery Box/i.test(html),`Sold-out Mystery Box still listed on ${route}`);
  }
- const slides=[...homeHTML.matchAll(/class="signature-slide"[^>]*aria-label="([^"]+)"/g)].map(m=>m[1]);
+ const slides=[...homeHTML.matchAll(/class="signature-slide[^"]*"[^>]*aria-label="([^"]+)"/g)].map(m=>m[1]);
  assert.equal(new Set(slides).size,slides.length,'Home carousel repeats a dish');
  const js=await fs.readFile(path.join(dist,'assets/home.js'),'utf8');
  assert.ok(!/cloneNode/.test(js),'Home carousel must not clone cards (each dish once)');

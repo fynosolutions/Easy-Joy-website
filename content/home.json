@@ -19,12 +19,12 @@
       "imageTreatment": "AI-generated from the restaurant's own table photos (Feishu _25A4668/_25A4670); 2026-11-04"
     },
     "dimSum": {
-      "image": "/assets/images/home/dim-sum-spread-1536.webp",
-      "imageSmall": "/assets/images/home/dim-sum-spread-960.webp",
+      "image": "/assets/images/home/dim-sum-steamers-1536.webp",
+      "imageSmall": "/assets/images/home/dim-sum-steamers-960.webp",
       "width": 1536,
-      "alt": "Steaming dim sum on a wooden table: har gow, siu mai, chicken feet, spare ribs, rice noodle rolls, egg tarts and ma lai go",
-      "position": "center center",
-      "imageTreatment": "AI-generated from the restaurant's own menu photos (Feishu 外卖图); 2026-11-04"
+      "alt": "Stacked bamboo steamers in steam with chicken feet, spare ribs, fried squid and chicken wings",
+      "position": "center 60%",
+      "imageTreatment": "From the restaurant's printed menu (1024-020意中人-活页菜单改版, page 15); 2026-11-04"
     },
     "dining": {
       "image": "/assets/images/home/dining-atmosphere-1920.webp",

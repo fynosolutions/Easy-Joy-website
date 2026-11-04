@@ -93,16 +93,6 @@
     "added": "2026-11-04"
   },
   {
-    "name": "dim-sum-spread",
-    "source": "AI-generated (ChatGPT image, via Codex) from the restaurant's own dim sum menu photos (Feishu 外卖图: 虾饺/烧卖/凤爪/排骨/肠粉/腐皮卷/猪肉饺/蛋挞/马拉糕)",
-    "originalSize": [
-      1536,
-      1024
-    ],
-    "use": "Home: One more basket. Always.",
-    "added": "2026-11-04"
-  },
-  {
     "name": "cuisine-hot-pot-pots",
     "source": "Crop of a second AI hot pot variant (same references as hot-pot-spread)",
     "originalSize": [
@@ -123,13 +113,29 @@
     "added": "2026-11-04"
   },
   {
-    "name": "cuisine-dim-sum-steamers",
-    "source": "AI-generated (ChatGPT image via Codex) from the restaurant's own dim sum menu photos (har gow, siu mai, egg tart)",
+    "name": "cuisine-dim-sum-menu",
+    "source": "Printed menu 1024-020意中人-活页菜单改版-8.5x11inch.pdf, page 16 photo",
     "originalSize": [
-      1024,
-      1536
+      1344,
+      1792
     ],
     "use": "Home cuisine card: Dim Sum",
+    "added": "2026-11-04"
+  },
+  {
+    "name": "dim-sum-steamers",
+    "source": "Printed menu 1024-020意中人-活页菜单改版-8.5x11inch.pdf, page 15 photo",
+    "originalSize": [
+      1792,
+      2400
+    ],
+    "use": "Home: One more basket. Always.",
+    "added": "2026-11-04"
+  },
+  {
+    "name": "menu-card/*",
+    "source": "Printed menu dish cutouts (pages 4, 6, 11, 18, 19), trimmed and resized",
+    "use": "Home carousel: Find your next favorite",
     "added": "2026-11-04"
   }
 ]
