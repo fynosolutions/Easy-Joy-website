@@ -81,17 +81,6 @@
       "alreadyHasImage": false
     },
     {
-      "category": "Take Out Menu",
-      "itemIndex": 7,
-      "name": "Mystery Box Set",
-      "sourceCategoryId": 358,
-      "sourceItemId": 3142,
-      "sourceOrder": 7,
-      "sourceName": "Mystery Box Set",
-      "imageUrl": "https://pixel.menusifu.com/35554f7339436751782f466c5152626a423569654a773d3d/20260705132505929KEtV.jpg",
-      "alreadyHasImage": true
-    },
-    {
       "category": "Malatang",
       "itemIndex": 0,
       "name": "Beef Malatang Combo",

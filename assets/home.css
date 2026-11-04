@@ -149,7 +149,6 @@
 .home-wrap{width:min(1200px,calc(100% - 64px))}
 @media(max-width:600px){.home-wrap{width:calc(100% - 40px)}}
 .hero-shade{background:linear-gradient(90deg,#150c08d9 0%,#150c0899 38%,#150c0814 70%,transparent 100%),linear-gradient(0deg,#150c0899,transparent 40%)}
-.hero-calligraphy{position:absolute;z-index:-1;right:5%;top:50%;transform:translateY(-50%);width:min(36vw,520px);color:var(--sign-gold,#f2c230);opacity:.9;pointer-events:none;filter:drop-shadow(0 6px 30px #0008)}
 .hero-link{color:white!important;align-self:center}
 .toolbar-zh{font-size:15px;letter-spacing:.3em}
 .brand-intro h2 em{color:var(--home-gold)}
@@ -170,9 +169,7 @@
 .editorial-visit .home-text-link,.editorial-visit .location-contact a{color:white}
 .platform-row-reviews{border-top:0;padding-top:24px}
 .platform-row-reviews .platform-heading{font-size:14px!important}
-@media(max-width:900px){.hero-calligraphy{right:auto;left:20px;top:auto;bottom:90px;transform:none;width:44vw;opacity:.28}}
 @media(max-width:700px){.cuisine-grid{grid-template-columns:1fr}.cuisine-card img{aspect-ratio:4/3!important}.scene-prices dd{font-size:28px}}
-@media(max-width:900px){.hero-calligraphy{left:auto;right:18px;bottom:70px;width:30vw;opacity:.85}}
 /* round 2 */
 .scene-copy .scene-note{font-size:16px!important;color:#eadfd6;max-width:420px}
 .visit-mark{width:120px;color:var(--sign-gold,#f2c230);margin:28px 0 0}
@@ -187,3 +184,24 @@
 .carousel-footer .fine,.motion-toggle,.carousel-pause{font-size:13px!important}
 .home-button{font-size:15px!important}
 @media(max-width:600px){.home-button{font-size:15px!important;min-height:48px}}
+
+/* 2026-11-04 round 2: sign calligraphy sits beside the gold "Easy Joy." line instead of over the photo */
+.hero-content .hero-outline{display:flex;align-items:center;gap:.3em}
+.hero-mark{display:block;flex:none;height:1.05em;color:var(--sign-gold,#f2c230);line-height:0}
+.hero-mark .calligraphy{display:block;height:100%;width:auto;filter:drop-shadow(0 2px 12px #0007)}
+/* round 2 review fixes: equal-height real-photo cuisine cards (no empty block), short line length, one gold, carousel aligned to the 1200px column */
+@media(min-width:701px){.cuisine-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start}.cuisine-card:nth-child(n) img{aspect-ratio:4/5}}
+.cuisine-intro>p{max-width:680px}
+.hero-mark{color:var(--home-gold)}
+@media(min-width:1201px){.signature-track{padding-inline:max(56px,calc((100vw - 1200px)/2))}.signature-carousel{scroll-padding-inline:max(56px,calc((100vw - 1200px)/2))}}
+@media(max-width:700px){.cuisine-card img{aspect-ratio:1/1!important}}
+/* Desktop split scenes: keep the photo beside the text panel, not under it, so whole pots/plates stay in frame */
+@media(min-width:1201px){#hot-pot .scene-visual{left:max(38%,430px)}.scene-dimsum .scene-visual{right:max(38%,430px)}}
+@media(min-width:1001px) and (max-width:1200px){#hot-pot .scene-visual{left:43%}.scene-dimsum .scene-visual{right:43%}}
+/* round 3 review fixes */
+@media(min-width:1001px){.cuisine-intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,560px);column-gap:64px;align-items:end}.intro-price h2{margin-bottom:0}.intro-rules>p:first-child{margin-top:0}}
+.intro-rules>p:last-child{font-size:16px;color:#f4dfd5}
+@media(min-width:701px){.cuisine-grid{grid-template-columns:1.6fr 1fr 1fr}.cuisine-card:nth-child(n) img{aspect-ratio:auto;height:clamp(360px,33vw,470px)}.cuisine-card:first-child img{object-position:center 40%}}
+.signature-copy p{color:#fff;opacity:.92;text-shadow:0 1px 8px #000a}
+.signature-slide:after{background:linear-gradient(0deg,#1c1514f2 0%,#1c1514b3 30%,#1c151452 50%,transparent 70%)}
+@media(min-width:1001px){.scene-panel{justify-content:center}.scene-index{margin-bottom:20px}}

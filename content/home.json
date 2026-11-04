@@ -11,14 +11,20 @@
   },
   "scenes": {
     "hotPot": {
-      "image": "/assets/images/dishes/duck-pickled-radish-broth-960.webp",
-      "alt": "Duck and pickled radish hot pot broth",
-      "position": "center center"
+      "image": "/assets/images/home/hot-pot-spread-1536.webp",
+      "imageSmall": "/assets/images/home/hot-pot-spread-960.webp",
+      "width": 1536,
+      "alt": "A hot pot table set with two copper pots, sliced beef and lamb, shrimp, tofu, vegetables and dipping sauces",
+      "position": "center center",
+      "imageTreatment": "AI-generated from the restaurant's own table photos (Feishu _25A4668/_25A4670); 2026-11-04"
     },
     "dimSum": {
-      "image": "/assets/images/dishes/siu-mai-assortment-960.webp",
-      "alt": "An assortment of siu mai in a bamboo steamer",
-      "position": "28% center"
+      "image": "/assets/images/home/dim-sum-spread-1536.webp",
+      "imageSmall": "/assets/images/home/dim-sum-spread-960.webp",
+      "width": 1536,
+      "alt": "Steaming dim sum on a wooden table: har gow, siu mai, chicken feet, spare ribs, rice noodle rolls, egg tarts and ma lai go",
+      "position": "center center",
+      "imageTreatment": "AI-generated from the restaurant's own menu photos (Feishu 外卖图); 2026-11-04"
     },
     "dining": {
       "image": "/assets/images/home/dining-atmosphere-1920.webp",

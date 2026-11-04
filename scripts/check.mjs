@@ -5,6 +5,9 @@ import {fileURLToPath} from 'node:url';
 import {slug,escape,money} from '../lib/site.mjs';
 const root=fileURLToPath(new URL('../',import.meta.url));
 const dist=path.join(root,'dist');
+// Built pages keep "à la carte" on one line with no-break spaces; compare copy as plain spaces.
+const readFileRaw=fs.readFile.bind(fs);
+fs.readFile=async(file,...rest)=>{const out=await readFileRaw(file,...rest);return typeof out==='string'&&String(file).endsWith('.html')?out.replaceAll('\u00a0',' ').replaceAll('\u2060',''):out;};
 const r=JSON.parse(await fs.readFile(path.join(root,'content/restaurant.json'),'utf8'));
 const menu=JSON.parse(await fs.readFile(path.join(root,'content/menu.json'),'utf8'));
 const categories=menu.categories.filter(c=>!c.isRecommendationGroup);
@@ -120,7 +123,7 @@ console.log(`PASS: source menu order and available official photos (${categories
 // 2026-11-04 design pass: AI search readiness, platform row, iPhone-safe glyphs.
 {
  const llms=await fs.readFile(path.join(dist,'llms.txt'),'utf8');
- assert.ok(llms.includes('$28 per person every day before 5 PM')&&llms.includes('Reservations:'),'llms.txt carries prices and booking link');
+ assert.ok(llms.includes('$28 per person every day (Monday to Sunday) before 5 PM')&&llms.includes('Reservations:'),'llms.txt carries prices and booking link');
  const faqHTML=await fs.readFile(path.join(dist,'faq','index.html'),'utf8');
  assert.ok(faqHTML.includes('"@type":"FAQPage"'),'FAQPage schema on /faq/');
  const homeLd=JSON.parse(homeHTML.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
@@ -135,4 +138,24 @@ console.log(`PASS: source menu order and available official photos (${categories
   assert.equal((html.match(/class="platform-link"/g)||[]).length>=10,true,`Platform icon row missing on ${route}`);
  }
  console.log('PASS: AI-search files and schema, platform icon row on every page, SVG glyphs, no internal wording.');
+}
+
+// 2026-11-04 round 2: AYCE covers hot pot only; no sold-out items; carousel shows each dish once.
+{
+ const restData=JSON.parse(await fs.readFile(path.join(root,'content/restaurant.json'),'utf8'));
+ const llms=await fs.readFile(path.join(dist,'llms.txt'),'utf8');
+ assert.ok(homeHTML.includes(escape(restData.ayceNote)),'Home states that dim sum and BBQ are a la carte');
+ assert.ok(/hot pot only/.test(llms)&&/BBQ skewers are ordered à la carte/.test(llms),'llms.txt states AYCE covers hot pot only');
+ for(const route of ['/','/menu/','/about/','/facility/','/location/','/contact/','/faq/','/gallery/']){
+  const html=await fs.readFile(path.join(dist,route,'index.html'),'utf8');
+  const text=html.replace(/<script[\s\S]*?<\/script>/g,'').replace(/<[^>]+>/g,' ');
+  assert.ok(!/unlimited dim sum|plus handcrafted dim sum|all-you-can-eat (?:dim sum|bbq)/i.test(text),`AYCE wording implies dim sum/BBQ are included on ${route}`);
+  assert.ok(!/Mystery Box/i.test(html),`Sold-out Mystery Box still listed on ${route}`);
+ }
+ const slides=[...homeHTML.matchAll(/class="signature-slide"[^>]*aria-label="([^"]+)"/g)].map(m=>m[1]);
+ assert.equal(new Set(slides).size,slides.length,'Home carousel repeats a dish');
+ const js=await fs.readFile(path.join(dist,'assets/home.js'),'utf8');
+ assert.ok(!/cloneNode/.test(js),'Home carousel must not clone cards (each dish once)');
+ assert.ok(!homeHTML.includes('class="hero-calligraphy"')&&homeHTML.includes('class="hero-mark"'),'Hero calligraphy sits beside the Easy Joy line, not over the photo');
+ console.log('PASS: AYCE = hot pot only (dim sum & BBQ à la carte), no Mystery Box, carousel dishes unique, hero mark inline.');
 }

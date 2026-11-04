@@ -535,32 +535,6 @@
       "menuName": null
     },
     {
-      "id": "mystery-box-set",
-      "sourceFile": "material/photos/menu/盲盒套餐.png",
-      "chineseName": "盲盒套餐",
-      "englishName": "Mystery Box Set",
-      "group": "hot-pot",
-      "image": "/assets/images/dishes/mystery-box-set-960.webp",
-      "imageSmall": "/assets/images/dishes/mystery-box-set-480.webp",
-      "width": 960,
-      "height": 576,
-      "alt": "Mystery Box Set",
-      "menuName": "Mystery Box Set"
-    },
-    {
-      "id": "mystery-box-set-alternate-photo",
-      "sourceFile": "material/photos/menu/盲盒套餐（？版）.png",
-      "chineseName": "盲盒套餐（？版）",
-      "englishName": "Mystery Box Set",
-      "group": "hot-pot",
-      "image": "/assets/images/dishes/mystery-box-set-alternate-photo-960.webp",
-      "imageSmall": "/assets/images/dishes/mystery-box-set-alternate-photo-480.webp",
-      "width": 960,
-      "height": 576,
-      "alt": "Mystery Box Set",
-      "menuName": null
-    },
-    {
       "id": "vegetable-spring-rolls",
       "sourceFile": "material/photos/menu/素菜春卷.png",
       "chineseName": "素菜春卷",

@@ -240,7 +240,7 @@
     },
     {
       "name": "Take Out Menu",
-      "sourceCount": 8,
+      "sourceCount": 7,
       "items": [
         {
           "name": "Coconut Chicken Mini Hot Pot",
@@ -321,17 +321,6 @@
           "height": 539,
           "imageSmall": "/assets/images/ordering/menu-7257-480.webp",
           "imageSmallWidth": 480
-        },
-        {
-          "name": "Mystery Box Set",
-          "price": 16.0,
-          "availability": "sold_out",
-          "image": "/assets/images/dishes/mystery-box-set-960.webp",
-          "imageSmall": "/assets/images/dishes/mystery-box-set-480.webp",
-          "width": 960,
-          "height": 576,
-          "alt": "Mystery Box Set",
-          "imageSourceName": "盲盒套餐"
         }
       ]
     },

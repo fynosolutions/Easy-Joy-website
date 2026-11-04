@@ -9,7 +9,7 @@
   },
   "about": {
     "title": "About Easy Joy | Hot Pot, Dim Sum & BBQ Skewers in Chinatown",
-    "description": "Discover Easy Joy’s all-you-can-eat hot pot, plus handcrafted dim sum, BBQ skewers, fresh ingredients and signature Chinese dishes at 145 Mulberry St in New York’s Chinatown."
+    "description": "Discover Easy Joy’s all-you-can-eat hot pot, à la carte dim sum and BBQ skewers, fresh ingredients and signature Chinese dishes at 145 Mulberry St in New York’s Chinatown."
   },
   "location": {
     "title": "Location & Contact Details | Easy Joy NYC",
@@ -32,7 +32,7 @@
     },
     {
       "question": "How much is all-you-can-eat hot pot at Easy Joy?",
-      "answer": "All-you-can-eat hot pot is $28 per person every day before 5 PM, and includes a rotating selection of 4–6 dim sum from the dim sum cart. After 5 PM, all-you-can-eat hot pot is $43 per person; dim sum is ordered à la carte at dinner. Tax and tip are extra. Prices can change, so call the restaurant to confirm before you visit.",
+      "answer": "All-you-can-eat hot pot is $28 per person every day, Monday to Sunday, before 5 PM. That price also includes 4–6 kinds of dim sum from the daily rotating dim sum cart. After 5 PM, all-you-can-eat hot pot is $43 per person. All-you-can-eat covers the hot pot only: the rest of the dim sum menu and all BBQ skewers are ordered à la carte, at lunch and at dinner. Tax and tip are extra. Prices can change, so call the restaurant to confirm before you visit.",
       "external": "phone",
       "linkLabel": "Call the restaurant",
       "id": "ayce-price"

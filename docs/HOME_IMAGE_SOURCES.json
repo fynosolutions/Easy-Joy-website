@@ -81,5 +81,55 @@
     ],
     "use": "Homepage cuisine introduction card",
     "added": "2026-10-29"
+  },
+  {
+    "name": "hot-pot-spread",
+    "source": "AI-generated (ChatGPT image, via Codex) from the restaurant's own table photos _25A4668/_25A4670 (Feishu 020 意中人AYCE/图片/常规图片/宣传片图)",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "use": "Home: A table full of possibilities",
+    "added": "2026-11-04"
+  },
+  {
+    "name": "dim-sum-spread",
+    "source": "AI-generated (ChatGPT image, via Codex) from the restaurant's own dim sum menu photos (Feishu 外卖图: 虾饺/烧卖/凤爪/排骨/肠粉/腐皮卷/猪肉饺/蛋挞/马拉糕)",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "use": "Home: One more basket. Always.",
+    "added": "2026-11-04"
+  },
+  {
+    "name": "cuisine-bbq-real",
+    "source": "Feishu 020 意中人AYCE/图片/常规图片/0906新图/DSC04491  4 3.jpg (real photo, cropped) ; slight warm grade",
+    "originalSize": [
+      4672,
+      7008
+    ],
+    "use": "Home cuisine card: BBQ Skewers",
+    "added": "2026-11-04"
+  },
+  {
+    "name": "cuisine-hot-pot-pots",
+    "source": "Crop of a second AI hot pot variant (same references as hot-pot-spread)",
+    "originalSize": [
+      950,
+      850
+    ],
+    "use": "Home cuisine card: Hot Pot",
+    "added": "2026-11-04"
+  },
+  {
+    "name": "cuisine-dim-sum-real",
+    "source": "Feishu 宣传片图/_25A4682.jpg (real photo, cropped, slight warm grade)",
+    "originalSize": [
+      5464,
+      8192
+    ],
+    "use": "Home cuisine card: Dim Sum",
+    "added": "2026-11-04"
   }
 ]

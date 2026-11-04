@@ -27,3 +27,19 @@ Two blind design reviews (screenshots only) scored the 11-03 site 4.5/10. Main r
 - Provide seat count, large tables and group size for the Dining page.
 - Provide new photos: a full room with guests, the sauce bar, the dim sum cart, and a hot pot close-up with steam. The current set is small, so several pages share photos.
 - Menu category names come from the ordering system ("Take Out Menu", "New Arrival"). Renaming them changes URLs, so they are left as they are.
+
+## Round 2 (same day, owner-side feedback)
+
+| Area | Change |
+|---|---|
+| AYCE wording | All-you-can-eat covers the **hot pot only**. Dim sum and BBQ skewers are à la carte at lunch and dinner. Before 5 PM the $28 price also includes 4–6 kinds of dim sum from the daily rotating cart. One sentence in `content/restaurant.json → ayceNote` drives the homepage; FAQ, About, Dining, Contact, Menu and `llms.txt` say the same. `$28` is every day (Monday to Sunday) before 5 PM. |
+| Hero | The 意中人 sign calligraphy now sits beside the gold "Easy Joy." line (`.hero-mark`) instead of a large watermark over the photo. |
+| Price block | Two columns on desktop: prices left, rules right (no empty red block). |
+| Cuisine cards | Wider hot pot card (1.6fr / 1fr / 1fr), equal heights. Dim sum and BBQ use real Feishu photos (`宣传片图/_25A4682`, `0906新图/DSC04491`). |
+| Story scenes | "A table full of possibilities" and "One more basket. Always." use full-table images instead of single studio dishes. On desktop the photo sits beside the text panel, not under it. |
+| Carousel | No cloned cards: each dish appears once, autoplay steps one card and rewinds. Mystery Box removed; dishes are unique. |
+| Menu | Mystery Box Set (sold out) removed from the menu and gallery. |
+| Text | "à la carte" and "4–6 kinds" never break across lines. |
+| Checks | New `check.mjs` block: AYCE = hot pot only, no "unlimited dim sum", no Mystery Box, unique carousel dishes, no card cloning, hero mark inline. |
+
+Image sources (real vs AI-generated) are listed in `docs/HOME_IMAGE_SOURCES.json`.

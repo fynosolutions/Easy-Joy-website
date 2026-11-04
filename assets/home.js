@@ -20,7 +20,6 @@
   let dragging = false;
   let carouselFrame;
   let carouselPaused = false;
-  let lastTick = 0;
   let resumeAt = 0;
   let frame;
   let sceneStarts = [];
@@ -77,70 +76,37 @@
     root.querySelectorAll('[data-home-reveal]').forEach(element => reveal.observe(element));
   }
 
-  const track = carousel.querySelector('.signature-track');
   const carouselSection = root.querySelector('#menu-highlights');
   const pauseCarousel = controls.querySelector('.carousel-pause');
-  // Only the ten original cards participate in keyboard/screen-reader navigation.
-  // Matching copies on both sides make the visual wrap continuous.
-  const copySet = () => cards.map(card => {
-    const copy = card.cloneNode(true);
-    copy.dataset.loopCopy = '';
-    copy.setAttribute('aria-hidden', 'true');
-    copy.tabIndex = -1;
-    return copy;
-  });
-  const leading = copySet();
-  track.prepend(...leading);
-  track.append(...copySet());
-  carousel.classList.add('is-looping');
-  let cycle = 0;
+  // Each dish appears once (no cloned cards). Autoplay steps one card at a time
+  // and rewinds to the first dish after the last one.
   let step = 0;
-  let position = 0;
-  const modulo = (value, length) => ((value % length) + length) % length;
-  const currentIndex = () => cycle ? modulo(Math.round((carousel.scrollLeft - cycle) / step), cards.length) : 0;
+  const maxLeft = () => Math.max(0, carousel.scrollWidth - carousel.clientWidth);
+  const currentIndex = () => step ? Math.min(cards.length - 1, Math.round(carousel.scrollLeft / step)) : 0;
   const refreshCounter = () => { counter.textContent = `${String(currentIndex() + 1).padStart(2, '0')} / ${String(cards.length).padStart(2, '0')}`; };
-  const measureCarousel = () => {
-    const phase = cycle ? modulo(carousel.scrollLeft - cycle, cycle) / cycle : 0;
-    cycle = cards[0].offsetLeft - leading[0].offsetLeft;
-    step = cycle / cards.length;
-    position = cycle + phase * cycle;
-    carousel.scrollTo({left: position, behavior: 'instant'});
-    refreshCounter();
-  };
-  const normalizePosition = () => {
-    const left = carousel.scrollLeft;
-    if (left < cycle || left >= 2 * cycle) {
-      carousel.scrollTo({left: cycle + modulo(left - cycle, cycle), behavior: 'instant'});
-    }
-    position = carousel.scrollLeft;
+  const measureCarousel = () => { step = cards.length > 1 ? cards[1].offsetLeft - cards[0].offsetLeft : carousel.clientWidth; refreshCounter(); };
+  const goTo = index => {
+    const atEnd = carousel.scrollLeft >= maxLeft() - 4;
+    if (index >= cards.length || (index > currentIndex() && atEnd)) index = 0;
+    if (index < 0) index = cards.length - 1;
+    carousel.scrollTo({left: Math.min(index * step, maxLeft()), behavior: behavior()});
+    return index;
   };
   function tick(now) {
-    const elapsed = lastTick ? Math.min(now - lastTick, 80) : 0;
-    lastTick = now;
-    if (now >= resumeAt) {
-      // Decreasing scrollLeft moves the pictures from left to right.
-      position -= step * elapsed / 10000;
-      position = cycle + modulo(position - cycle, cycle);
-      carousel.scrollTo({left: position, behavior: 'instant'});
-    } else position = carousel.scrollLeft;
+    if (now >= resumeAt) { goTo(currentIndex() + 1); resumeAt = now + 3500; }
     carouselFrame = requestAnimationFrame(tick);
   }
   function schedule() {
     cancelAnimationFrame(carouselFrame);
     carouselFrame = null;
-    lastTick = 0;
-    if (!motionAllowed() || carouselPaused || !visible || hovered || focused || dragging || document.hidden || !cycle) return;
-    normalizePosition();
+    if (!motionAllowed() || carouselPaused || !visible || hovered || focused || dragging || document.hidden || !step) return;
+    resumeAt = Math.max(resumeAt, performance.now() + 3500);
     carouselFrame = requestAnimationFrame(tick);
   }
   function advance(direction, manual = false) {
-    normalizePosition();
-    const relative = (carousel.scrollLeft - cycle) / step;
-    const next = direction > 0 ? Math.floor(relative + .02) + 1 : Math.ceil(relative - .02) - 1;
-    const target = cycle + next * step;
-    resumeAt = performance.now() + 1500;
-    carousel.scrollTo({left: target, behavior: behavior()});
-    if (manual) announcement.textContent = `Showing ${cards[modulo(next, cards.length)].querySelector('h3').textContent} and more dishes.`;
+    const next = goTo(currentIndex() + direction);
+    resumeAt = performance.now() + 5000;
+    if (manual) announcement.textContent = `Showing ${cards[next].querySelector('h3').textContent} and more dishes.`;
   }
   carousel.addEventListener('scroll', refreshCounter, {passive: true});
   controls.hidden = false;
@@ -155,11 +121,11 @@
   carousel.addEventListener('keydown', event => {
     if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key) || event.target !== carousel) return;
     event.preventDefault();
-    if (event.key === 'Home' || event.key === 'End') carousel.scrollTo({left: cycle + (event.key === 'Home' ? 0 : (cards.length - 1) * step), behavior: behavior()});
+    if (event.key === 'Home' || event.key === 'End') carousel.scrollTo({left: event.key === 'Home' ? 0 : maxLeft(), behavior: behavior()});
     else advance(event.key === 'ArrowRight' ? 1 : -1, true);
     schedule();
   });
-  carousel.querySelectorAll('.signature-slide').forEach(card => {
+  cards.forEach(card => {
     card.addEventListener('pointerenter', event => { if (event.pointerType === 'mouse') { hovered = true; schedule(); } });
     card.addEventListener('pointerleave', event => { if (event.pointerType === 'mouse') { hovered = false; schedule(); } });
   });
@@ -171,10 +137,10 @@
     schedule();
   });
   carousel.addEventListener('pointerdown', () => { dragging = true; schedule(); }, {passive: true});
-  const endDrag = () => { if (!dragging) return; dragging = false; resumeAt = performance.now() + 1500; schedule(); };
+  const endDrag = () => { if (!dragging) return; dragging = false; resumeAt = performance.now() + 5000; schedule(); };
   addEventListener('pointerup', endDrag, {passive: true});
   addEventListener('pointercancel', endDrag, {passive: true});
-  carousel.addEventListener('wheel', () => { resumeAt = performance.now() + 1500; }, {passive: true});
+  carousel.addEventListener('wheel', () => { resumeAt = performance.now() + 5000; }, {passive: true});
   measureCarousel();
   new ResizeObserver(() => { measureCarousel(); schedule(); }).observe(carousel);
   if ('IntersectionObserver' in window) new IntersectionObserver(entries => { visible = entries[0].isIntersecting; schedule(); }, {threshold: .1}).observe(carousel);
