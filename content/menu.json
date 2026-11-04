@@ -245,13 +245,14 @@
         {
           "name": "Coconut Chicken Mini Hot Pot",
           "price": 20.0,
-          "description": "酱汁：姜+红皮蒜+青柠+酱油 猪肚，玉米，金针菇，冬瓜，竹笙，海鲜菇 配米饭",
+          "description": "Pork tripe, corn, enoki mushrooms, winter melon, bamboo fungus and seafood mushrooms, with a ginger, garlic, lime and soy dipping sauce. Served with rice.",
           "image": "/assets/images/dishes/coconut-chicken-mini-hot-pot-set-960.webp",
           "imageSmall": "/assets/images/dishes/coconut-chicken-mini-hot-pot-set-480.webp",
           "width": 960,
           "height": 576,
           "alt": "Coconut Chicken Mini Hot Pot Set",
-          "imageSourceName": "椰子鸡套餐"
+          "imageSourceName": "椰子鸡套餐",
+          "sourceDescription": "酱汁：姜+红皮蒜+青柠+酱油 猪肚，玉米，金针菇，冬瓜，竹笙，海鲜菇 配米饭"
         },
         {
           "name": "Tomato Mini Hot Pot",

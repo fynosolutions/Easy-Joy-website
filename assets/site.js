@@ -126,13 +126,14 @@ const film = document.querySelector('#film-player');
 const filmPlay = document.querySelector('.film-play');
 if (film && filmPlay) {
   filmPlay.hidden = false;
+  film.controls = false;
   const startFilm = async () => {
     try { await film.play(); filmPlay.hidden = true; }
     catch { filmPlay.hidden = true; document.querySelector('.film-error').hidden = false; film.focus(); }
   };
   filmPlay.addEventListener('click', startFilm);
   document.querySelector('.film-watch-link')?.addEventListener('click', () => { film.focus(); startFilm(); });
-  film.addEventListener('play', () => { filmPlay.hidden = true; });
+  film.addEventListener('play', () => { filmPlay.hidden = true; film.controls = true; });
   film.addEventListener('ended', () => { filmPlay.hidden = false; });
   film.addEventListener('error', () => { filmPlay.hidden = true; document.querySelector('.film-error').hidden = false; });
 }
@@ -155,3 +156,17 @@ deliveryMenus.forEach(menu => {
   });
 });
 document.addEventListener('click', event => deliveryMenus.forEach(menu => { if (!menu.contains(event.target)) menu.open = false; }));
+
+// Tap-to-play videos: hide native controls behind one play button until the guest starts the film.
+document.querySelectorAll('video[data-tap-play]').forEach(video => {
+  const button = video.parentElement.querySelector('.tap-play');
+  if (!button) return;
+  video.controls = false;
+  button.hidden = false;
+  const start = async () => {
+    video.controls = true; button.hidden = true;
+    try { await video.play(); } catch { video.focus(); }
+  };
+  button.addEventListener('click', start);
+  video.addEventListener('play', () => { button.hidden = true; video.controls = true; });
+});

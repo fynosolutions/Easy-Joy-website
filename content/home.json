@@ -11,21 +11,20 @@
   },
   "scenes": {
     "hotPot": {
-      "image": "/assets/images/home/mulberry-storefront-1920.webp",
-      "alt": "Easy Joy storefront and outdoor tables at 145 Mulberry Street",
-      "position": "center center",
-      "imageSmall": "/assets/images/home/mulberry-storefront-960.webp"
-    },
-    "dimSum": {
-      "image": "/assets/images/dishes/shanghai-soup-dumplings-960.webp",
-      "alt": "Shanghai soup dumplings in a bamboo steamer",
+      "image": "/assets/images/dishes/duck-pickled-radish-broth-960.webp",
+      "alt": "Duck and pickled radish hot pot broth",
       "position": "center center"
     },
+    "dimSum": {
+      "image": "/assets/images/dishes/siu-mai-assortment-960.webp",
+      "alt": "An assortment of siu mai in a bamboo steamer",
+      "position": "28% center"
+    },
     "dining": {
-      "image": "/assets/images/home/dining-room-1920.webp",
-      "alt": "Warm lanterns and hot pot tables in the Easy Joy dining room",
-      "position": "65% center",
-      "imageSmall": "/assets/images/home/dining-room-960.webp"
+      "image": "/assets/images/home/dining-atmosphere-1920.webp",
+      "imageSmall": "/assets/images/home/dining-atmosphere-960.webp",
+      "alt": "Guests at dinner under the lanterns in the Easy Joy dining room",
+      "position": "center center"
     }
   },
   "atmosphere": [
@@ -33,13 +32,13 @@
       "image": "/assets/images/home/entrance-1920.webp",
       "imageSmall": "/assets/images/home/entrance-960.webp",
       "alt": "The Easy Joy entrance and dining tables on Mulberry Street",
-      "caption": "A warm welcome on Mulberry Street."
+      "caption": "The entrance and front tables."
     },
     {
       "image": "/assets/images/home/dining-atmosphere-1920.webp",
       "imageSmall": "/assets/images/home/dining-atmosphere-960.webp",
       "alt": "Guests enjoying a meal in the Easy Joy dining room",
-      "caption": "Good food. Even better company."
+      "caption": "Dinner service in the main room."
     }
   ]
 }

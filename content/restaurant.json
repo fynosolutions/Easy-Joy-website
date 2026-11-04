@@ -40,7 +40,7 @@
   ],
   "hoursMessage": "Mon - Sun: 10:00 AM - 10:30 PM",
   "menuPriceContext": "Online ordering menu · USD",
-  "menuNotice": "Prices and sold-out labels reflect the online ordering menu captured on October 20, 2026. Check MealKeyway for current prices, availability and any options or additional charges. These are online menu prices, not AYCE admission prices.",
+  "menuNotice": "Pickup menu prices as of October 2026. The online ordering page shows current prices, availability and any options. These are pickup prices, not all-you-can-eat prices.",
   "lastReviewed": "2026-10-20",
   "navigation": [
     {
@@ -79,5 +79,74 @@
       "name": "DoorDash",
       "url": "https://www.doordash.com/store/35886623/"
     }
-  ]
+  ],
+  "reservationUrl": "https://www.yelp.com/reservations/easy-joy-dim-sum-and-ayce-hot-pot-new-york",
+  "priceRange": "$$",
+  "geo": {
+    "latitude": 40.7188999,
+    "longitude": -73.9975456
+  },
+  "profiles": [
+    {
+      "name": "Google",
+      "icon": "google",
+      "group": "reviews",
+      "url": "https://maps.app.goo.gl/HgKMhWXqBt28XdHA9"
+    },
+    {
+      "name": "Yelp",
+      "icon": "yelp",
+      "group": "reviews",
+      "url": "https://www.yelp.com/biz/easy-joy-dim-sum-and-ayce-hot-pot-new-york"
+    },
+    {
+      "name": "Tripadvisor",
+      "icon": "tripadvisor",
+      "group": "reviews",
+      "url": "https://www.tripadvisor.com/Restaurant_Review-g60763-d34291343-Reviews-Easy_Joy_Dim_Sum_AYCE_Hot_Pot-New_York_City_New_York.html"
+    },
+    {
+      "name": "Apple Maps",
+      "icon": "apple",
+      "group": "reviews",
+      "url": "https://maps.apple.com/place?auid=13595933395073062209"
+    },
+    {
+      "name": "Instagram",
+      "icon": "instagram",
+      "group": "social",
+      "url": "https://www.instagram.com/easyjoybuffet/"
+    },
+    {
+      "name": "TikTok",
+      "icon": "tiktok",
+      "group": "social",
+      "url": "https://www.tiktok.com/@easyjoyhotpot"
+    },
+    {
+      "name": "DoorDash",
+      "icon": "doordash",
+      "group": "order",
+      "url": "https://www.doordash.com/store/35886623/"
+    },
+    {
+      "name": "Uber Eats",
+      "icon": "ubereats",
+      "group": "order",
+      "url": "https://www.ubereats.com/store/easy-joy-dim-sum-hot-pot-buffet-%E6%84%8F%E4%B8%AD%E4%BA%BA%E7%82%B9%E5%BF%83%E7%81%AB%E9%94%85%E8%87%AA%E5%8A%A9-145-mulberry-street/7ObUBkSuUKCK1aTC7nHx_g"
+    },
+    {
+      "name": "Grubhub",
+      "icon": "grubhub",
+      "group": "order",
+      "url": "https://www.grubhub.com/restaurant/easy-joy-ayce-dim-sum-hot-pot-145-mulberry-st-new-york/12387504"
+    },
+    {
+      "name": "ezCater",
+      "icon": "ezcater",
+      "group": "order",
+      "url": "https://www.ezcater.com/catering/easy-joy-dim-sum-and-ayce-hot-pot-3"
+    }
+  ],
+  "profilesChecked": "2026-11-04: each URL opened in a real browser (Yelp blocks automated visits; its address is the long-standing business page)."
 }

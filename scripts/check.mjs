@@ -82,7 +82,7 @@ let lastSection=-1;
 for(const marker of homeSections){const next=homeHTML.indexOf(marker);assert.ok(next>lastSection,`Home section missing or out of order: ${marker}`);lastSection=next;}
 assert.equal((homeHTML.match(/class="signature-slide"/g)||[]).length,10);
 assert.ok(!homeHTML.includes('class="closing"')&&!homeHTML.includes('class="category-grid"'));
-assert.ok(homeHTML.includes('Online pickup menu prices are separate from dine-in AYCE pricing.'));
+assert.ok(homeHTML.includes('$28 before 5 PM.')&&homeHTML.includes('/faq/#ayce-price'),'Home states AYCE prices and links to the details');
 const reviews=JSON.parse(await fs.readFile(path.join(root,'content/reviews.json'),'utf8'));
 const approvedReviews=reviews.items.filter(review=>review.publicationStatus==='approved');
 assert.equal((homeHTML.match(/class="review-card"/g)||[]).length,approvedReviews.length);
@@ -116,3 +116,23 @@ for(const category of categories){
 }
 assert.deepEqual([...html.matchAll(/<article id="(dish-[^"]+)"/g)].map(m=>m[1]),expectedIds,'Full menu HTML must follow source order');
 console.log(`PASS: source menu order and available official photos (${categories.flatMap(c=>c.items).filter(i=>i.image).length}/${total}); stable dish anchors.`);
+
+// 2026-11-04 design pass: AI search readiness, platform row, iPhone-safe glyphs.
+{
+ const llms=await fs.readFile(path.join(dist,'llms.txt'),'utf8');
+ assert.ok(llms.includes('$28 per person every day before 5 PM')&&llms.includes('Reservations:'),'llms.txt carries prices and booking link');
+ const faqHTML=await fs.readFile(path.join(dist,'faq','index.html'),'utf8');
+ assert.ok(faqHTML.includes('"@type":"FAQPage"'),'FAQPage schema on /faq/');
+ const homeLd=JSON.parse(homeHTML.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
+ const rest=homeLd['@graph'].find(x=>x['@type']==='Restaurant');
+ assert.equal(rest.sameAs.length,10,'Restaurant.sameAs lists every platform');
+ assert.ok(rest.acceptsReservations&&rest.geo&&rest.priceRange,'Restaurant schema has booking, geo and price range');
+ for(const route of ['/','/menu/','/about/','/facility/','/location/','/contact/','/faq/','/gallery/']){
+  const html=await fs.readFile(path.join(dist,route,'index.html'),'utf8');
+  const text=html.replace(/<script[\s\S]*?<\/script>/g,'').replace(/<[^>]+>/g,' ');
+  assert.ok(!/[↗↓↑←→⌄☰★▶]/.test(text),`Unicode glyph left in visible text on ${route} (renders as emoji on iPhone)`);
+  assert.ok(!/MealKeyway|captured|Reviewed on/.test(text),`Internal wording visible on ${route}`);
+  assert.equal((html.match(/class="platform-link"/g)||[]).length>=10,true,`Platform icon row missing on ${route}`);
+ }
+ console.log('PASS: AI-search files and schema, platform icon row on every page, SVG glyphs, no internal wording.');
+}

@@ -17,7 +17,7 @@
   },
   "contact": {
     "title": "Contact & Order Online | Easy Joy NYC",
-    "description": "Call Easy Joy at (929) 243-6130, find our Chinatown address or open our MealKeyway online ordering page for pickup."
+    "description": "Call Easy Joy at (929) 243-6130, reserve a table, find our Chinatown address or order pickup online."
   },
   "faq": {
     "title": "Menu, Ordering & Visiting FAQs | Easy Joy NYC",
@@ -31,6 +31,13 @@
       "linkLabel": "Location & directions"
     },
     {
+      "question": "How much is all-you-can-eat hot pot at Easy Joy?",
+      "answer": "All-you-can-eat hot pot is $28 per person every day before 5 PM, and includes a rotating selection of 4–6 dim sum from the dim sum cart. After 5 PM, all-you-can-eat hot pot is $43 per person; dim sum is ordered à la carte at dinner. Tax and tip are extra. Prices can change, so call the restaurant to confirm before you visit.",
+      "external": "phone",
+      "linkLabel": "Call the restaurant",
+      "id": "ayce-price"
+    },
+    {
       "question": "What is on the Easy Joy menu?",
       "answer": "The online menu includes premium dim sum, buns and dumplings, rice noodle rolls, BBQ, fried rice and noodles, mini hot pots, malatang, hot pot ingredients, soup bases and more.",
       "link": "/menu/",
@@ -38,19 +45,42 @@
     },
     {
       "question": "Can I order online for pickup?",
-      "answer": "Yes. Easy Joy's MealKeyway ordering page offers a pickup option. Open that page for the current menu, pickup times and checkout.",
+      "answer": "Yes. Order pickup online from the restaurant's ordering page, which shows the current menu, pickup times and checkout.",
       "external": "order",
-      "linkLabel": "Order through MealKeyway"
+      "linkLabel": "Order pickup online",
+      "plain": true
     },
     {
-      "question": "Are these all-you-can-eat hot pot prices?",
-      "answer": "No. The prices on this website come from the online ordering menu, including individual hot pot ingredients and soup bases. Call Easy Joy to ask about current AYCE pricing and rules.",
+      "question": "Can I make a reservation?",
+      "answer": "Yes. Reserve on Yelp or from the Reserve a table button on Google Maps. Same-day tables can be booked up to 3 hours ahead; for larger groups, call the restaurant.",
+      "link": "https://www.yelp.com/reservations/easy-joy-dim-sum-and-ayce-hot-pot-new-york",
+      "linkLabel": "Reserve on Yelp",
+      "id": "reservations"
+    },
+    {
+      "question": "Does Easy Joy deliver?",
+      "answer": "Yes. Order delivery on DoorDash, Uber Eats or Grubhub, or order pickup online directly from the restaurant.",
+      "external": "order",
+      "linkLabel": "Order pickup online",
+      "id": "delivery",
+      "plain": true
+    },
+    {
+      "question": "Does Easy Joy cater office lunches and events?",
+      "answer": "Yes. Easy Joy takes catering orders on ezCater for dim sum, skewers and more. Place catering orders at least 24 hours ahead; ezCater shows the current minimum order and delivery fee.",
+      "link": "https://www.ezcater.com/catering/easy-joy-dim-sum-and-ayce-hot-pot-3",
+      "linkLabel": "Order catering on ezCater",
+      "id": "catering"
+    },
+    {
+      "question": "Are the menu prices on this website all-you-can-eat prices?",
+      "answer": "No. Prices on this website come from the online pickup menu, including individual hot pot ingredients and soup bases. All-you-can-eat pricing is listed in the question above.",
       "external": "phone",
       "linkLabel": "Call the restaurant"
     },
     {
-      "question": "Which hot pot soup bases are listed online?",
-      "answer": "The Soup Base Delivery category lists Rich Tomato Broth, Coconut Chicken Broth, Pork Bone Collagen Broth and Tom Yum Goong Soup. Each is listed at $9.99 in the captured online menu.",
+      "question": "Which hot pot soup bases can I order for pickup?",
+      "answer": "For pickup, you can order Rich Tomato Broth, Coconut Chicken Broth, Pork Bone Collagen Broth and Tom Yum Goong Soup, $9.99 each.",
       "link": "/menu/soup-base-delivery/",
       "linkLabel": "Soup bases & prices"
     },
@@ -62,7 +92,7 @@
     },
     {
       "question": "How can I ask about allergies or dietary requirements?",
-      "answer": "Call the restaurant before ordering to discuss ingredients, preparation and your requirements. Menu names alone do not confirm whether a dish meets a particular dietary requirement.",
+      "answer": "Call the restaurant before you order, and tell us about allergies when you visit. We'll check ingredients and preparation for each dish with you.",
       "external": "phone",
       "linkLabel": "Discuss your requirements"
     }

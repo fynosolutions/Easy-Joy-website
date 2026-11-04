@@ -846,6 +846,39 @@
   },
   "lifestylePhotos": [
     {
+      "id": "skewers-on-the-grill",
+      "sourceFile": "material/photos/others/烤串 烤.jpg",
+      "englishName": "Fresh from the grill",
+      "image": "/assets/images/lifestyle/skewers-on-the-grill-960.webp",
+      "imageSmall": "/assets/images/lifestyle/skewers-on-the-grill-480.webp",
+      "width": 640,
+      "height": 960,
+      "alt": "Skewers cooking over the grill at Easy Joy"
+    },
+    {
+      "id": "squid-on-the-grill",
+      "sourceFile": "material/photos/others/烤鱿鱼.jpg",
+      "englishName": "Grilled squid",
+      "image": "/assets/images/lifestyle/squid-on-the-grill-960.webp",
+      "imageSmall": "/assets/images/lifestyle/squid-on-the-grill-480.webp",
+      "width": 640,
+      "height": 960,
+      "alt": "Squid skewers cooking on the grill at Easy Joy"
+    },
+    {
+      "id": "dining-atmosphere",
+      "englishName": "Dinner at Easy Joy",
+      "image": "/assets/images/home/dining-atmosphere-1920.webp",
+      "imageSmall": "/assets/images/home/dining-atmosphere-960.webp",
+      "imageSmallWidth": 960,
+      "width": 1920,
+      "height": 1281,
+      "alt": "Guests at dinner in the Easy Joy dining room",
+      "usedIn": "home atmosphere, gallery"
+    }
+  ],
+  "diningPhotos": [
+    {
       "id": "dining-room",
       "sourceFile": "material/photos/others/环境3.jpg",
       "englishName": "A warm welcome",
@@ -872,26 +905,6 @@
       "enhancedSourceFile": "assets/images/lifestyle/entrance-hd-master.png",
       "enhancement": "AI-assisted clarity restoration, 2026-10-28; original photograph retained.",
       "imageSmallWidth": 768
-    },
-    {
-      "id": "skewers-on-the-grill",
-      "sourceFile": "material/photos/others/烤串 烤.jpg",
-      "englishName": "Fresh from the grill",
-      "image": "/assets/images/lifestyle/skewers-on-the-grill-960.webp",
-      "imageSmall": "/assets/images/lifestyle/skewers-on-the-grill-480.webp",
-      "width": 640,
-      "height": 960,
-      "alt": "Skewers cooking over the grill at Easy Joy"
-    },
-    {
-      "id": "squid-on-the-grill",
-      "sourceFile": "material/photos/others/烤鱿鱼.jpg",
-      "englishName": "Grilled squid",
-      "image": "/assets/images/lifestyle/squid-on-the-grill-960.webp",
-      "imageSmall": "/assets/images/lifestyle/squid-on-the-grill-480.webp",
-      "width": 640,
-      "height": 960,
-      "alt": "Squid skewers cooking on the grill at Easy Joy"
     }
   ]
 }
