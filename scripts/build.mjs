@@ -61,7 +61,7 @@ await page('/location/',pages.location,`${intro('HOURS & LOCATION','Your next st
   </div>
   <div class="location-services">
     <section><h2>Pickup &amp; Delivery</h2><p>Order pickup online or choose a delivery platform.</p><a href="${e(r.orderUrl)}">Order online ↗</a></section>
-    <section><h2>Reservations</h2><p>Book a table on Yelp. For larger groups, call the restaurant.</p><a class="text-link" href="${e(r.reservationUrl)}" target="_blank" rel="noopener">Reserve a table ↗</a></section>
+    <section><h2>Reservations</h2><p>Book a table on Yelp. For larger groups, call the restaurant.</p><a class="button" href="${e(r.reservationUrl)}" target="_blank" rel="noopener">Reserve a table ↗</a></section>
   </div>
 </div><section class="container location-page-map" aria-label="Restaurant map">${locationMap(r)}</section>`, 'Location',[crumb('/location/','Location')]);
 await page('/facility/',{...pages.facility,title:'Dining at Easy Joy | Hot Pot, Dim Sum & BBQ Skewers, NYC',description:'Take a look inside Easy Joy on Mulberry Street. Explore our dining room and restaurant film, and plan your hot pot, dim sum and BBQ skewers visit.'},`${intro('DINING AT EASY JOY','Inside<br><em>Easy Joy.</em>','Gather over all-you-can-eat hot pot, with dim sum and BBQ skewers à la carte, in Chinatown.')}

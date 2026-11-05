@@ -214,3 +214,8 @@
 .menu-card .signature-copy h3{color:#2b1d18}
 .menu-card .signature-link{border-top-color:#2b1d1826;color:#2b1d18}
 .menu-card:hover{color:#2b1d18}
+/* Menu cards: photo on top, words below — no overlap (2026-11-05) */
+.signature-slide.menu-card{display:flex;flex-direction:column}
+.menu-card .signature-image{position:relative;inset:auto;flex:1 1 auto;min-height:0;width:calc(100% - 36px);height:auto;margin:20px 18px 0;object-fit:contain}
+.menu-card .signature-copy{position:relative;inset:auto;flex:none;padding:16px 24px 24px}
+.menu-card:hover .signature-image{transform:scale(1.03)}

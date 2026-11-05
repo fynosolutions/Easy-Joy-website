@@ -161,6 +161,14 @@ document.addEventListener('click', event => deliveryMenus.forEach(menu => { if (
 document.querySelectorAll('video[data-tap-play]').forEach(video => {
   const button = video.parentElement.querySelector('.tap-play');
   if (!button) return;
+  // Autoplay (muted, looping) while the film is on screen; guests can unmute with the controls.
+  if (video.hasAttribute('data-autoplay') && 'IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    video.muted = true;
+    new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) video.play().catch(() => {}); else video.pause();
+    }, {threshold: 0.35}).observe(video);
+    return;
+  }
   video.controls = false;
   button.hidden = false;
   const start = async () => {

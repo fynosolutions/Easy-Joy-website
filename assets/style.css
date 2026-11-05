@@ -183,3 +183,9 @@ figcaption,.location-note,.dining-photos figcaption,.film-caption{font-size:14px
 @media(max-width:700px){.about-storefront{grid-template-columns:1fr!important;gap:20px}.about-mark{width:160px}}
 .food-gallery-card figcaption small{font-size:13px}
 .film-story h3{text-wrap:balance}
+/* Header Reserve button (Yelp) — 2026-11-05 */
+.header-reserve{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 16px;border:1px solid var(--ink,#2b1d18);border-radius:4px;background:var(--ink,#2b1d18);color:#fff;text-decoration:none;white-space:nowrap}
+.header-reserve:hover{background:#000;color:#fff}
+.label-short{display:none}
+@media(max-width:1200px){.header-reserve{min-height:40px;padding:8px 12px;font-size:14px}}
+@media(max-width:600px){.header-row{grid-template-columns:1fr auto auto}.header-order{gap:6px}.header-reserve{min-height:40px;font-size:13px;padding:8px 10px}.header-order .label-long{display:none}.header-order .label-short{display:inline}.brand-name>span.brand-zh{display:none}}
