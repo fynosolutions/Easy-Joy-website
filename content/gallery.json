@@ -1,0 +1,191 @@
+{
+  "title": "A table worth<br><em>gathering around.</em>",
+  "lead": "Steam, lanterns, dim sum and skewers at 145 Mulberry St. Our own photos and film, plus moments from Instagram and TikTok.",
+  "sign": {
+    "image": "/assets/images/home/storefront-sign-705.webp",
+    "imageSmall": "/assets/images/home/storefront-sign-480.webp",
+    "w": 705,
+    "h": 1281,
+    "alt": "Easy Joy storefront with the yellow 意中人 sign on Mulberry Street"
+  },
+  "chapters": [
+    {
+      "id": "pot",
+      "title": "The pot",
+      "text": "Pick your broths, add the meat and let the table get to work. All-you-can-eat covers the hot pot.",
+      "layout": "main-left",
+      "items": [
+        {
+          "type": "photo",
+          "image": "/assets/images/gallery/pot-seafood-1600.webp",
+          "imageSmall": "/assets/images/gallery/pot-seafood-800.webp",
+          "w": 1600,
+          "h": 900,
+          "caption": "Seafood, straight to the pot",
+          "alt": "A plate of clams and mussels held over a copper hot pot",
+          "position": "center 60%"
+        },
+        {
+          "type": "instagram",
+          "handle": "fiannaeats",
+          "url": "https://www.instagram.com/p/DevI-KFsVux/",
+          "poster": "/assets/images/social/ig-fiannaeats.webp",
+          "w": 480,
+          "h": 853,
+          "caption": "A ladle of golden broth",
+          "alt": "A ladle lifting chicken from golden coconut broth"
+        },
+        {
+          "type": "instagram",
+          "handle": "dora19foodie",
+          "url": "https://www.instagram.com/p/Dd-U_mCMrCD/",
+          "poster": "/assets/images/social/ig-dora19foodie.webp",
+          "w": 480,
+          "h": 853,
+          "caption": "Marbled beef, straight to the pot",
+          "alt": "Thin slices of marbled beef lifted with chopsticks"
+        }
+      ]
+    },
+    {
+      "id": "dim-sum",
+      "title": "A little dim sum, too",
+      "text": "Made by hand and steamed fresh. Order à la carte any time; before 5 PM, 4–6 kinds come around on the cart with the $28 hot pot.",
+      "layout": "main-right",
+      "items": [
+        {
+          "type": "tiktok",
+          "handle": "easyjoyhotpot",
+          "url": "https://www.tiktok.com/@easyjoyhotpot/video/7704734502936939789",
+          "poster": "/assets/images/social/tt-siumai.webp",
+          "loop": "/assets/video/social/tt-siumai.mp4",
+          "w": 540,
+          "h": 960,
+          "caption": "Golden shrimp siu mai",
+          "alt": "Shrimp siu mai topped with orange roe in a bamboo steamer",
+          "position": "70% center"
+        },
+        {
+          "type": "tiktok",
+          "handle": "easyjoyhotpot",
+          "url": "https://www.tiktok.com/@easyjoyhotpot/video/7698263841590775071",
+          "poster": "/assets/images/social/tt-handmade.webp",
+          "loop": "/assets/video/social/tt-handmade.mp4",
+          "w": 540,
+          "h": 960,
+          "caption": "Wrappers pressed by hand, every day",
+          "alt": "Hands pressing dumpling wrappers on a floured board"
+        },
+        {
+          "type": "photo",
+          "image": "/assets/images/gallery/steamer-lid-1600.webp",
+          "imageSmall": "/assets/images/gallery/steamer-lid-800.webp",
+          "w": 1600,
+          "h": 900,
+          "caption": "Lifting the lid on fresh dim sum",
+          "alt": "A hand lifting the lid of a bamboo steamer from a stack of yellow steamers",
+          "position": "center"
+        }
+      ]
+    },
+    {
+      "id": "grill",
+      "title": "Fresh from the grill",
+      "text": "Skewers grilled over an open flame, ordered à la carte.",
+      "layout": "wide-then-row",
+      "items": [
+        {
+          "type": "photo",
+          "image": "/assets/images/gallery/grill-fire-1600.webp",
+          "imageSmall": "/assets/images/gallery/grill-fire-800.webp",
+          "w": 1600,
+          "h": 900,
+          "caption": "Skewers over the open flame",
+          "alt": "Skewers lined up over an open flame on the grill",
+          "position": "center"
+        },
+        {
+          "type": "photo",
+          "image": "/assets/images/gallery/grill-turn-1600.webp",
+          "imageSmall": "/assets/images/gallery/grill-turn-800.webp",
+          "w": 1600,
+          "h": 900,
+          "caption": "Turned by hand, a few at a time",
+          "alt": "A cook in black gloves turning skewers over the smoking grill",
+          "position": "35% 60%"
+        },
+        {
+          "type": "photo",
+          "image": "/assets/images/lifestyle/squid-on-the-grill-960.webp",
+          "imageSmall": "/assets/images/lifestyle/squid-on-the-grill-480.webp",
+          "w": 640,
+          "h": 960,
+          "caption": "Squid on the grill",
+          "alt": "Squid skewers cooking on the grill",
+          "position": "center"
+        },
+        {
+          "type": "photo",
+          "image": "/assets/images/lifestyle/skewers-on-the-grill-960.webp",
+          "imageSmall": "/assets/images/lifestyle/skewers-on-the-grill-480.webp",
+          "w": 640,
+          "h": 960,
+          "caption": "Lamb skewers, cooked to order",
+          "alt": "Lamb skewers cooking on the grill",
+          "position": "center"
+        }
+      ]
+    },
+    {
+      "id": "together",
+      "title": "Better together",
+      "text": "Bring your friends and family. Big tables, lanterns and the yellow sign on Mulberry Street.",
+      "layout": "wide-then-pins",
+      "items": [
+        {
+          "type": "photo",
+          "image": "/assets/images/lifestyle/dining-room-hd-1536.webp",
+          "imageSmall": "/assets/images/lifestyle/dining-room-hd-768.webp",
+          "w": 1536,
+          "h": 1024,
+          "caption": "Our dining room on Mulberry Street",
+          "alt": "The Easy Joy dining room with hot pot tables and hanging lanterns",
+          "position": "center"
+        },
+        {
+          "type": "instagram",
+          "handle": "therealchefpaper",
+          "url": "https://www.instagram.com/p/DdAMx22J9hU/",
+          "poster": "/assets/images/social/ig-therealchefpaper.webp",
+          "w": 480,
+          "h": 853,
+          "caption": "Thumbs up under the yellow sign",
+          "alt": "A guest giving two thumbs up in front of the yellow Easy Joy sign"
+        },
+        {
+          "type": "instagram",
+          "handle": "bunvoyaage",
+          "url": "https://www.instagram.com/p/Db5nSPPxXrz/",
+          "poster": "/assets/images/social/ig-bunvoyaage.webp",
+          "w": 480,
+          "h": 853,
+          "caption": "A full spread, ready to cook",
+          "alt": "A hot pot table set with meat, vegetables and dipping sauces"
+        },
+        {
+          "type": "instagram",
+          "handle": "wei.nyc",
+          "url": "https://www.instagram.com/p/DdAOwfHCbc_/",
+          "poster": "/assets/images/social/ig-wei-nyc.webp",
+          "w": 600,
+          "h": 800,
+          "caption": "Dim sum and hot pot on one table",
+          "alt": "Soup dumplings, siu mai, egg tarts and sliced meat around a hot pot"
+        }
+      ]
+    }
+  ],
+  "heroPoster": "/assets/images/gallery/table-spread-1600.webp",
+  "heroLoop": "/assets/video/gallery-loop.mp4",
+  "heroLoopMobile": "/assets/video/gallery-loop-mobile.mp4"
+}

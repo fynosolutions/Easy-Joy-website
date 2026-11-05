@@ -47,3 +47,12 @@ Image sources (real vs AI-generated) are listed in `docs/HOME_IMAGE_SOURCES.json
 ## Round 3 (owner feedback, same day)
 - "Find your next favorite" now uses the printed menu's own dish photos (cutouts in `assets/images/menu-card/`), in menu order: hot pot broths and $43 meat → dim sum → BBQ → mains. Cards are menu-paper cream with dark text.
 - Dim sum card and the "One more basket" scene use photos from the printed menu (pages 16 and 15) instead of AI images. BBQ card uses the photo from the BBQ & beer A-frame board.
+
+## Round 4 (2026-11-05, owner feedback)
+- The film autoplays (muted, looping) while on screen. It now plays a 24-second highlight loop (3 MB, 1 MB on phones) instead of streaming the 65 MB film; "Watch the full film with sound (2:48)" opens the full version.
+- Menu cards: photo above the text, no overlap.
+- Header: Yelp "Reserve a table" button on every page, the same size as Order Pickup / Order Delivery, with the Yelp mark. Desktop header is two rows (brand + buttons, then navigation) so six links fit; Gallery is now in the main navigation.
+- The owner's red lion-pot seal sits beside the logo in the header and footer (trial, `assets/lion-stamp.webp`).
+- Footer platform row: each group wraps into two rows; new Catering group (ezCater, Sharebite). Sharebite has no public restaurant page, so it links to sharebite.com and is left out of `sameAs`.
+- Gallery rebuilt as a meal: The pot → dim sum → the grill → Better together, mixing our photos and film with Instagram collab posts (cover + creator credit + link to the post; creators' videos are not re-hosted) and our own TikTok loops. All 60 food photos follow, with filters (no photos dropped). Concept compared with a Codex plan (`gallery: concept A + yellow-sign entrance from B`).
+- `npm run check` has a new block for the header button, lion stamp, gallery posts, every food photo and loop size (negative control run).

@@ -7,12 +7,14 @@ import {renderAbout} from '../lib/about.mjs';
 import {drinksMenu} from '../lib/drinks.mjs';
 import {locationMap} from '../lib/map.mjs';
 import {galleryCard} from '../lib/media.mjs';
+import {renderGallery} from '../lib/gallery.mjs';
 import {renderHome,diningExperience} from '../lib/home.mjs';
 const root=fileURLToPath(new URL('../',import.meta.url));
 const read=async name=>JSON.parse(await readFile(path.join(root,'content',name),'utf8'));
 const [restaurant,menu,pages,about]=await Promise.all([read('restaurant.json'),read('menu.json'),read('pages.json'),read('about.json')]);
 const reviews=await read('reviews.json');
 const media=await read('media.json');
+const gallery=await read('gallery.json');
 const home=await read('home.json');
 if (!home.hero.videoSrc && await access(path.join(root,'assets/video/hero-landscape.mp4')).then(() => true, () => false)) home.hero.videoSrc='/assets/video/hero-landscape.mp4';
 // Dropping the landscape MP4 into this path enables it on the next build.
@@ -50,7 +52,7 @@ for(const c of categories){
  const examples=c.items.slice(0,3).map(x=>x.name).join(', ');
  await page(route,{title:`${c.name} Menu & Prices | Easy Joy NYC`,description:`Explore Easy Joy's ${c.name} menu in Chinatown, New York, including ${examples}. View pickup menu prices and order online.`},`${intro('EASY JOY · MENU',e(c.name),`Explore ${c.items.length} dishes in this online menu category. Prices are in USD.`,`<a class="text-link" href="/menu/">← All menu categories</a><p class="menu-notice">${e(r.menuNotice)}</p>`)}<div class="container category-page"><div class="dish-grid">${orderedDishes(c,true)}</div><div class="actions section-actions"><a class="button" href="${e(r.orderUrl)}">Order online ↗</a><a class="text-link" href="/menu/">Browse every category ↗</a></div></div>`, 'Menu',[menuSchema(r,[c],route),crumb(route,c.name,true)]);
 }
-await page('/gallery/',{title:'Food Gallery | Easy Joy Hot Pot, Dim Sum & BBQ Skewers, NYC',description:'Explore Easy Joy’s dim sum, hot pot, grilled skewers, rice dishes and congee in our food photo gallery. Visit us in New York’s Chinatown.'},`${intro('THE EASY JOY TABLE','Our food,<br><em>up close.</em>',media.galleryNotice,`<div class="actions"><a class="button" href="/menu/">Menu & prices ↗</a><a class="text-link" href="/facility/#easyjoy-film">Watch our film ↗</a></div>`)}<div class="container gallery-categories"><nav aria-label="Food gallery categories">${media.groups.map(group=>`<a href="#gallery-${group.id}">${e(group.label)}</a>`).join('')}</nav></div>${media.lifestylePhotos?.length ? `<section class="section container gallery-group" id="gallery-at-easyjoy"><div class="section-heading"><h2>At Easy Joy</h2></div><div class="food-gallery-grid lifestyle-gallery-grid">${media.lifestylePhotos.map(galleryCard).join('')}</div></section>` : ''}${media.groups.map(group=>`<section class="section container gallery-group" id="gallery-${group.id}"><div class="section-heading"><h2>${e(group.label)}</h2></div><div class="food-gallery-grid">${(list=>list.length>3&&list.length%3===1?list.slice(0,-1):list)(media.photos.filter(photo=>photo.group===group.id)).map(galleryCard).join('')}</div></section>`).join('')}`, '',[crumb('/gallery/','Gallery')]);
+await page('/gallery/',{title:'Gallery | Easy Joy Hot Pot, Dim Sum & BBQ Skewers, NYC',description:'Photos and short films from Easy Joy: bubbling hot pot, handmade dim sum and BBQ skewers at 145 Mulberry St, plus moments from our Instagram and TikTok.'},renderGallery({r,media,gallery,intro}), 'Gallery',[crumb('/gallery/','Gallery')]);
 await page('/about/',pages.about,renderAbout(r,about),'About',[crumb('/about/','About')]);
 await page('/location/',pages.location,`${intro('HOURS & LOCATION','Your next stop:<br><em>Mulberry Street.</em>','Easy Joy is at 145 Mulberry St in Manhattan’s Chinatown, New York.')}<section class="container wayfinding" aria-labelledby="wayfinding-heading"><figure class="wayfinding-photo"><img src="/assets/images/home/storefront-sign-705.webp" srcset="/assets/images/home/storefront-sign-480.webp 480w, /assets/images/home/storefront-sign-705.webp 705w" sizes="(max-width:700px) calc(100vw - 40px), 560px" width="705" height="1281" alt="Easy Joy storefront with the yellow 意中人 sign and outdoor tables on Mulberry Street" loading="lazy" decoding="async"></figure><div class="wayfinding-copy"><p class="eyebrow">FINDING US</p><h2 id="wayfinding-heading">Look for the<br><em>yellow sign.</em></h2><p>Easy Joy is on Mulberry Street between Grand St and Hester St, under the yellow <span lang="zh">意中人</span> sign. Canal St station is about a 5-minute walk away.</p><a class="button" href="${e(r.directionsUrl)}">Get directions ↗</a></div></section>
 <div class="container location-content">

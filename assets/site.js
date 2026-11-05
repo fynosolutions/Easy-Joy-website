@@ -178,3 +178,39 @@ document.querySelectorAll('video[data-tap-play]').forEach(video => {
   button.addEventListener('click', start);
   video.addEventListener('play', () => { button.hidden = true; video.controls = true; });
 });
+
+// Gallery: muted loops play only while on screen; food photos show 12 at first, with a filter.
+(() => {
+  const loops = [...document.querySelectorAll('video[data-gallery-loop]')];
+  const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (loops.length && 'IntersectionObserver' in window) {
+    if (still) loops.forEach(v => { v.controls = true; });
+    else {
+      const io = new IntersectionObserver(entries => entries.forEach(({target: v, isIntersecting}) => {
+        if (isIntersecting) { v.muted = true; v.play().catch(() => { v.controls = true; }); } else v.pause();
+      }), {threshold: 0.5});
+      loops.forEach(v => io.observe(v));
+    }
+  }
+  const grid = document.querySelector('.g-photo-grid');
+  if (!grid) return;
+  const cards = [...grid.children], more = document.querySelector('.g-more'), count = document.querySelector('.g-count');
+  const buttons = [...document.querySelectorAll('[data-g-filter]')];
+  const step = matchMedia('(max-width: 600px)').matches ? 8 : 12;
+  let group = 'all', expanded = false;
+  const render = () => {
+    const match = cards.filter(c => group === 'all' || c.dataset.gGroup === group);
+    cards.forEach(c => { c.hidden = true; });
+    match.forEach((c, i) => { c.hidden = !expanded && i >= step; });
+    const shown = match.filter(c => !c.hidden).length;
+    more.hidden = shown >= match.length;
+    more.textContent = `Show all ${match.length} photos`;
+    count.textContent = `Showing ${shown} of ${match.length}`;
+  };
+  buttons.forEach(b => b.addEventListener('click', () => {
+    group = b.dataset.gFilter; expanded = false;
+    buttons.forEach(x => x.setAttribute('aria-pressed', String(x === b))); render();
+  }));
+  more.addEventListener('click', () => { expanded = true; render(); });
+  render();
+})();

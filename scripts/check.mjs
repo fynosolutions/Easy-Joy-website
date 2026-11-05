@@ -159,3 +159,22 @@ console.log(`PASS: source menu order and available official photos (${categories
  assert.ok(!homeHTML.includes('class="hero-calligraphy"')&&homeHTML.includes('class="hero-mark"'),'Hero calligraphy sits beside the Easy Joy line, not over the photo');
  console.log('PASS: AYCE = hot pot only (dim sum & BBQ à la carte), no Mystery Box, carousel dishes unique, hero mark inline.');
 }
+
+// 2026-11-05 round 4: Yelp Reserve button in every header, lion stamp beside the logo, gallery with real social posts.
+{
+ for(const route of ['/','/menu/','/about/','/facility/','/location/','/contact/','/faq/','/gallery/']){
+  const html=await fs.readFile(path.join(dist,route,'index.html'),'utf8');
+  const header=html.slice(html.indexOf('<header class="site-header"'),html.indexOf('</header>'));
+  assert.ok(/class="header-reserve"[^>]*href="https:\/\/www\.yelp\.com\/reservations\//.test(header),`Header Yelp Reserve button missing on ${route}`);
+  assert.ok(header.includes('class="brand-lion"'),`Lion stamp missing beside the logo on ${route}`);
+ }
+ const gal=await fs.readFile(path.join(dist,'gallery/index.html'),'utf8');
+ const posts=[...gal.matchAll(/class="g-out" href="(https:\/\/www\.(?:instagram|tiktok)\.com\/[^"]+)"/g)].map(m=>m[1]);
+ assert.ok(posts.length>=7,'Gallery links at least 7 Instagram/TikTok posts');
+ assert.equal(new Set(posts).size,posts.length,'Gallery repeats a social post');
+ for(const m of gal.matchAll(/(?:src|poster)="(\/assets\/[^"]+)"/g)) await fs.access(path.join(dist,m[1])).catch(()=>assert.fail(`Gallery asset missing: ${m[1]}`));
+ assert.equal((gal.match(/data-g-group=/g)||[]).length,JSON.parse(await fs.readFile(path.join(root,'content/media.json'),'utf8')).photos.length,'Gallery must show every food photo (no silent drops)');
+ const loops=[...gal.matchAll(/<source src="(\/assets\/video\/[^"]+)"/g)].map(m=>m[1]);
+ for(const v of loops){ const {size}=await fs.stat(path.join(dist,v)); assert.ok(size<4e6,`Autoplay loop too heavy (${(size/1e6).toFixed(1)} MB): ${v}`); }
+ console.log(`PASS: Yelp Reserve + lion stamp in every header; gallery ${posts.length} social posts, all food photos, loops under 4 MB.`);
+}

@@ -137,5 +137,35 @@
     "source": "Printed menu dish cutouts (pages 4, 6, 11, 18, 19), trimmed and resized",
     "use": "Home carousel: Find your next favorite",
     "added": "2026-11-04"
+  },
+  {
+    "name": "lion-stamp",
+    "source": "Owner's red lion-pot seal (ip-mascot-review-1031/原稿13张/9.png), lion and steam cut out, text removed",
+    "use": "Beside the logo in header and footer (trial)",
+    "added": "2026-11-05"
+  },
+  {
+    "name": "social/ig-*",
+    "source": "Cover frames of Instagram collab posts on @easyjoybuffet (creators credited on the card, card links to the original post); fetched 2026-11-05",
+    "use": "Gallery",
+    "added": "2026-11-05"
+  },
+  {
+    "name": "social/tt-* and video/social/tt-*",
+    "source": "Own TikTok posts @easyjoyhotpot (6-second muted loops + cover frames)",
+    "use": "Gallery",
+    "added": "2026-11-05"
+  },
+  {
+    "name": "video/hot-pot-loop*",
+    "source": "24-second highlight loop cut from hot-pot-landscape.mp4 (the 2:48 film, 65 MB) for muted autoplay",
+    "use": "Home film section and gallery hero",
+    "added": "2026-11-05"
+  },
+  {
+    "name": "video/social/film-loop",
+    "source": "First 9 seconds of easyjoy-film.mp4, muted",
+    "use": "Gallery: Better together",
+    "added": "2026-11-05"
   }
 ]
