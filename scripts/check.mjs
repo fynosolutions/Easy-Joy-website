@@ -166,15 +166,19 @@ console.log(`PASS: source menu order and available official photos (${categories
   const html=await fs.readFile(path.join(dist,route,'index.html'),'utf8');
   const header=html.slice(html.indexOf('<header class="site-header"'),html.indexOf('</header>'));
   assert.ok(/class="header-reserve"[^>]*href="https:\/\/www\.yelp\.com\/reservations\//.test(header),`Header Yelp Reserve button missing on ${route}`);
-  assert.ok(header.includes('class="brand-lion"'),`Lion stamp missing beside the logo on ${route}`);
+  assert.ok(!header.includes('class="brand-lion"'),`Lion stamp should not be in the header on ${route} (owner 2026-11-05)`);
  }
  const gal=await fs.readFile(path.join(dist,'gallery/index.html'),'utf8');
  const posts=[...gal.matchAll(/class="g-out" href="(https:\/\/www\.(?:instagram|tiktok)\.com\/[^"]+)"/g)].map(m=>m[1]);
  assert.ok(posts.length>=7,'Gallery links at least 7 Instagram/TikTok posts');
  assert.equal(new Set(posts).size,posts.length,'Gallery repeats a social post');
  for(const m of gal.matchAll(/(?:src|poster)="(\/assets\/[^"]+)"/g)) await fs.access(path.join(dist,m[1])).catch(()=>assert.fail(`Gallery asset missing: ${m[1]}`));
- assert.equal((gal.match(/data-g-group=/g)||[]).length,JSON.parse(await fs.readFile(path.join(root,'content/media.json'),'utf8')).photos.length,'Gallery must show every food photo (no silent drops)');
+ {const mm=JSON.parse(await fs.readFile(path.join(root,'content/menu.json'),'utf8'));const ids=new Set();for(const c of mm.categories) if(!c.isRecommendationGroup) for(const it of c.items) if(/menusifu/.test(it.imageSourceUrl||'')) ids.add(it.imageSourceItemId);
+ assert.equal((gal.match(/data-g-group=/g)||[]).length,ids.size,'Gallery food photos = every official ordering-menu photo, once');
+ assert.ok(!/Seafood Congee|\/assets\/images\/dishes\//.test(gal),'Gallery must not use the old composite dish photos');
+ assert.ok(gal.indexOf('id="g-photos"')>gal.indexOf('id="g-together"')&&gal.indexOf('id="g-photos"')<gal.indexOf('class="g-close'),'All food photos comes after the story sections, just before the closing call to action');}
  const loops=[...gal.matchAll(/<source src="(\/assets\/video\/[^"]+)"/g)].map(m=>m[1]);
  for(const v of loops){ const {size}=await fs.stat(path.join(dist,v)); assert.ok(size<4e6,`Autoplay loop too heavy (${(size/1e6).toFixed(1)} MB): ${v}`); }
- console.log(`PASS: Yelp Reserve + lion stamp in every header; gallery ${posts.length} social posts, all food photos, loops under 4 MB.`);
+ assert.ok(homeHTML.includes('class="promo-band"')&&/4th hot pot is free/.test(homeHTML)&&/Valid student ID/.test(homeHTML),'Home hero shows the special offers band with the student deal');
+ console.log(`PASS: Yelp Reserve in every header (no lion); offers band on home; gallery ${posts.length} social posts, all food photos, loops under 4 MB.`);
 }

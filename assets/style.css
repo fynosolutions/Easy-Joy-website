@@ -188,7 +188,7 @@ figcaption,.location-note,.dining-photos figcaption,.film-caption{font-size:14px
 .header-reserve .brand-icon{color:#d32323;flex:none}
 .header-reserve:hover{background:var(--red);color:#fff}.header-reserve:hover .brand-icon{color:#fff}
 .label-short{display:none}
-@media(max-width:600px){.header-order{gap:6px}.header-order .header-reserve,.header-order .order-pickup{min-height:40px;font-size:13px;padding:8px 10px;gap:5px}.header-order .label-long{display:none}.header-order .label-short{display:inline}.brand-name>span.brand-zh{display:none}}
+@media(max-width:600px){.header-order{gap:6px}.header-order .header-reserve,.header-order .order-pickup{min-height:40px;font-size:13px;padding:8px 10px;gap:5px}.header-order .label-long{display:none}.header-order .label-short{display:inline}}
 /* Platform row: each group stacks into two rows instead of one long line (2026-11-05) */
 @media(min-width:1001px){
  .platform-groups{display:grid;grid-template-columns:2fr 1fr 2fr 1fr;justify-content:stretch;gap:24px 32px}
@@ -204,7 +204,7 @@ figcaption,.location-note,.dining-photos figcaption,.film-caption{font-size:14px
 @media(min-width:1001px){.brand-logo{width:88px;height:88px;margin-inline-end:-12px}.navlinks{gap:20px}.navlinks a{white-space:nowrap}}
 .wordmark-lion{display:inline-block;height:1.5em;width:auto;vertical-align:-.35em;margin-inline-end:.4em}
 @media(max-width:1000px){.brand-lion{height:48px;margin-inline:14px 10px}}
-@media(max-width:600px){.brand-lion{height:36px;margin-inline:6px 0}.brand-copy{display:none}.mobile-nav-toggle>.toggle-label{display:none}.mobile-nav-toggle>span:not(.toggle-label){display:inline-flex;font-size:22px}.mobile-nav-toggle{padding:8px 10px;min-height:40px}}
+@media(max-width:600px){.brand-lion{height:36px;margin-inline:6px 0}.mobile-nav-toggle>.toggle-label{display:none}.mobile-nav-toggle>span:not(.toggle-label){display:inline-flex;font-size:22px}.mobile-nav-toggle{padding:8px 10px;min-height:40px}}
 .header-order a,.header-order summary{white-space:nowrap}
 /* ===== Gallery page (2026-11-05): the meal as a story + Instagram/TikTok moments ===== */
 .gallery-page .page-intro h1 em{color:var(--red)}
@@ -306,3 +306,21 @@ figcaption,.location-note,.dining-photos figcaption,.film-caption{font-size:14px
 @media(max-width:1000px){.g-pins{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:12px}.g-pin .g-media{aspect-ratio:9/16}.g-pin:nth-child(3){grid-column:1/-1}.g-pin:nth-child(3) .g-media{aspect-ratio:1/1}}
 @media(max-width:600px){.g-filter{-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent)}}
 @media(max-width:1000px){.g-tag{grid-column:1/-1;padding-top:8px}.g-tag p:first-child{margin:0 0 4px;font-weight:600;color:var(--ink)}.g-tag p{margin:0;color:var(--muted)}.g-tag a{color:var(--red)}}
+/* Phones: logo + EASY JOY 意中人 on top; Reserve / Order move to a bar fixed at the bottom of the screen (2026-11-05) */
+.mobile-actions{display:none}
+@media(max-width:600px){
+ .site-header .header-order{display:none!important}
+ .header-row{grid-template-columns:1fr auto!important}
+ .brand-copy{display:flex!important}.brand-copy small{display:none}
+ .brand-name{font-size:19px}.brand-name>span.brand-zh{display:inline-block!important;width:44px;margin-left:6px}
+ .mobile-actions{position:fixed;left:0;right:0;bottom:0;z-index:40;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:#fffdf9f2;border-top:1px solid var(--line);backdrop-filter:blur(8px)}
+ .mobile-actions a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:4px;font-weight:600;font-size:15px;text-decoration:none}
+ .mobile-reserve{background:var(--red);color:#fff}.mobile-reserve .brand-icon{color:#fff}
+ .mobile-order{border:1px solid var(--red);color:var(--red);background:#fffdf9}
+ body{padding-bottom:calc(72px + env(safe-area-inset-bottom))}
+ .back-to-top{bottom:calc(84px + env(safe-area-inset-bottom))!important}
+}
+@media print{.mobile-actions{display:none!important}}
+@media(max-width:600px){.back-to-top{display:none!important}}
+@media(min-width:1001px){.brand-logo{width:84px;height:84px;margin-inline-end:-10px}}
+@media(max-width:600px){.brand-logo{width:54px!important;height:54px!important}}

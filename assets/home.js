@@ -184,3 +184,36 @@
   document.addEventListener('visibilitychange', () => { schedule(); syncVideo(); });
   syncMotion();
 })();
+
+// Special offers band: one offer at a time; pauses on hover/focus, when motion is paused, or with reduced motion.
+(() => {
+  const band = document.querySelector('.promo-band');
+  if (!band) return;
+  const slides = [...band.querySelectorAll('.promo-slide')], dots = [...band.querySelectorAll('.promo-dot')];
+  if (slides.length < 2) return;
+  const ms = 7000, reduce = matchMedia('(prefers-reduced-motion: reduce)');
+  band.style.setProperty('--promo-ms', `${ms}ms`);
+  let index = 0, timer = 0, hold = false;
+  const show = n => {
+    index = (n + slides.length) % slides.length;
+    slides.forEach((s, i) => { const on = i === index; s.classList.toggle('is-active', on); s.setAttribute('aria-hidden', String(!on)); });
+    dots.forEach((d, i) => d.setAttribute('aria-current', String(i === index)));
+    play();
+  };
+  const play = () => {
+    clearTimeout(timer);
+    const pausedByToolbar = document.querySelector('.motion-toggle[aria-pressed="true"]');
+    const run = !hold && !reduce.matches && !pausedByToolbar && !document.hidden;
+    band.classList.remove('is-playing'); void band.offsetWidth; band.classList.toggle('is-playing', run);
+    if (run) timer = setTimeout(() => show(index + 1), ms);
+  };
+  dots.forEach((d, i) => d.addEventListener('click', () => show(i)));
+  band.addEventListener('mouseenter', () => { hold = true; play(); });
+  band.addEventListener('mouseleave', () => { hold = false; play(); });
+  band.addEventListener('focusin', () => { hold = true; play(); });
+  band.addEventListener('focusout', () => { hold = false; play(); });
+  document.addEventListener('visibilitychange', play);
+  document.querySelector('.motion-toggle')?.addEventListener('click', () => setTimeout(play, 0));
+  reduce.addEventListener?.('change', play);
+  play();
+})();

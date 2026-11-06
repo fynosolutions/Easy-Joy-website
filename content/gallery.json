@@ -116,22 +116,22 @@
         },
         {
           "type": "photo",
-          "image": "/assets/images/lifestyle/squid-on-the-grill-960.webp",
-          "imageSmall": "/assets/images/lifestyle/squid-on-the-grill-480.webp",
-          "w": 640,
-          "h": 960,
-          "caption": "Squid on the grill",
-          "alt": "Squid skewers cooking on the grill",
+          "image": "/assets/images/ordering/menu-3085-960.webp",
+          "imageSmall": "/assets/images/ordering/menu-3085-480.webp",
+          "w": 960,
+          "h": 539,
+          "caption": "Grilled chicken skewers",
+          "alt": "Grilled chicken skewers on a plate",
           "position": "center"
         },
         {
           "type": "photo",
-          "image": "/assets/images/lifestyle/skewers-on-the-grill-960.webp",
-          "imageSmall": "/assets/images/lifestyle/skewers-on-the-grill-480.webp",
-          "w": 640,
-          "h": 960,
-          "caption": "Lamb skewers, cooked to order",
-          "alt": "Lamb skewers cooking on the grill",
+          "image": "/assets/images/ordering/menu-3342-960.webp",
+          "imageSmall": "/assets/images/ordering/menu-3342-480.webp",
+          "w": 960,
+          "h": 540,
+          "caption": "Grilled oysters with garlic",
+          "alt": "Grilled oysters topped with garlic and scallion",
           "position": "center"
         }
       ]

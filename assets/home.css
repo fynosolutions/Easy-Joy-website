@@ -219,3 +219,68 @@
 .menu-card .signature-image{position:relative;inset:auto;flex:1 1 auto;min-height:0;width:calc(100% - 36px);height:auto;margin:20px 18px 0;object-fit:contain}
 .menu-card .signature-copy{position:relative;inset:auto;flex:none;padding:16px 24px 24px}
 .menu-card:hover .signature-image{transform:scale(1.03)}
+/* ===== Special offers band at the bottom of the hero (2026-11-05) ===== */
+.cinema-hero{--promo-h:clamp(150px,22vh,190px)}
+.cinema-hero .hero-content{padding-bottom:calc(var(--promo-h) + 28px)}
+.cinema-hero .hero-content h1{font-size:clamp(56px,7.4vw,104px)}
+.promo-band{position:absolute;left:0;right:0;bottom:0;height:var(--promo-h);z-index:3;background:linear-gradient(90deg,#7d1d22f2,#a3262df0 60%,#8a2026f2);border-top:1px solid #f2c23066;color:#fff8ec;backdrop-filter:blur(6px)}
+.promo-inner{height:100%;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:28px}
+.promo-label{margin:0;writing-mode:vertical-rl;transform:rotate(180deg);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--home-gold,#f2c230);border-left:1px solid #f2c23066;padding-left:10px}
+.promo-stage{position:relative;height:100%}
+.promo-slide{position:absolute;inset:0;display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:32px;opacity:0;visibility:hidden;transition:opacity .5s ease,visibility 0s .5s}
+.promo-slide.is-active{opacity:1;visibility:visible;transition:opacity .5s ease}
+.promo-copy>*{margin:0;overflow:hidden}
+.promo-copy span{display:block;transform:translateY(110%);transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.promo-slide.is-active .promo-copy span{transform:none}
+.promo-slide.is-active .promo-title span{transition-delay:.08s}.promo-slide.is-active .promo-fine span{transition-delay:.16s}
+.promo-kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--home-gold,#f2c230);font-weight:600}
+.promo-title{font-size:clamp(22px,2.4vw,34px);line-height:1.1;letter-spacing:-.02em;margin:6px 0 8px!important;color:#fff}
+.promo-fine{font-size:13px;line-height:1.45;color:#fff8ecd9;max-width:720px}
+.promo-pots{display:flex;gap:10px}
+.promo-pot{display:flex;flex-direction:column;align-items:center;gap:4px;color:#fff8ec}
+.promo-pot small{font-size:10px;letter-spacing:.14em;font-weight:700;opacity:.8}
+.promo-pot.is-free{color:var(--home-gold,#f2c230)}
+.promo-pot.is-free small{opacity:1}
+.promo-slide.is-active .promo-pot{animation:promo-pop .45s cubic-bezier(.2,.8,.2,1) both}
+.promo-slide.is-active .promo-pot:nth-child(2){animation-delay:.15s}.promo-slide.is-active .promo-pot:nth-child(3){animation-delay:.3s}
+.promo-slide.is-active .promo-pot.is-free{animation:promo-stamp .55s cubic-bezier(.3,1.6,.5,1) .65s both}
+@keyframes promo-pop{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes promo-stamp{0%{opacity:0;transform:scale(1.8) rotate(-12deg)}70%{opacity:1;transform:scale(.92) rotate(3deg)}100%{opacity:1;transform:scale(1) rotate(0)}}
+.promo-price{display:block;font-size:clamp(54px,5.6vw,84px);line-height:1;font-weight:600;letter-spacing:-.04em;color:var(--home-gold,#f2c230)}
+.promo-slide.is-active .promo-price{animation:promo-pop .6s cubic-bezier(.2,.8,.2,1) both}
+.promo-dots{display:flex;gap:8px}
+.promo-dot{width:44px;height:28px;padding:0;border:0;background:none;cursor:pointer;display:grid;align-items:center}
+.promo-dot span{display:block;height:3px;border-radius:2px;background:#fff8ec55;overflow:hidden;position:relative}
+.promo-dot span:after{content:'';position:absolute;inset:0;background:var(--home-gold,#f2c230);transform-origin:left;transform:scaleX(0)}
+.promo-dot[aria-current=true] span:after{transform:scaleX(1)}
+.promo-band.is-playing .promo-dot[aria-current=true] span:after{animation:promo-progress var(--promo-ms,7000ms) linear both}
+@keyframes promo-progress{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.promo-dot:focus-visible{outline:2px solid #fff;outline-offset:2px}
+@media(prefers-reduced-motion:reduce){.promo-copy span,.promo-slide{transition:none}.promo-pot,.promo-price{animation:none!important}}
+@media(max-width:1000px){.cinema-hero{--promo-h:176px}.promo-label{display:none}.promo-inner{grid-template-columns:1fr auto;gap:16px}.promo-slide{gap:18px}}
+@media(max-width:600px){.cinema-hero{--promo-h:196px}.promo-inner{grid-template-columns:1fr;grid-template-rows:1fr auto;padding-block:14px 6px;gap:4px}
+ .promo-slide{grid-template-columns:1fr;gap:8px;align-content:center}.promo-visual{display:none}
+ .promo-title{font-size:22px}.promo-fine{font-size:12.5px}.promo-controls{justify-self:start}}
+.cinema-hero .promo-title{font-size:clamp(22px,2.3vw,32px)!important;line-height:1.12!important;letter-spacing:-.02em!important}
+@media(max-width:600px){.cinema-hero .promo-title{font-size:21px!important}}
+.promo-title,.promo-fine{text-wrap:balance}
+/* Review round 5 fixes */
+.cinema-hero .hero-content{padding-bottom:calc(var(--promo-h) + 56px)}
+.cinema-hero .hero-content h1{font-size:clamp(52px,6.8vw,96px)}
+.promo-band{background:linear-gradient(90deg,#2a1210f5,#4a1618f2 55%,#2a1210f5);border-top:1px solid #f2c23080;border-bottom:1px solid #f2c23055}
+.promo-fine{max-width:600px}
+.promo-controls{display:flex;flex-direction:column;align-items:flex-end;gap:14px}
+.promo-cta{color:var(--home-gold,#f2c230);font-weight:600;font-size:14px;text-decoration:none;border-bottom:1px solid #f2c23080;padding-bottom:2px;white-space:nowrap}
+.promo-cta:hover{color:#fff;border-color:#fff}
+.promo-pot svg{width:52px;height:44px}
+@media(max-width:600px){.promo-controls{flex-direction:row;align-items:center;justify-content:space-between;width:100%}
+ .cinema-hero .hero-bottom .home-button{display:none}
+ .cinema-hero .hero-content{padding-bottom:calc(var(--promo-h) + 32px)}}
+@media(max-width:375px){.cinema-hero .hero-content h1{font-size:44px!important}}
+@media(max-width:600px){
+ .cinema-hero{--promo-h:178px;min-height:560px!important;height:calc(100svh - var(--sticky-header,76px) - 72px)!important;max-height:780px}
+ .cinema-hero .hero-content{padding-top:28px}
+ .promo-cta{display:none}
+ .promo-fine{font-size:12px;line-height:1.4}
+}
+@media(max-width:375px){.cinema-hero .hero-bottom>p{display:none}.cinema-hero .hero-content h1{font-size:40px!important}.cinema-hero .eyebrow{font-size:11px}}

@@ -46,5 +46,22 @@
       "alt": "Guests enjoying a meal in the Easy Joy dining room",
       "caption": "Dinner service in the main room."
     }
+  ],
+  "promotions": [
+    {
+      "id": "student",
+      "kicker": "Student deal · All day, every day",
+      "title": "Bring 3 friends. The 4th hot pot is free.",
+      "fine": "For the $43 all-you-can-eat hot pot. Valid student ID required. Dine-in only, one free pot per table, cannot be combined with other offers.",
+      "visual": "pots"
+    },
+    {
+      "id": "before5",
+      "kicker": "Every day before 5 PM",
+      "title": "$28 hot pot, with dim sum from the cart.",
+      "fine": "All-you-can-eat hot pot plus 4–6 kinds of dim sum from the daily rotating cart, Monday to Sunday. Other dim sum and BBQ skewers are à la carte.",
+      "visual": "price",
+      "price": "$28"
+    }
   ]
 }
