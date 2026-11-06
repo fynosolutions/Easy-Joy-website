@@ -182,3 +182,13 @@ console.log(`PASS: source menu order and available official photos (${categories
  assert.ok(homeHTML.includes('class="promo-band"')&&/4th hot pot is free/.test(homeHTML)&&/Valid student ID/.test(homeHTML),'Home hero shows the special offers band with the student deal');
  console.log(`PASS: Yelp Reserve in every header (no lion); offers band on home; gallery ${posts.length} social posts, all food photos, loops under 4 MB.`);
 }
+
+// 2026-11-05 round 6: clear "Special offers" badge, $19.95 lunch set, vegetarian page for search and AI answers.
+{
+ const veg=await fs.readFile(path.join(dist,'vegetarian/index.html'),'utf8');
+ assert.ok(homeHTML.includes('class="promo-badge"')&&/\$19\.95/.test(homeHTML),'Home offers band has the Special offers badge and the $19.95 lunch set');
+ assert.ok(/<title>[^<]*Vegetarian/.test(veg)&&/"@type":"FAQPage"/.test(veg)&&/VegetarianDiet/.test(veg),'Vegetarian page has title, FAQPage and VegetarianDiet menu schema');
+ assert.ok(/beef tallow/.test(veg),'Vegetarian page says the Chongqing broth is not vegetarian');
+ const sm=await fs.readFile(path.join(dist,'sitemap.xml'),'utf8'); assert.ok(sm.includes('/vegetarian/'),'Vegetarian page is in the sitemap');
+ console.log('PASS: Round 6 — offers badge + $19.95 lunch set; vegetarian page with FAQ/menu schema, honest broth note, in sitemap.');
+}

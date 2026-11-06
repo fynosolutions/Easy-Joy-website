@@ -1,0 +1,258 @@
+{
+  "meta": {
+    "title": "Vegetarian Hot Pot in Chinatown NYC | Easy Joy",
+    "description": "Vegetarian options at Easy Joy, 145 Mulberry St: vegetarian-friendly hot pot broths, an all-you-can-eat fridge of vegetables, tofu and mushrooms, and vegetarian dim sum, fried rice and chow mein."
+  },
+  "sizes": {
+    "veg-basket": [
+      576,
+      781
+    ],
+    "broth-mushroom": [
+      480,
+      480
+    ],
+    "broth-coconut": [
+      480,
+      480
+    ]
+  },
+  "fridge": [
+    {
+      "name": "Napa Cabbage",
+      "image": "/assets/images/ordering/menu-3310-960.webp",
+      "imageSmall": "/assets/images/ordering/menu-3310-480.webp",
+      "w": 960,
+      "h": 540
+    },
+    {
+      "name": "Shanghai Bok Choy",
+      "image": "/assets/images/ordering/menu-3311-960.webp",
+      "imageSmall": "/assets/images/ordering/menu-3311-480.webp",
+      "w": 960,
+      "h": 539
+    },
+    {
+      "name": "Broccoli",
+      "image": "/assets/images/ordering/menu-3295-960.webp",
+      "imageSmall": "/assets/images/ordering/menu-3295-480.webp",
+      "w": 960,
+      "h": 540
+    },
+    {
+      "name": "Shiitake Mushroom",
+      "image": "/assets/images/ordering/menu-3303-960.webp",
+      "imageSmall": "/assets/images/ordering/menu-3303-480.webp",
+      "w": 960,
+      "h": 540
+    },
+    {
+      "name": "Enoki Mushroom",
+      "image": "/assets/images/ordering/menu-3315-960.webp",
+      "imageSmall": "/assets/images/ordering/menu-3315-480.webp",
+      "w": 960,
+      "h": 540
+    },
+    {
+      "name": "Firm Tofu",
+      "image": "/assets/images/ordering/menu-3298-960.webp",
+      "imageSmall": "/assets/images/ordering/menu-3298-480.webp",
+      "w": 960,
+      "h": 540
+    },
+    {
+      "name": "Spiced Tofu Skin",
+      "image": "/assets/images/ordering/menu-3299-960.webp",
+      "imageSmall": "/assets/images/ordering/menu-3299-480.webp",
+      "w": 960,
+      "h": 540
+    },
+    {
+      "name": "Lotus Root",
+      "image": "/assets/images/ordering/menu-3293-960.webp",
+      "imageSmall": "/assets/images/ordering/menu-3293-480.webp",
+      "w": 960,
+      "h": 540
+    },
+    {
+      "name": "Pumpkin",
+      "image": "/assets/images/ordering/menu-3301-960.webp",
+      "imageSmall": "/assets/images/ordering/menu-3301-480.webp",
+      "w": 960,
+      "h": 540
+    },
+    {
+      "name": "Fresh Corn",
+      "image": "/assets/images/ordering/menu-3291-960.webp",
+      "imageSmall": "/assets/images/ordering/menu-3291-480.webp",
+      "w": 960,
+      "h": 540
+    },
+    {
+      "name": "Winter Melon",
+      "image": "/assets/images/ordering/menu-3300-960.webp",
+      "imageSmall": "/assets/images/ordering/menu-3300-480.webp",
+      "w": 960,
+      "h": 540
+    },
+    {
+      "name": "Konjac Knot",
+      "image": "/assets/images/ordering/menu-3302-960.webp",
+      "imageSmall": "/assets/images/ordering/menu-3302-480.webp",
+      "w": 960,
+      "h": 540
+    },
+    {
+      "name": "Kelp",
+      "image": "/assets/images/ordering/menu-3292-960.webp",
+      "imageSmall": "/assets/images/ordering/menu-3292-480.webp",
+      "w": 960,
+      "h": 540
+    },
+    {
+      "name": "Bamboo Shoots",
+      "image": "/assets/images/ordering/menu-3296-960.webp",
+      "imageSmall": "/assets/images/ordering/menu-3296-480.webp",
+      "w": 960,
+      "h": 540
+    },
+    {
+      "name": "Fried Bean Curd Roll",
+      "image": "/assets/images/ordering/menu-3307-960.webp",
+      "imageSmall": "/assets/images/ordering/menu-3307-480.webp",
+      "w": 960,
+      "h": 540
+    },
+    {
+      "name": "Handmade Noodle",
+      "image": "/assets/images/ordering/menu-3305-960.webp",
+      "imageSmall": "/assets/images/ordering/menu-3305-480.webp",
+      "w": 960,
+      "h": 540
+    }
+  ],
+  "broths": [
+    {
+      "name": "Yunnan Mushroom",
+      "zh": "云南菌菇汤",
+      "note": "A mushroom broth for a fully vegetarian pot.",
+      "image": "/assets/images/vegetarian/broth-mushroom.webp",
+      "key": "broth-mushroom"
+    },
+    {
+      "name": "Hainan Coconut",
+      "zh": "海南椰子",
+      "note": "Ask for it vegetarian and we make it with coconut water instead of chicken.",
+      "image": "/assets/images/vegetarian/broth-coconut.webp",
+      "key": "broth-coconut"
+    }
+  ],
+  "dishes": [
+    {
+      "name": "Fried Vegetable Spring Rolls",
+      "detail": "3 pieces",
+      "price": "$8.99",
+      "group": "Dim sum"
+    },
+    {
+      "name": "Mixed Vegetable Rice Noodle Roll",
+      "detail": "Cheung fun",
+      "price": "$7.99",
+      "group": "Dim sum"
+    },
+    {
+      "name": "Vegetarian Buns",
+      "detail": "3 pieces",
+      "price": "$6.99",
+      "group": "Dim sum"
+    },
+    {
+      "name": "Sweet Potato Flaky Pastry Pie",
+      "detail": "2 pieces",
+      "price": "$7.00",
+      "group": "Dim sum"
+    },
+    {
+      "name": "Grilled Chinese Chives",
+      "detail": "2 skewers",
+      "price": "$8.00",
+      "group": "BBQ"
+    },
+    {
+      "name": "Vegetable Fried Rice",
+      "detail": "",
+      "price": "$14.99",
+      "group": "Mains"
+    },
+    {
+      "name": "Vegetable Chow Mein",
+      "detail": "Egg noodles, or rice noodles for gluten-free",
+      "price": "$14.99",
+      "group": "Mains"
+    },
+    {
+      "name": "Vegetarian Mushroom Mini Hot Pot",
+      "detail": "Pickup and delivery",
+      "price": "$16.00",
+      "group": "To go"
+    },
+    {
+      "name": "Vegetable Malatang Combo",
+      "detail": "Pickup and delivery",
+      "price": "$17.99",
+      "group": "To go"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Does Easy Joy have vegetarian options?",
+      "answer": "Yes. Most of our hot pot broths can be made vegetarian-friendly, the all-you-can-eat fridge is full of vegetables, tofu, mushrooms and noodles, and the menu has vegetarian dim sum, vegetable fried rice and vegetable chow mein. Tell your server you are vegetarian when you sit down."
+    },
+    {
+      "question": "Which hot pot broths are vegetarian?",
+      "answer": "Ask for the Yunnan mushroom soup, or the Hainan coconut broth made with coconut water instead of chicken. Most other broths can be made vegetarian-friendly too; your server will tell you which ones. The Chongqing spicy broth is made with beef tallow, so it is not vegetarian."
+    },
+    {
+      "question": "Is all-you-can-eat hot pot worth it for vegetarians?",
+      "answer": "Yes. The $28 (before 5 PM, every day) and $43 (after 5 PM) all-you-can-eat prices include the broth and everything in the fridge: leafy greens, mushrooms, tofu, tofu skin, lotus root, pumpkin, corn, noodles and more. Before 5 PM the $28 price also brings 4–6 kinds of dim sum from the cart."
+    },
+    {
+      "question": "Can I get the $19.95 lunch set vegetarian?",
+      "answer": "Yes. The weekday lunch set comes with a plate of sliced beef, a plate of fresh vegetables and egg noodles. Ask for it without the meat and pick a vegetarian-friendly broth."
+    },
+    {
+      "question": "Do you have vegan or allergy-safe dishes?",
+      "answer": "We do not label dishes as vegan or allergen-free. Many vegetables, tofu and noodles are plant-based, but sauces, fried items and the sauce bar can contain egg, dairy or fish products. Please tell your server about any dietary restriction."
+    }
+  ],
+  "dishPhotos": [
+    {
+      "name": "Vegetarian Buns",
+      "image": "/assets/images/ordering/menu-3071-960.webp",
+      "imageSmall": "/assets/images/ordering/menu-3071-480.webp",
+      "w": 960,
+      "h": 540
+    },
+    {
+      "name": "Sweet Potato Flaky Pastry Pie",
+      "image": "/assets/images/ordering/menu-3048-960.webp",
+      "imageSmall": "/assets/images/ordering/menu-3048-480.webp",
+      "w": 960,
+      "h": 540
+    },
+    {
+      "name": "Vegetable Fried Rice",
+      "image": "/assets/images/ordering/menu-3053-960.webp",
+      "imageSmall": "/assets/images/ordering/menu-3053-480.webp",
+      "w": 960,
+      "h": 540
+    },
+    {
+      "name": "Vegetable Chow Mein",
+      "image": "/assets/images/ordering/menu-3060-960.webp",
+      "imageSmall": "/assets/images/ordering/menu-3060-480.webp",
+      "w": 960,
+      "h": 540
+    }
+  ]
+}

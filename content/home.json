@@ -50,18 +50,30 @@
   "promotions": [
     {
       "id": "student",
-      "kicker": "Student deal · All day, every day",
-      "title": "Bring 3 friends. The 4th hot pot is free.",
-      "fine": "For the $43 all-you-can-eat hot pot. Valid student ID required. Dine-in only, one free pot per table, cannot be combined with other offers.",
+      "tag": "Student deal",
+      "kicker": "All day, every day",
+      "title": "Bring 3 friends. The 4th hot pot is free.",
+      "fine": "For the $43 all-you-can-eat hot pot. Valid student ID required. Dine‑in only, one free pot per table, cannot be combined with other offers.",
       "visual": "pots"
     },
     {
-      "id": "before5",
-      "kicker": "Every day before 5 PM",
-      "title": "$28 hot pot, with dim sum from the cart.",
-      "fine": "All-you-can-eat hot pot plus 4–6 kinds of dim sum from the daily rotating cart, Monday to Sunday. Other dim sum and BBQ skewers are à la carte.",
+      "id": "lunch",
+      "tag": "Lunch special",
+      "kicker": "Mon–Fri · 11 AM–4 PM",
+      "title": "Weekday lunch hot pot set.",
+      "fine": "Your own pot with a plate of sliced beef, a plate of fresh vegetables and egg noodles. A set, not all-you-can-eat. Ask for it without the meat for a vegetarian set.",
       "visual": "price",
-      "price": "$28"
+      "price": "$19.95"
+    },
+    {
+      "id": "vegetarian",
+      "tag": "Vegetarian options",
+      "kicker": "Every day",
+      "title": "Vegetarian? Most of our broths can be too.",
+      "fine": "Mushroom soup, or coconut broth made with coconut water. Plus vegetables, tofu and noodles.",
+      "visual": "leaf",
+      "link": "/vegetarian/",
+      "linkLabel": "See vegetarian options"
     }
   ]
 }

@@ -38,6 +38,12 @@
       "id": "ayce-price"
     },
     {
+      "question": "Does Easy Joy have vegetarian options?",
+      "answer": "Yes. Most of our hot pot broths can be made vegetarian-friendly (for example the Yunnan mushroom soup, or the Hainan coconut broth made with coconut water instead of chicken), the all-you-can-eat fridge has vegetables, tofu, mushrooms and noodles, and the menu has vegetarian dim sum, vegetable fried rice and vegetable chow mein. Tell your server you are vegetarian.",
+      "link": "/vegetarian/",
+      "linkLabel": "Vegetarian options"
+    },
+    {
       "question": "What is on the Easy Joy menu?",
       "answer": "The online menu includes premium dim sum, buns and dumplings, rice noodle rolls, BBQ, fried rice and noodles, mini hot pots, malatang, hot pot ingredients, soup bases and more.",
       "link": "/menu/",

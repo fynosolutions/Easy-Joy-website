@@ -217,3 +217,11 @@
   reduce.addEventListener?.('change', play);
   play();
 })();
+// keep the "1 / 3" counter in the Special offers badge in step with the active slide
+(() => {
+  const band = document.querySelector('.promo-band'); const b = band?.querySelector('.promo-count b');
+  if (!band || !b) return;
+  const slides = [...band.querySelectorAll('.promo-slide')];
+  new MutationObserver(() => { b.textContent = String(slides.findIndex(s => s.classList.contains('is-active')) + 1); })
+    .observe(band.querySelector('.promo-stage'), {subtree: true, attributes: true, attributeFilter: ['class']});
+})();
