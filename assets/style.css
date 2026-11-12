@@ -471,10 +471,21 @@ button,summary{cursor:pointer}
 .brand-departure .brand-transition::before { animation: brand-fill .25s ease-out both; }
 .brand-departure .transition-lockup::before { animation: brand-fill .25s .25s ease both; }
 .brand-departure .transition-lockup > * { animation: brand-join .5s cubic-bezier(.22,.72,.18,1) both; }
-.brand-departure .brand-transition .brand-logo { --brand-offset: -100vw; }
+
 .brand-departure .brand-transition .brand-copy { --brand-offset: 100vw; }
 .brand-arrival.brand-ready .brand-transition { animation: brand-reveal .25s ease-in-out both; }
 @keyframes brand-fill { from { opacity: 0; } to { opacity: 1; } }
 @keyframes brand-join { from { transform: translateX(var(--brand-offset)); } to { transform: translateX(0); } }
 @keyframes brand-reveal { from { opacity: 1; } to { opacity: 0; visibility: hidden; } }
 @media print { html .brand-transition { display: none; } }
+
+/* One logo everywhere (owner-supplied EASY JOY + 意中人, 2026-11-12): colours come from the surrounding text colour. */
+.brand{display:flex;align-items:center;margin-inline-end:0}
+.brand-wordmark{display:block;height:52px;width:auto;color:var(--red);flex:none}
+@media(max-width:600px){.brand-wordmark{height:40px}}
+@media(max-width:360px){.brand-wordmark{height:34px}}
+.wordmark{display:inline-block;line-height:0}
+.footer-logo{display:block;height:68px;width:auto;color:var(--red)}
+.transition-lockup{padding:10px 20px}
+.transition-lockup .brand-wordmark{height:clamp(56px,16vw,96px);color:#a52a2f}
+.brand-departure .brand-transition .brand-wordmark{--brand-offset:-60vw}

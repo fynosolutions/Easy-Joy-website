@@ -229,8 +229,7 @@ document.querySelectorAll('video[data-tap-play]').forEach(video => {
   window.addEventListener('pageshow', event => { if (event.persisted) reset(); });
   // This script is deferred: the destination markup is already available.
   if (root.classList.contains('brand-arrival')) {
-    const logo = document.querySelector('.transition-lockup .brand-logo');
-    Promise.allSettled([logo.decode?.(), document.fonts?.ready]).then(() => {
+    Promise.allSettled([document.fonts?.ready]).then(() => {
       requestAnimationFrame(() => requestAnimationFrame(() => {
         if (root.classList.contains('brand-arrival')) root.classList.add('brand-ready');
       }));
