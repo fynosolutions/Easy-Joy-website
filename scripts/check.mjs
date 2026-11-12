@@ -7,7 +7,7 @@ const root=fileURLToPath(new URL('../',import.meta.url));
 const dist=path.join(root,'dist');
 // Built pages keep "à la carte" on one line with no-break spaces; compare copy as plain spaces.
 const readFileRaw=fs.readFile.bind(fs);
-fs.readFile=async(file,...rest)=>{const out=await readFileRaw(file,...rest);return typeof out==='string'&&String(file).endsWith('.html')?out.replaceAll('\u00a0',' ').replaceAll('\u2060',''):out;};
+fs.readFile=async(file,...rest)=>{const out=await readFileRaw(file,...rest);return typeof out==='string'&&String(file).endsWith('.html')?out.replaceAll('\u00a0',' ').replaceAll('\u2060','').replace(/<span class="nowrap">(all-you-can-eat)<\/span>/gi,'$1'):out;};
 const r=JSON.parse(await fs.readFile(path.join(root,'content/restaurant.json'),'utf8'));
 const menu=JSON.parse(await fs.readFile(path.join(root,'content/menu.json'),'utf8'));
 const categories=menu.categories.filter(c=>!c.isRecommendationGroup);
@@ -191,4 +191,19 @@ console.log(`PASS: source menu order and available official photos (${categories
  assert.ok(/beef tallow/.test(veg),'Vegetarian page says the Chongqing broth is not vegetarian');
  const sm=await fs.readFile(path.join(dist,'sitemap.xml'),'utf8'); assert.ok(sm.includes('/vegetarian/'),'Vegetarian page is in the sitemap');
  console.log('PASS: Round 6 — offers badge + $19.95 lunch set; vegetarian page with FAQ/menu schema, honest broth note, in sitemap.');
+}
+
+// 2026-11-12 round 7 (phone + UX audit): photo names match photos, phone menu hides before first paint, facts first on Visit.
+{
+ const read=p=>fs.readFile(path.join(dist,p,'index.html'),'utf8');
+ const about=await read('about'), loc=await read('location'), faq=await read('faq'), fac=await read('facility');
+ assert.ok(!/Hainan Coconut Chicken<\/h3>/.test(homeHTML),'Home carousel: the fish maw chicken photo is not labelled Hainan Coconut Chicken');
+ assert.ok(/Chongqing Spicy Hot Pot/.test(about)&&!/hot-pot-landscape-poster/.test(about),'About: spicy hot pot card uses the red broth photo and the menu name');
+ assert.ok(/<head>[\s\S]*?classList\.add\('js'\)[\s\S]*?style\.css/.test(homeHTML),'js class is set in <head> before the stylesheet (no jump when the phone menu hides)');
+ assert.ok(/class="nav-contact"[\s\S]*?href="tel:/.test(homeHTML),'Phone menu offers Call and Directions');
+ assert.ok(loc.indexOf('location-content')<loc.indexOf('class="container wayfinding"'),'Visit page: address, hours and phone come before the storefront story');
+ assert.ok(/\$19\.95/.test(faq),'FAQ answers the weekday lunch set question');
+ assert.ok(fac.indexOf('dining-room-image')<fac.indexOf('The dining room')&&!/squid-on-the-grill/.test(fac),'Dining page: room photo first, no skewer close-up under "The dining room"');
+ for(const [name,html] of [['home',homeHTML],['about',about],['faq',faq]]) for(const m of html.matchAll(/<a\b[^>]*href="\/[^"]*"[^>]*>[\s\S]*?<\/a>/g)) assert.ok(!/M7 17 17 7M8 7h9v9/.test(m[0]),`${name}: a link that stays on the site shows the leaves-the-site arrow: ${m[0].slice(0,80)}`);
+ console.log('PASS: Round 7 — names match photos, phone menu (Call/Directions, no load jump), Visit facts first, FAQ lunch set, Dining photo first.');
 }

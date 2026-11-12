@@ -38,6 +38,13 @@
       "id": "ayce-price"
     },
     {
+      "id": "lunch-set",
+      "question": "Is there a weekday lunch special?",
+      "answer": "Yes. The weekday lunch hot pot set is $19.95, Monday to Friday from 11 AM to 4 PM: your own pot with a plate of sliced beef, a plate of fresh vegetables and egg noodles. It is a set, not all-you-can-eat. Ask for it without the meat for a vegetarian set.",
+      "external": "phone",
+      "linkLabel": "Call the restaurant"
+    },
+    {
       "question": "Does Easy Joy have vegetarian options?",
       "answer": "Yes. Most of our hot pot broths can be made vegetarian-friendly (for example the Yunnan mushroom soup, or the Hainan coconut broth made with coconut water instead of chicken), the all-you-can-eat fridge has vegetables, tofu, mushrooms and noodles, and the menu has vegetarian dim sum, vegetable fried rice and vegetable chow mein. Tell your server you are vegetarian.",
       "link": "/vegetarian/",

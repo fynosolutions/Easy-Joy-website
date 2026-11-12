@@ -2,11 +2,11 @@
   "title": "A table worth<br><em>gathering around.</em>",
   "lead": "Steam, lanterns, dim sum and skewers at 145 Mulberry St. Our own photos and film, plus moments from Instagram and TikTok.",
   "sign": {
-    "image": "/assets/images/home/storefront-sign-705.webp",
-    "imageSmall": "/assets/images/home/storefront-sign-480.webp",
-    "w": 705,
-    "h": 1281,
-    "alt": "Easy Joy storefront with the yellow 意中人 sign on Mulberry Street"
+    "image": "/assets/images/home/mulberry-storefront-1920.webp",
+    "imageSmall": "/assets/images/home/mulberry-storefront-960.webp",
+    "w": 1920,
+    "h": 1280,
+    "alt": "The Easy Joy storefront on Mulberry Street with both yellow 意中人 signs"
   },
   "chapters": [
     {
@@ -92,8 +92,18 @@
       "id": "grill",
       "title": "Fresh from the grill",
       "text": "Skewers grilled over an open flame, ordered à la carte.",
-      "layout": "wide-then-row",
+      "layout": "main-left",
       "items": [
+        {
+          "type": "photo",
+          "image": "/assets/images/home/cuisine-bbq-skewers-960.webp",
+          "imageSmall": "/assets/images/home/cuisine-bbq-skewers-480.webp",
+          "w": 960,
+          "h": 1048,
+          "caption": "Lamb skewers, hot off the grill",
+          "alt": "A tray of grilled lamb skewers dusted with cumin and chili",
+          "position": "center"
+        },
         {
           "type": "photo",
           "image": "/assets/images/gallery/grill-fire-1600.webp",
@@ -113,26 +123,6 @@
           "caption": "Turned by hand, a few at a time",
           "alt": "A cook in black gloves turning skewers over the smoking grill",
           "position": "35% 60%"
-        },
-        {
-          "type": "photo",
-          "image": "/assets/images/ordering/menu-3085-960.webp",
-          "imageSmall": "/assets/images/ordering/menu-3085-480.webp",
-          "w": 960,
-          "h": 539,
-          "caption": "Grilled chicken skewers",
-          "alt": "Grilled chicken skewers on a plate",
-          "position": "center"
-        },
-        {
-          "type": "photo",
-          "image": "/assets/images/ordering/menu-3342-960.webp",
-          "imageSmall": "/assets/images/ordering/menu-3342-480.webp",
-          "w": 960,
-          "h": 540,
-          "caption": "Grilled oysters with garlic",
-          "alt": "Grilled oysters topped with garlic and scallion",
-          "position": "center"
         }
       ]
     },

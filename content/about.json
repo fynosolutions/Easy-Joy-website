@@ -21,7 +21,7 @@
     },
     {
       "title": "Broths worth the trip",
-      "text": "Coconut chicken, pickled radish duck, pork bone, tomato and Tom Yum, plus spicy Sichuan for heat seekers."
+      "text": "Coconut chicken, pickled radish duck, pork bone, tomato and Tom Yum, plus Chongqing spicy for heat seekers."
     },
     {
       "title": "Skewers off the grill",
@@ -30,20 +30,20 @@
   ],
   "signatures": [
     {
-      "name": "Spicy Sichuan Hot Pot",
-      "description": "Our spicy Sichuan broth, built for sharing with sliced meats, vegetables and house dipping sauces.",
+      "name": "Chongqing Spicy Hot Pot",
+      "description": "Our Chongqing spicy broth, built for sharing with sliced meats, vegetables and house dipping sauces.",
       "href": "/menu/hot-pot-delivery/",
       "linkLabel": "Explore hot pot options",
-      "image": "/assets/video/hot-pot-landscape-poster.webp",
-      "alt": "Copper hot pots with broth, sliced meats and vegetables"
+      "image": "/assets/images/menu-card/chongqing-spicy-broth.webp",
+      "alt": "Chongqing spicy hot pot broth in a gold pot"
     },
     {
       "name": "Cantonese Shrimp Dumplings",
       "description": "Translucent wrappers folded around whole shrimp, steamed to order.",
       "href": "/menu/premium-dim-sum/",
       "linkLabel": "Explore dim sum",
-      "image": "/assets/images/dishes/shrimp-dumpling-assortment-960.webp",
-      "alt": "Shrimp dumplings in a bamboo steamer"
+      "image": "/assets/images/ordering/menu-3332-960.webp",
+      "alt": "Shrimp dumplings (har gow) in a bamboo steamer"
     },
     {
       "name": "Pan-Fried Pork Buns",
