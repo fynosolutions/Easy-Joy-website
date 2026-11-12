@@ -173,10 +173,10 @@ console.log(`PASS: source menu order and available official photos (${categories
  assert.ok(posts.length>=7,'Gallery links at least 7 Instagram/TikTok posts');
  assert.equal(new Set(posts).size,posts.length,'Gallery repeats a social post');
  for(const m of gal.matchAll(/(?:src|poster)="(\/assets\/[^"]+)"/g)) await fs.access(path.join(dist,m[1])).catch(()=>assert.fail(`Gallery asset missing: ${m[1]}`));
- {const mm=JSON.parse(await fs.readFile(path.join(root,'content/menu.json'),'utf8'));const ids=new Set();for(const c of mm.categories) if(!c.isRecommendationGroup) for(const it of c.items) if(/menusifu/.test(it.imageSourceUrl||'')) ids.add(it.imageSourceItemId);
- assert.equal((gal.match(/data-g-group=/g)||[]).length,ids.size,'Gallery food photos = every official ordering-menu photo, once');
+ {
+  assert.ok(!gal.includes('id="g-photos"')&&!gal.includes('data-g-group=')&&!/All food photos/.test(gal),'Gallery no longer has the All food photos section (owner 2026-11-12)');
  assert.ok(!/Seafood Congee|\/assets\/images\/dishes\//.test(gal),'Gallery must not use the old composite dish photos');
- assert.ok(gal.indexOf('id="g-photos"')>gal.indexOf('id="g-together"')&&gal.indexOf('id="g-photos"')<gal.indexOf('class="g-close'),'All food photos comes after the story sections, just before the closing call to action');}
+ }
  const loops=[...gal.matchAll(/<source src="(\/assets\/video\/[^"]+)"/g)].map(m=>m[1]);
  for(const v of loops){ const {size}=await fs.stat(path.join(dist,v)); assert.ok(size<4e6,`Autoplay loop too heavy (${(size/1e6).toFixed(1)} MB): ${v}`); }
  assert.ok(homeHTML.includes('class="promo-band"')&&/4th hot pot is free/.test(homeHTML)&&/Valid student ID/.test(homeHTML),'Home hero shows the special offers band with the student deal');
