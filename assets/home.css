@@ -9,8 +9,8 @@
 .home-button.ghost{background:transparent;color:white;border-color:#ffffff80}
 .home-button.ghost:hover{background:white;color:var(--red)}
 .home-text-link{display:inline-flex;align-items:center;justify-content:space-between;gap:30px;min-height:44px;font-size:14px;text-decoration:none;border-bottom:1px solid currentColor;padding-block:10px}
-.home-text-link>span{font-size:21px;transition:transform .2s}
-.home-text-link:hover>span{transform:translate(3px,-3px)}
+.home-text-link>span[aria-hidden]{font-size:21px;transition:transform .2s}
+.home-text-link:hover>span[aria-hidden]{transform:translate(3px,-3px)}
 .cinema-hero{position:relative;isolation:isolate;min-height:700px;height:calc(100svh - var(--sticky-header,80px));max-height:1200px;color:white;overflow:hidden;background:#35251b}
 .hero-visual{position:absolute;inset:-8% 0;z-index:-2;will-change:transform}
 .hero-visual>img,.hero-motion-video{width:100%;height:100%;object-fit:cover;display:block}
@@ -346,3 +346,122 @@
 /* Short laptop windows: keep the address line off the header and the offers badge off the tagline */
 @media(min-width:1001px) and (max-height:960px){.cinema-hero .hero-content h1{font-size:min(6.4vw,8.6vh)}}
 @media(hover:hover){.promo-dot:hover span{background:#fff8ecaa}}
+
+/* Homepage lunch offer */
+.lunch-poster {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: min(840px, calc(100% - 32px));
+  max-height: calc(100dvh - 32px);
+  padding: 0;
+  border: 0;
+  color: #fff7eb;
+  background: #721a19;
+  box-shadow: 0 24px 80px #0006;
+}
+.lunch-poster::backdrop { background: rgb(16 9 7 / 74%); }
+@keyframes lunch-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .lunch-poster[open], .lunch-poster[open]::backdrop {
+    animation: lunch-fade-in 1s ease-out;
+  }
+}
+html:has(.lunch-poster[open]) { overflow: hidden; }
+.lunch-layout { position: relative; display: grid; grid-template-columns: 1.05fr 1fr; }
+.lunch-copy { padding: clamp(26px, 4vw, 54px); align-self: center; }
+.lunch-copy h2 { margin: 0; font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1; color: inherit; }
+.lunch-price { display: block; margin: .22em 0; font-size: clamp(3.7rem, 7vw, 6rem); line-height: 1; color: #ffcf66; }
+.lunch-hours { margin: 0; font-weight: 700; }
+.lunch-detail { margin: 14px 0 22px; line-height: 1.45; }
+.lunch-directions { display: inline-flex; align-items: center; gap: 10px; padding: 12px 18px; background: #ffcf66; color: #381510; font-weight: 700; text-decoration: none; }
+.lunch-directions svg { width: 18px; }
+.lunch-photo { width: 100%; height: 100%; object-fit: cover; }
+.lunch-close { position: absolute; top: 10px; right: 10px; width: 44px; height: 44px; border: 1px solid #fff9; border-radius: 50%; background: #251312; color: white; font: 30px/1 sans-serif; cursor: pointer; }
+.lunch-poster :focus-visible { outline: 3px solid white; outline-offset: 2px; }
+@media (max-width: 620px) {
+  .lunch-layout { grid-template-columns: 1fr; }
+  .lunch-photo { grid-row: 1; height: clamp(110px, 23dvh, 190px); }
+  .lunch-copy { padding: 20px 24px 24px; }
+  .lunch-copy h2 { font-size: 2rem; }
+}
+
+/* A repeating underline follows the link label and leaves the arrow clear. */
+.wave-label { position: relative; }
+.wave-label::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 -5px;
+  height: 4px;
+  background: currentColor;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 4'%3E%3Cpath d='M-4 2Q0 -1 4 2T12 2T20 2' fill='none' stroke='black' stroke-width='1.4'/%3E%3C/svg%3E") repeat-x 0 center / 16px 4px;
+  opacity: 0;
+  pointer-events: none;
+}
+@keyframes link-wave { to { mask-position: 16px center; } }
+.home-editorial a:focus-visible .wave-label::after { opacity: 1; }
+@media (hover: hover) {
+  .home-editorial a:hover .wave-label::after { opacity: 1; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .home-editorial:not(.home-motion-paused) a:focus-visible .wave-label::after {
+    animation: link-wave .8s linear infinite;
+  }
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .home-editorial:not(.home-motion-paused) a:hover .wave-label::after {
+    animation: link-wave .8s linear infinite;
+  }
+}
+
+.cuisine-photo {
+  display: block;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom: 22px;
+}
+.cuisine-photo img { margin: 0; border-radius: 0; }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .home-editorial:not(.home-motion-paused) .cuisine-photo img {
+    transition: transform 850ms ease-in-out;
+  }
+  .home-editorial:not(.home-motion-paused) .cuisine-photo:hover img {
+    transform: scale(1.1);
+  }
+}
+
+/* The brush is painted behind the dish, within the carousel card. */
+.menu-card .dish-art {
+  position: relative;
+  isolation: isolate;
+  flex: 1 1 0;
+  min-height: 0;
+  margin: 20px 18px 0;
+}
+.menu-card .dish-art .signature-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.dish-art::before {
+  content: "";
+  position: absolute;
+  inset: -14px -18px -9px;
+  background: url("/assets/dish-brush.svg") center / 100% 100% no-repeat;
+  clip-path: inset(0 100% 0 0);
+  pointer-events: none;
+}
+@media (hover: hover) {
+  .dish-art:hover::before { clip-path: inset(0); }
+}
+.menu-card:focus-visible .dish-art::before { clip-path: inset(0); }
+@media (prefers-reduced-motion: no-preference) {
+  .home-editorial:not(.home-motion-paused) .dish-art::before {
+    transition: clip-path 480ms cubic-bezier(.25,.7,.3,1);
+  }
+}
