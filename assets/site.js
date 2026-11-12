@@ -186,10 +186,18 @@ document.querySelectorAll('video[data-tap-play]').forEach(video => {
   if (loops.length && 'IntersectionObserver' in window) {
     if (still) loops.forEach(v => { v.controls = true; });
     else {
+      // Start as soon as a fifth of the clip is on screen; retry once the first frames have loaded.
+      const start = v => { v.muted = true; v.defaultMuted = true; v.play().catch(() => {}); };
       const io = new IntersectionObserver(entries => entries.forEach(({target: v, isIntersecting}) => {
-        if (isIntersecting) { v.muted = true; v.play().catch(() => { v.controls = true; }); } else v.pause();
-      }), {threshold: 0.5});
-      loops.forEach(v => io.observe(v));
+        if (isIntersecting) start(v); else v.pause();
+      }), {threshold: 0.2});
+      loops.forEach(v => {
+        v.preload = 'metadata';
+        v.addEventListener('loadeddata', () => { if (v.dataset.visible === '1') start(v); });
+        v.addEventListener('canplay', () => { if (v.dataset.visible === '1' && v.paused) start(v); });
+        new IntersectionObserver(([e]) => { v.dataset.visible = e.isIntersecting ? '1' : '0'; }, {threshold: 0.2}).observe(v);
+        io.observe(v);
+      });
     }
   }
   const grid = document.querySelector('.g-photo-grid');
