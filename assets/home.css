@@ -347,47 +347,41 @@
 @media(min-width:1001px) and (max-height:960px){.cinema-hero .hero-content h1{font-size:min(6.4vw,8.6vh)}}
 @media(hover:hover){.promo-dot:hover span{background:#fff8ecaa}}
 
-/* Homepage lunch offer */
+/* Homepage offers pop-up: lunch poster and Extra Spicy Challenge, two pages */
 .lunch-poster {
-  position: fixed;
-  inset: 0;
-  margin: auto;
-  width: min(840px, calc(100% - 32px));
-  max-height: calc(100dvh - 32px);
-  padding: 0;
-  border: 0;
-  color: #fff7eb;
-  background: #721a19;
-  box-shadow: 0 24px 80px #0006;
+  position: fixed; inset: 0; margin: auto; padding: 0; border: 0; overflow: hidden;
+  width: min(92vw, calc((100dvh - 120px) * .707), 460px);
+  color: #fff7eb; background: #721a19; box-shadow: 0 24px 80px #0006;
 }
 .lunch-poster::backdrop { background: rgb(16 9 7 / 74%); }
-@keyframes lunch-fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
+@keyframes lunch-fade-in { from { opacity: 0; } to { opacity: 1; } }
 @media (prefers-reduced-motion: no-preference) {
-  .lunch-poster[open], .lunch-poster[open]::backdrop {
-    animation: lunch-fade-in 1s ease-out;
-  }
+  .lunch-poster[open], .lunch-poster[open]::backdrop { animation: lunch-fade-in .6s ease-out; }
+  .lunch-slide { transition: opacity .45s ease; }
 }
 html:has(.lunch-poster[open]) { overflow: hidden; }
-.lunch-layout { position: relative; display: grid; grid-template-columns: 1.05fr 1fr; }
-.lunch-copy { padding: clamp(26px, 4vw, 54px); align-self: center; }
-.lunch-copy h2 { margin: 0; font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1; color: inherit; }
-.lunch-price { display: block; margin: .22em 0; font-size: clamp(3.7rem, 7vw, 6rem); line-height: 1; color: #ffcf66; }
-.lunch-hours { margin: 0; font-weight: 700; }
-.lunch-detail { margin: 14px 0 22px; line-height: 1.45; }
-.lunch-directions { display: inline-flex; align-items: center; gap: 10px; padding: 12px 18px; background: #ffcf66; color: #381510; font-weight: 700; text-decoration: none; }
-.lunch-directions svg { width: 18px; }
-.lunch-photo { width: 100%; height: 100%; object-fit: cover; }
-.lunch-close { position: absolute; top: 10px; right: 10px; width: 44px; height: 44px; border: 1px solid #fff9; border-radius: 50%; background: #251312; color: white; font: 30px/1 sans-serif; cursor: pointer; }
+.lunch-stage { position: relative; aspect-ratio: 1060 / 1500; }
+.lunch-slide { position: absolute; inset: 0; background: #721a19; }
+.lunch-slide[inert] { opacity: 0; visibility: hidden; }
+.lunch-slide > img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.lunch-when { position: absolute; left: 0; right: 0; bottom: 0; margin: 0; padding: 22px 16px 12px; text-align: center; font-weight: 800; letter-spacing: .02em; color: #fff; background: linear-gradient(transparent, #000b); }
+.lunch-challenge { display: flex; flex-direction: column; justify-content: center; padding: 8% 9%; background: radial-gradient(120% 70% at 50% 0%, #b3261e 0%, #721a19 62%, #3d0d0c 100%); }
+.challenge-kicker { margin: 0 0 .6em; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; font-size: clamp(.72rem, 3vw, .85rem); color: #ffcf66; }
+.lunch-challenge h2 { margin: 0 0 .7em; font-size: clamp(2.3rem, 11vw, 3.6rem); line-height: .95; color: #fff7eb; }
+.challenge-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.challenge-steps li { display: grid; grid-template-columns: 2.4em 1fr; align-items: center; gap: 12px; font-size: clamp(1.02rem, 4.4vw, 1.25rem); line-height: 1.25; }
+.challenge-steps b { display: grid; place-items: center; width: 2.2em; height: 2.2em; border-radius: 50%; background: #ffcf66; color: #381510; font-size: 1.05em; }
+.challenge-steps em { font-style: normal; font-weight: 800; color: #ffcf66; }
+.challenge-ask { margin: 1.4em 0 0; padding-top: 1em; border-top: 1px solid #fff4; font-weight: 700; }
+.lunch-close { position: absolute; z-index: 2; top: 10px; right: 10px; width: 44px; height: 44px; border: 1px solid #fff9; border-radius: 50%; background: #251312; color: white; font: 30px/1 sans-serif; cursor: pointer; }
+.lunch-controls { display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: #3d0d0c; }
+.lunch-controls button { width: 44px; height: 44px; border: 0; border-radius: 50%; background: #b3261e; color: #fff7eb; font-size: 22px; cursor: pointer; }
+.lunch-dots { display: flex; gap: 8px; }
+.lunch-dots i { width: 9px; height: 9px; border-radius: 50%; background: #fff5; }
+.lunch-dots i.is-on { background: #ffcf66; }
+.lunch-directions { margin-left: auto; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; background: #ffcf66; color: #381510; font-weight: 800; text-decoration: none; }
+.lunch-directions svg { width: 16px; }
 .lunch-poster :focus-visible { outline: 3px solid white; outline-offset: 2px; }
-@media (max-width: 620px) {
-  .lunch-layout { grid-template-columns: 1fr; }
-  .lunch-photo { grid-row: 1; height: clamp(110px, 23dvh, 190px); }
-  .lunch-copy { padding: 20px 24px 24px; }
-  .lunch-copy h2 { font-size: 2rem; }
-}
 
 /* A repeating underline follows the link label and leaves the arrow clear. */
 .wave-label { position: relative; }

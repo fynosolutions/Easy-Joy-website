@@ -236,19 +236,34 @@
   try {
     if (!preview && Date.now() - Number(localStorage.getItem(key)) < week) return;
   } catch { /* The offer still works when storage is unavailable. */ }
+  const slides = [...poster.querySelectorAll('[data-slide]')];
+  const dots = [...poster.querySelectorAll('.lunch-dots i')];
+  const motion = matchMedia('(prefers-reduced-motion: reduce)');
+  let index = 0, timer;
+  function show(next) {
+    index = (next + slides.length) % slides.length;
+    slides.forEach((s, i) => { s.inert = i !== index; });
+    dots.forEach((d, i) => d.classList.toggle('is-on', i === index));
+    restart();
+  }
+  function restart() {
+    clearTimeout(timer);
+    if (poster.open && !motion.matches) timer = setTimeout(() => show(index + 1), 5000);
+  }
+  poster.querySelector('[data-prev]').addEventListener('click', () => show(index - 1));
+  poster.querySelector('[data-next]').addEventListener('click', () => show(index + 1));
   function dismiss() {
+    clearTimeout(timer);
     try { if (!preview) localStorage.setItem(key, String(Date.now())); } catch {}
     poster.close();
   }
   poster.querySelector('.lunch-close').addEventListener('click', dismiss);
   poster.querySelector('.lunch-directions').addEventListener('click', dismiss);
   poster.addEventListener('cancel', event => { event.preventDefault(); dismiss(); });
-  poster.addEventListener('click', event => {
-    if (event.target === poster) dismiss();
-  });
+  poster.addEventListener('click', event => { if (event.target === poster) dismiss(); });
   function scheduleOffer() {
     window.setTimeout(() => {
-      if (!location.hash && !poster.open) poster.showModal();
+      if (!location.hash && !poster.open) { poster.showModal(); show(0); }
     }, 3000);
   }
   if (document.readyState === 'complete') scheduleOffer();
