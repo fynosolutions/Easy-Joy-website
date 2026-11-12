@@ -458,3 +458,23 @@ button,summary{cursor:pointer}
 .button:active,.home-button:active,.header-reserve:active,.order-pickup:active,.delivery-menu>summary:active,.mobile-actions a:active,.filter-chip:active,.g-filter button:active,.nav-contact a:active,.carousel-controls button:active{transform:scale(.97)}
 @media(prefers-reduced-motion:reduce){.button:active,.home-button:active,.header-reserve:active,.order-pickup:active,.delivery-menu>summary:active,.mobile-actions a:active,.filter-chip:active,.g-filter button:active,.nav-contact a:active,.carousel-controls button:active{transform:none}}
 @media(max-width:1000px){main .text-link,.location-phone,.about-facts a,.film-watch-link{display:inline-flex;align-items:center;min-height:44px}}
+
+.brand-transition { display: none; position: fixed; inset: 0; z-index: 2147483646; place-items: center; overflow: hidden; }
+.brand-transition::before { content: ""; position: absolute; inset: 0; background: #fff; }
+.transition-lockup { position: relative; display: flex; align-items: center; padding: 8px 18px 8px 6px; color: #a52a2f; }
+.transition-lockup::before { content: ""; position: absolute; inset: 0; background: #fff; }
+.transition-lockup > * { position: relative; }
+.transition-lockup .brand-name { font-size: clamp(20px, 6vw, 30px); }
+.transition-lockup .brand-copy small { color: #533329; font-size: clamp(9px, 2.6vw, 12px); white-space: nowrap; }
+.transition-lockup .brand-logo { width: clamp(64px, 20vw, 100px); height: auto; margin: 0; }
+.brand-departure .brand-transition, .brand-arrival .brand-transition { display: grid; }
+.brand-departure .brand-transition::before { animation: brand-fill .25s ease-out both; }
+.brand-departure .transition-lockup::before { animation: brand-fill .25s .25s ease both; }
+.brand-departure .transition-lockup > * { animation: brand-join .5s cubic-bezier(.22,.72,.18,1) both; }
+.brand-departure .brand-transition .brand-logo { --brand-offset: -100vw; }
+.brand-departure .brand-transition .brand-copy { --brand-offset: 100vw; }
+.brand-arrival.brand-ready .brand-transition { animation: brand-reveal .25s ease-in-out both; }
+@keyframes brand-fill { from { opacity: 0; } to { opacity: 1; } }
+@keyframes brand-join { from { transform: translateX(var(--brand-offset)); } to { transform: translateX(0); } }
+@keyframes brand-reveal { from { opacity: 1; } to { opacity: 0; visibility: hidden; } }
+@media print { html .brand-transition { display: none; } }

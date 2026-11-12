@@ -214,3 +214,55 @@ document.querySelectorAll('video[data-tap-play]').forEach(video => {
   more.addEventListener('click', () => { expanded = true; render(); });
   render();
 })();
+
+// Ordinary same-tab page links share the branded exit and arrival.
+(() => {
+  const root = document.documentElement;
+  let pending;
+  function reset() {
+    clearTimeout(pending);
+    pending = undefined;
+    root.classList.remove('brand-departure', 'brand-arrival', 'brand-ready');
+  }
+  // Keep the outgoing frame covered until the browser swaps documents.
+  window.addEventListener('pagehide', () => clearTimeout(pending));
+  window.addEventListener('pageshow', event => { if (event.persisted) reset(); });
+  // This script is deferred: the destination markup is already available.
+  if (root.classList.contains('brand-arrival')) {
+    const logo = document.querySelector('.transition-lockup .brand-logo');
+    Promise.allSettled([logo.decode?.(), document.fonts?.ready]).then(() => {
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        if (root.classList.contains('brand-arrival')) root.classList.add('brand-ready');
+      }));
+    });
+  }
+  document.querySelector('.brand-transition').addEventListener('animationend', event => {
+    if (event.animationName === 'brand-reveal') root.classList.remove('brand-arrival', 'brand-ready');
+  });
+  document.addEventListener('click', event => {
+    if (event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey ||
+        event.altKey || event.shiftKey || reducedMotion.matches ||
+        document.querySelector('.home-motion-paused')) return;
+    const link = event.target.closest?.('a[href]');
+    if (!link || link.hasAttribute('download') || (link.target && link.target !== '_self')) return;
+    const next = new URL(link.href, location.href);
+    if (!/^https?:$/.test(next.protocol) || next.origin !== location.origin ||
+        /\.[^/]+$/.test(next.pathname) ||
+        (next.pathname === location.pathname && next.search === location.search)) return;
+    if (pending !== undefined) {
+      event.preventDefault();
+      return;
+    }
+    try {
+      sessionStorage.setItem('easyjoy.navigation', JSON.stringify({ url: next.href, at: Date.now() }));
+    } catch { return; }
+    event.preventDefault();
+    root.classList.remove('brand-arrival');
+    root.classList.add('brand-departure');
+    const preload = document.createElement('link');
+    preload.rel = 'prefetch';
+    preload.href = next.href;
+    document.head.append(preload);
+    pending = setTimeout(() => location.assign(next.href), 750);
+  });
+})();

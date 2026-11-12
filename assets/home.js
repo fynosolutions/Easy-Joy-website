@@ -225,3 +225,32 @@
   new MutationObserver(() => { b.textContent = String(slides.findIndex(s => s.classList.contains('is-active')) + 1); })
     .observe(band.querySelector('.promo-stage'), {subtree: true, attributes: true, attributeFilter: ['class']});
 })();
+
+(() => {
+  const poster = document.querySelector('.lunch-poster');
+  if (!poster || typeof poster.showModal !== 'function' || location.hash) return;
+  const key = 'easyjoy.lunch-offer.dismissed';
+  const preview = ['localhost', '127.0.0.1'].includes(location.hostname)
+    && new URLSearchParams(location.search).get('preview') === 'lunch';
+  const week = 7 * 24 * 60 * 60 * 1000;
+  try {
+    if (!preview && Date.now() - Number(localStorage.getItem(key)) < week) return;
+  } catch { /* The offer still works when storage is unavailable. */ }
+  function dismiss() {
+    try { if (!preview) localStorage.setItem(key, String(Date.now())); } catch {}
+    poster.close();
+  }
+  poster.querySelector('.lunch-close').addEventListener('click', dismiss);
+  poster.querySelector('.lunch-directions').addEventListener('click', dismiss);
+  poster.addEventListener('cancel', event => { event.preventDefault(); dismiss(); });
+  poster.addEventListener('click', event => {
+    if (event.target === poster) dismiss();
+  });
+  function scheduleOffer() {
+    window.setTimeout(() => {
+      if (!location.hash && !poster.open) poster.showModal();
+    }, 3000);
+  }
+  if (document.readyState === 'complete') scheduleOffer();
+  else window.addEventListener('load', scheduleOffer, { once: true });
+})();
