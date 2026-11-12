@@ -459,3 +459,20 @@ html:has(.lunch-poster[open]) { overflow: hidden; }
     transition: clip-path 480ms cubic-bezier(.25,.7,.3,1);
   }
 }
+
+/* Offers band, desktop: more height, tag and day on one line, nothing clipped, even space above and below (owner 2026-11-12). */
+@media(min-width:1001px){
+ .cinema-hero{--promo-h:clamp(210px,27vh,236px)}
+ .promo-slide{align-content:center}
+ .promo-copy{display:grid;gap:8px;padding-block:22px 18px}
+ .promo-copy>*{margin:0!important}
+ .promo-kicker>span{display:flex!important;align-items:center;flex-wrap:wrap;gap:6px 12px}
+ .promo-title{padding-bottom:.14em;line-height:1.12}
+ .promo-fine{line-height:1.5;max-width:700px}
+ .promo-fine,.promo-fine span{text-wrap:pretty!important}
+ .promo-copy .nowrap{display:inline!important;transform:none!important;white-space:nowrap}
+ .promo-more{margin-top:2px!important}
+ .promo-controls{align-self:center;gap:18px}
+}
+
+.promo-copy .nowrap{display:inline!important;transform:none!important}
