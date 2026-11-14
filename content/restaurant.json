@@ -3,6 +3,10 @@
   "shortName": "Easy Joy",
   "alternateName": "Easy Joy意中人",
   "domain": "https://www.easyjoybuffet.com",
+  "analytics": {
+    "ga4": "G-X21JGBFWKK",
+    "googleAds": ["AW-17468422386", "AW-17529338521"]
+  },
   "language": "en-US",
   "telephone": "+1-929-243-6130",
   "displayPhone": "(929) 243-6130",

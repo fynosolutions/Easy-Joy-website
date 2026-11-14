@@ -273,3 +273,18 @@ document.querySelectorAll('video[data-tap-play]').forEach(video => {
     pending = setTimeout(() => location.assign(next.href), 750);
   });
 })();
+
+// Count the clicks that matter to the restaurant (order, reserve, call, directions, delivery apps) in GA4.
+// Capture phase, so it runs even when another handler navigates the page.
+document.addEventListener('click', event => {
+  const a = event.target.closest && event.target.closest('a[href]');
+  if (!a || typeof window.gtag !== 'function') return;
+  const h = a.href;
+  const name = /mealkeyway\.com/.test(h) ? 'order_click'
+    : /yelp\.com\/reservations/.test(h) ? 'reserve_click'
+    : /^tel:/.test(h) ? 'call_click'
+    : /google\.[a-z.]+\/maps|maps\.app\.goo\.gl|maps\.apple\.com/.test(h) ? 'directions_click'
+    : /doordash\.com|ubereats\.com|grubhub\.com|ezcater\.com|sharebite\.com/.test(h) ? 'delivery_click'
+    : '';
+  if (name) window.gtag('event', name, {link_url: h, transport_type: 'beacon'});
+}, true);
