@@ -18,6 +18,17 @@
   ],
   "redirects": [
     {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "easyjoybuffet.com"
+        }
+      ],
+      "destination": "https://www.easyjoybuffet.com/$1",
+      "permanent": true
+    },
+    {
       "source": "/contact-us/",
       "destination": "/contact/",
       "permanent": true
