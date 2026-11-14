@@ -250,8 +250,8 @@
     clearTimeout(timer);
     if (poster.open && !motion.matches) timer = setTimeout(() => show(index + 1), 5000);
   }
-  poster.querySelector('[data-prev]').addEventListener('click', () => show(index - 1));
-  poster.querySelector('[data-next]').addEventListener('click', () => show(index + 1));
+  poster.querySelector('[data-prev]')?.addEventListener('click', () => show(index - 1));
+  poster.querySelector('[data-next]')?.addEventListener('click', () => show(index + 1));
   function dismiss() {
     clearTimeout(timer);
     try { if (!preview) localStorage.setItem(key, String(Date.now())); } catch {}
