@@ -29,6 +29,39 @@
       "permanent": true
     },
     {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "easy-joy-orcin.vercel.app"
+        }
+      ],
+      "destination": "https://www.easyjoybuffet.com/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "easy-joy-fynosolutions.vercel.app"
+        }
+      ],
+      "destination": "https://www.easyjoybuffet.com/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "easy-joy-git-main-fynosolutions.vercel.app"
+        }
+      ],
+      "destination": "https://www.easyjoybuffet.com/$1",
+      "permanent": true
+    },
+    {
       "source": "/contact-us/",
       "destination": "/contact/",
       "permanent": true
