@@ -274,6 +274,15 @@ document.querySelectorAll('video[data-tap-play]').forEach(video => {
   });
 })();
 
+// Where on the page a tracked button sits (GA4 custom dimension click_location), so we can see which spot gets the clicks.
+function clickLocation(a) {
+  const spots = [['dialog.lunch-poster', 'popup'], ['.mobile-actions', 'mobile_bar'], ['header.site-header', 'header'],
+    ['.promo-band', 'promo_band'], ['.cinema-hero', 'hero'], ['footer.site-footer', 'footer']];
+  for (const [selector, label] of spots) if (a.closest(selector)) return label;
+  const section = a.closest('section[id]');
+  return section ? section.id : 'page';
+}
+
 // Count the clicks that matter to the restaurant (order, reserve, call, directions, delivery apps) in GA4.
 // Capture phase, so it runs even when another handler navigates the page.
 document.addEventListener('click', event => {
@@ -286,5 +295,5 @@ document.addEventListener('click', event => {
     : /google\.[a-z.]+\/maps|maps\.app\.goo\.gl|maps\.apple\.com/.test(h) ? 'directions_click'
     : /doordash\.com|ubereats\.com|grubhub\.com|ezcater\.com|sharebite\.com/.test(h) ? 'delivery_click'
     : '';
-  if (name) window.gtag('event', name, {link_url: h, transport_type: 'beacon'});
+  if (name) window.gtag('event', name, {link_url: h, click_location: clickLocation(a), transport_type: 'beacon'});
 }, true);
