@@ -85,7 +85,7 @@ let lastSection=-1;
 for(const marker of homeSections){const next=homeHTML.indexOf(marker);assert.ok(next>lastSection,`Home section missing or out of order: ${marker}`);lastSection=next;}
 assert.equal((homeHTML.match(/class="signature-slide[ "]/g)||[]).length,10);
 assert.ok(!homeHTML.includes('class="closing"')&&!homeHTML.includes('class="category-grid"'));
-assert.ok(homeHTML.includes('$28 before 5 PM.')&&homeHTML.includes('/faq/#ayce-price'),'Home states AYCE prices and links to the details');
+assert.ok(homeHTML.includes('$28, 12 PM–5 PM.')&&homeHTML.includes('/faq/#ayce-price'),'Home states AYCE prices and links to the details');
 const reviews=JSON.parse(await fs.readFile(path.join(root,'content/reviews.json'),'utf8'));
 const approvedReviews=reviews.items.filter(review=>review.publicationStatus==='approved');
 assert.equal((homeHTML.match(/class="review-card"/g)||[]).length,approvedReviews.length);
@@ -123,7 +123,7 @@ console.log(`PASS: source menu order and available official photos (${categories
 // 2026-11-04 design pass: AI search readiness, platform row, iPhone-safe glyphs.
 {
  const llms=await fs.readFile(path.join(dist,'llms.txt'),'utf8');
- assert.ok(llms.includes('$28 per person every day (Monday to Sunday) before 5 PM')&&llms.includes('Reservations:'),'llms.txt carries prices and booking link');
+ assert.ok(llms.includes('$28 per person every day (Monday to Sunday) from 12 PM to 5 PM')&&llms.includes('Reservations:'),'llms.txt carries prices and booking link');
  const faqHTML=await fs.readFile(path.join(dist,'faq','index.html'),'utf8');
  assert.ok(faqHTML.includes('"@type":"FAQPage"'),'FAQPage schema on /faq/');
  const homeLd=JSON.parse(homeHTML.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
