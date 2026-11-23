@@ -199,7 +199,19 @@ document.querySelectorAll('video[data-tap-play]').forEach(video => {
     if (still) loops.forEach(v => { v.controls = true; });
     else {
       // Start as soon as a fifth of the clip is on screen; retry once the first frames have loaded.
-      const start = v => { v.muted = true; v.defaultMuted = true; v.play().catch(() => {}); };
+      // One pause button for every looping clip on the page (WCAG 2.2.2; stays in the sticky section bar).
+      let stopped = false;
+      const start = v => { if (stopped) return; v.muted = true; v.defaultMuted = true; v.play().catch(() => {}); };
+      const toggle = document.querySelector('.g-video-toggle');
+      if (toggle) {
+        toggle.hidden = false;
+        toggle.addEventListener('click', () => {
+          stopped = !stopped;
+          toggle.setAttribute('aria-pressed', String(stopped));
+          toggle.textContent = stopped ? 'Play videos' : 'Pause videos';
+          loops.forEach(v => { if (stopped) v.pause(); else if (v.dataset.visible === '1') start(v); });
+        });
+      }
       const io = new IntersectionObserver(entries => entries.forEach(({target: v, isIntersecting}) => {
         if (isIntersecting) start(v); else v.pause();
       }), {threshold: 0.2});

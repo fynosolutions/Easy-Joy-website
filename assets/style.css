@@ -218,6 +218,7 @@ figcaption,.location-note,.dining-photos figcaption,.film-caption{font-size:14px
 .g-chapters{position:sticky;top:var(--sticky-header,80px);z-index:5;display:flex;gap:8px;flex-wrap:wrap;padding-block:12px;background:var(--cream,#faf5ee)}
 .g-chapters a{padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:#fffdf9;font-size:14px;font-weight:600;text-decoration:none;color:var(--ink)}
 .g-chapters a:hover{border-color:var(--red);color:var(--red)}
+.g-video-toggle{margin-left:auto;white-space:nowrap;flex-shrink:0;padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:#fffdf9;font-size:14px;font-weight:600;color:var(--ink);min-height:38px}.g-video-toggle:hover{border-color:var(--red);color:var(--red)}.g-video-toggle[aria-pressed=true]{border-color:var(--red);color:var(--red)}
 .g-chapter,.g-photos{padding-block:44px 8px;scroll-margin-top:150px}
 .g-head{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:24px;align-items:end;margin-bottom:22px}
 .g-head h2{margin:0;font-size:clamp(32px,3.4vw,46px);line-height:1.05;letter-spacing:-.03em}
@@ -500,3 +501,4 @@ button,summary{cursor:pointer}
 .veg-more-broths .veg-zh{color:var(--muted);font-weight:500;font-size:15px}
 @media(max-width:900px){.veg-more-broths{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.veg-more-broths{grid-template-columns:1fr 1fr;gap:10px}.veg-more-broths li{padding:12px 14px}.veg-more-name{font-size:16px}}
+@media(max-width:600px){.g-chapters .g-video-toggle{order:-1;margin-left:0}}
