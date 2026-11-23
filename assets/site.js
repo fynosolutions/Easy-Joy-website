@@ -7,17 +7,29 @@ const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 const navToggle = document.querySelector('.mobile-nav-toggle');
 const primaryNav = document.querySelector('#primary-nav');
 const mobileWidth = window.matchMedia('(max-width: 1000px)');
+// The open phone menu covers the page: keep the covered page out of reach of
+// screen readers and Tab. The Reserve/Order bar stays usable.
+const setPageBehindInert = on => document.querySelectorAll('main, .site-footer, .back-to-top').forEach(el => { el.inert = on; });
+// The open list sits in the sticky header and makes the page taller; closing it
+// used to throw the guest up the page by that height. Put them back where they were.
+let scrollBeforeNav = null;
 const closeNavigation = (restoreFocus = false) => {
+  const wasOpen = header.classList.contains('nav-open');
   header.classList.remove('nav-open');
+  setPageBehindInert(false);
+  if (wasOpen && scrollBeforeNav !== null) window.scrollTo({top: scrollBeforeNav, behavior: 'instant'});
+  scrollBeforeNav = null;
   navToggle.setAttribute('aria-expanded', 'false');
   closeCategories();
   if (restoreFocus) navToggle.focus();
 };
 navToggle.addEventListener('click', () => {
   const open = navToggle.getAttribute('aria-expanded') !== 'true';
+  if (!open) { closeNavigation(); return; }
+  scrollBeforeNav = window.scrollY;
   header.classList.toggle('nav-open', open);
   navToggle.setAttribute('aria-expanded', String(open));
-  if (!open) closeCategories();
+  setPageBehindInert(open);
 });
 mobileWidth.addEventListener('change', () => closeNavigation());
 document.addEventListener('keydown', event => {

@@ -360,6 +360,9 @@
   .lunch-slide { transition: opacity .45s ease; }
 }
 html:has(.lunch-poster[open]) { overflow: hidden; }
+/* Scroll inside the pop-up or over its backdrop stays there (2026-11-23, MWG prevent-page-scroll-under-modal-dialog). */
+.lunch-poster:modal { overscroll-behavior: contain; }
+.lunch-poster::backdrop { overflow: hidden; overscroll-behavior: contain; }
 .lunch-stage { position: relative; aspect-ratio: 1060 / 1500; }
 .lunch-slide { position: absolute; inset: 0; background: #721a19; }
 .lunch-slide[inert] { opacity: 0; visibility: hidden; }

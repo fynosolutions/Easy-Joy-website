@@ -420,6 +420,9 @@ details[open] .veg-faq-mark:after{transform:rotate(0)}
 @media(max-width:1000px){
  .js .site-header.nav-open:after{content:'';position:fixed;inset:0;z-index:-1;background:var(--paper)}
  .js .site-header.nav-open #primary-nav{max-height:calc(100dvh - 160px - env(safe-area-inset-bottom))}
+ /* The open menu covers the page, so the hidden page behind it must not scroll (2026-11-23). */
+ html.js:has(.site-header.nav-open){overflow:hidden}
+ .js .site-header.nav-open #primary-nav{overscroll-behavior:contain}
  .nav-contact{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:16px 0 28px;border-top:1px solid var(--line)}
  .nav-contact a{display:flex;align-items:center;justify-content:center;min-height:48px;padding:8px 10px;border:1px solid var(--line);border-radius:4px;font-weight:600;font-size:15px;text-decoration:none;color:var(--ink);text-align:center}
  .nav-contact a:first-child{border-color:var(--red);color:var(--red)}

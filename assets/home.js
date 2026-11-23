@@ -252,15 +252,23 @@
   }
   poster.querySelector('[data-prev]')?.addEventListener('click', () => show(index - 1));
   poster.querySelector('[data-next]')?.addEventListener('click', () => show(index + 1));
-  function dismiss() {
+  // Every way of closing (×, Directions, Esc/back, tap outside) ends here.
+  poster.addEventListener('close', () => {
     clearTimeout(timer);
     try { if (!preview) localStorage.setItem(key, String(Date.now())); } catch {}
-    poster.close();
-  }
+  });
+  const dismiss = () => poster.close();
   poster.querySelector('.lunch-close').addEventListener('click', dismiss);
   poster.querySelector('.lunch-directions').addEventListener('click', dismiss);
-  poster.addEventListener('cancel', event => { event.preventDefault(); dismiss(); });
-  poster.addEventListener('click', event => { if (event.target === poster) dismiss(); });
+  // closedby="any" handles tap-outside natively; older browsers (Safari) use this fallback.
+  if (!('closedBy' in HTMLDialogElement.prototype)) {
+    poster.addEventListener('click', event => {
+      if (event.target !== poster) return;
+      const r = poster.getBoundingClientRect();
+      if (event.clientY >= r.top && event.clientY <= r.bottom && event.clientX >= r.left && event.clientX <= r.right) return;
+      dismiss();
+    });
+  }
   function scheduleOffer() {
     window.setTimeout(() => {
       if (!location.hash && !poster.open) { poster.showModal(); show(0); }
